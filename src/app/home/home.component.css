@@ -1,0 +1,96 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.carousel-wrapper {
+  width: 105%;
+  max-width: 105%;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dot Indicators */
+.dot-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  outline: none;
+}
+
+.dot-indicator:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+
+.dot-indicator.active {
+  background-color: #D9E33F;
+  border-color: #D9E33F;
+  width: 12px;
+  height: 12px;
+  box-shadow: 0 0 10px rgba(217, 227, 63, 0.6);
+}
+
+
+
+/* Minimalistic Indicator Bars */
+.indicator-bar {
+    width: 20px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 99px;
+}
+
+/* Active State: Bar expands and glows Cyan */
+.indicator-bar.active {
+    width: 60px;
+    background-color: #00FFC2; /* cyber-cyan */
+    box-shadow: 0 0 10px rgba(0, 255, 194, 0.5);
+}
+
+.indicator-bar:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Optional: Smooth entry for the whole carousel */
+.lg\:block {
+    animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

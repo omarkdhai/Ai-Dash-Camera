@@ -12,6 +12,13 @@ import { SolutionsComponent } from './solutions/solutions.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { OfferComponent } from './offer/offer.component';
 import { IntegratorComponent } from './integrator/integrator.component';
+import { ScrollRevealDirective } from './directives/scroll-reveal.directive';
+import { ProductsComponent } from './products/products.component';
+import { LogisticsComponent } from './logistics/logistics.component';
+import { OilGasComponent } from './oil-gas/oil-gas.component';
+import { TaxiComponent } from './taxi/taxi.component';
+import { SchoolBusComponent } from './school-bus/school-bus.component';
+import { PublicBusComponent } from './public-bus/public-bus.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +31,14 @@ import { IntegratorComponent } from './integrator/integrator.component';
     SolutionsComponent,
     AboutUsComponent,
     OfferComponent,
-    IntegratorComponent
+    IntegratorComponent,
+    ScrollRevealDirective,
+    ProductsComponent,
+    LogisticsComponent,
+    OilGasComponent,
+    TaxiComponent,
+    SchoolBusComponent,
+    PublicBusComponent
   ],
   imports: [
     BrowserModule,

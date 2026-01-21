@@ -1,75 +1,134 @@
-<div class="bg-[#050505] text-white font-base selection:bg-cyber-cyan selection:text-black overflow-hidden">
+<div class="bg-[#391f5b] text-white font-base selection:bg-cyber-cyan selection:text-black overflow-hidden">
 
-  <section class="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-6">
-    <div class="absolute top-[-20%] left-[-10%] w-[700px] h-[700px] bg-cyber-cyan/10 blur-[180px] rounded-full"></div>
-    <div class="absolute bottom-[20%] right-[-10%] w-[500px] h-[500px] bg-purple-500/5 blur-[150px] rounded-full"></div>
+  <section appScrollReveal class="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-6">
+  <!-- Background Glows -->
+  <div class="absolute top-[-20%] left-[-10%] w-[700px] h-[700px] bg-cyber-cyan/10 blur-[180px] rounded-full"></div>
+  <div class="absolute bottom-[20%] right-[-10%] w-[500px] h-[500px] bg-purple-500/5 blur-[150px] rounded-full"></div>
 
-    <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center z-10">
-      <div class="space-y-8">
-        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[10px] font-cyber uppercase tracking-[0.3em] text-cyber-cyan">
-          <span class="relative flex h-2 w-2 mr-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyber-cyan opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-cyber-cyan"></span>
-          </span>
-          The Future of Computing
+  <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10">
+    
+    <!-- Left Content -->
+    <div class="space-y-8">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[10px] font-cyber uppercase tracking-[0.3em] text-cyber-cyan">
+        <span class="relative flex h-2 w-2 mr-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyber-cyan opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-cyber-cyan"></span>
+        </span>
+        EDGE AI FOR SMART & SAFE MOBILITY
+      </div>
+      
+<h4 class="text-4xl md:text-5xl font-cyber font-extrabold leading-[1.1] tracking-tight">
+  AI-Powered <br>
+  <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">
+    Road Safety
+  </span>
+</h4>
+      <p class="text-nav-grey text-sm max-w-lg leading-relaxed border-l-2 border-cyber-cyan pl-6">
+       Our intelligent AI camera combines Driver Monitoring System (DMS) and Advanced Driver Assistance Systems (ADAS) to detect risks in real time and enhance road safety for drivers and pedestrians.
+      </p>
+
+      <button routerLink="/contact" class="group relative px-8 py-4 bg-cyber-cyan text-black font-bold font-cyber uppercase tracking-widest rounded-xl shadow-[0_0_30px_rgba(0,255,194,0.3)] hover:scale-105 transition-all">
+        Request Information
+        <span class="ml-2 inline-block group-hover:translate-x-1 transition-transform">→</span>
+      </button>
+    </div>
+
+    <!-- Right Content: Minimalistic Carousel -->
+    <div class="relative hidden lg:block">
+      <!-- Image Wrapper -->
+      <div class="relative rounded-3xl border border-white/10 overflow-hidden shadow-2xl">
+        <div class="flex transition-transform duration-700 ease-in-out h-[400px]" 
+             [style.transform]="'translateX(-' + (currentImageIndex * 100) + '%)'">
+          <div class="min-w-full h-full" *ngFor="let image of carouselImages">
+            <img [src]="image.url" [alt]="image.alt" 
+                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
+          </div>
         </div>
-        
-        <h1 class="text-5xl md:text-5xl font-cyber font-extrabold leading-[1.1] tracking-tight">
-          Innovative <br>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">
-            AI Solutions
-          </span>
-        </h1>
-        
-        <p class="text-nav-grey text-sm max-w-lg leading-relaxed border-l-2 border-cyber-cyan pl-6">
-          We specialize in designing and developing AI and IoT solutions that enhance safety, boost efficiency, and promote sustainability across the operations that drive our economy.
-        </p>
+      </div>
 
-        <button routerLink="/contact" class="group relative px-8 py-4 bg-cyber-cyan text-black font-bold font-cyber font-black uppercase tracking-widest rounded-xl shadow-[0_0_30px_rgba(0,255,194,0.3)] hover:scale-105 transition-all">
-          Request Information
-          <span class="ml-2 inline-block group-hover:translate-x-1 transition-transform">→</span>
+      <!-- Minimalistic Bar Indicators (Under the image) -->
+      <div class="mt-8 flex justify-center items-center space-x-3">
+        <button *ngFor="let image of carouselImages; let i = index" 
+                (click)="currentImageIndex = i"
+                class="indicator-bar"
+                [class.active]="i === currentImageIndex">
         </button>
       </div>
+    </div>
 
-      <div class="relative hidden lg:block">
-        <div class="absolute -inset-10 bg-cyber-cyan/20 blur-[100px] rounded-full animate-pulse"></div>
-        <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=1000" 
-             alt="AI Vision" class="relative rounded-3xl border border-white/10 grayscale group-hover:grayscale-0 transition duration-700">
+  </div>
+</section>
+
+  <!-- AI DASHCAM SECTOR APPLICATIONS -->
+  <section appScrollReveal class="py-32 px-6 lg:px-20 bg-[#391f5b] relative overflow-hidden">
+    
+    <!-- Background Blueprint Glow -->
+    <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(0,255,194,0.03)_0%,transparent_50%)] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      
+      <!-- Section Header (Keeping as requested) -->
+      <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-6">
+        <div class="space-y-4">
+          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-tighter leading-tight">
+            Sector <br><span class="text-cyber-cyan">Applications</span>
+          </h2>
+        </div>
+        <div class="h-[1px] flex-grow mx-8 bg-white/10 hidden md:block"></div>
+        <p class="text-nav-grey text-sm max-w-xs text-right font-light italic leading-relaxed">
+          A single AI Dashcam system, engineered for the unique demands of every transport sector.
+        </p>
+      </div>
+
+      <!-- NEW ICON-BASED SECTORS ROW -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 items-start">
+        
+        <!-- 1. Logistics -->
+        <div [routerLink]="['/logistics']" fragment="logistics" class="group flex flex-col items-center cursor-pointer transition-all duration-500">
+          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-white/[0.02]">
+            <img src="assets/truck-moving (1).png" alt="">
+          </div>
+          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-nav-grey group-hover:text-white transition-colors">Logistics</span>
+        </div>
+
+        <!-- 2. Oil & Gas -->
+        <div [routerLink]="['/oil-gas']" fragment="hazardous" class="group flex flex-col items-center cursor-pointer transition-all duration-500">
+          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-white/[0.02]">
+            <img src="assets/car-oil.png" alt="">
+          </div>
+          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-nav-grey group-hover:text-white transition-colors">Oil & Gas</span>
+        </div>
+
+        <!-- 4. Taxi -->
+        <div [routerLink]="['/taxi']" fragment="private-hire" class="group flex flex-col items-center cursor-pointer transition-all duration-500">
+          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-white/[0.02]">
+            <img src="assets/taxi.png" alt="">
+          </div>
+          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-nav-grey group-hover:text-white transition-colors">Taxi</span>
+        </div>
+
+        <!-- 5. School Bus -->
+        <div [routerLink]="['/school-bus']" fragment="specialized" class="group flex flex-col items-center cursor-pointer transition-all duration-500">
+          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-white/[0.02]">
+            <img src="assets/school-bus.png" alt="">
+          </div>
+          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-nav-grey group-hover:text-white transition-colors">School Bus</span>
+        </div>
+
+        <!-- 6. Public Bus -->
+        <div [routerLink]="['/public-bus']" fragment="public-transport" class="group flex flex-col items-center cursor-pointer transition-all duration-500">
+          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-white/[0.02]">
+            <img src="assets/bus-alt.png" alt="">
+          </div>
+          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-nav-grey group-hover:text-white transition-colors">Public Bus</span>
+        </div>
+
       </div>
     </div>
-  </section>
-
-  <!-- METRICS SECTION -->
-  <section class="py-24 px-6 relative border-y border-white/5 bg-white/[0.01]">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16 space-y-2">
-        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.5em]">Let our metrics</h2>
-        <p class="text-4xl font-cyber font-bold uppercase tracking-widest">Speak Volumes</p>
-      </div>
-
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="text-center p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/30 transition-all">
-          <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+60</div>
-          <p class="text-nav-grey text-xs uppercase tracking-widest leading-relaxed">Supervised IOT<br>Platform</p>
-        </div>
-        <div class="text-center p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/30 transition-all">
-          <div class="text-5xl font-cyber font-black text-white mb-2">+35</div>
-          <p class="text-nav-grey text-xs uppercase tracking-widest leading-relaxed">Solutions<br>IOT</p>
-        </div>
-        <div class="text-center p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/30 transition-all">
-          <div class="text-5xl font-cyber font-black text-white mb-2">+1097</div>
-          <p class="text-nav-grey text-xs uppercase tracking-widest leading-relaxed">Connected<br>Devices</p>
-        </div>
-        <div class="text-center p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/30 transition-all">
-          <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+15</div>
-          <p class="text-nav-grey text-xs uppercase tracking-widest leading-relaxed">Countries<br>Touched</p>
-        </div>
-      </div>
-    </div>
-  </section>
+</section>
 
   <!-- SERVICES -->
-  <section class="py-32 px-6">
+  <section appScrollReveal class="py-32 px-6">
     <div class="max-w-7xl mx-auto">
       <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
         <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-tighter">Services we <br><span class="text-cyber-cyan">Provide</span></h2>
@@ -125,8 +184,228 @@
     </div>
   </section>
 
+  <!-- INNOVATION SECTION -->
+  <section appScrollReveal class="py-40 px-6 lg:px-20 bg-[#391f5b] relative overflow-hidden">
+    
+    <!-- Subtle Blueprint Grid Overlay -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none" 
+        style="background-image: radial-gradient(#00FFC2 0.5px, transparent 0.5px); background-size: 30px 30px;"></div>
+    
+    <!-- Glow behind the technical content -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-cyber-cyan/5 blur-[120px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      
+      <!-- Section Title -->
+      <div class="mb-24">
+        <div class="flex items-center space-x-4 mb-4">
+          <div class="h-[1px] w-12 bg-cyber-cyan"></div>
+          <span class="text-[10px] font-cyber text-cyber-cyan uppercase tracking-[0.6em] font-bold">Future-Proof Tech</span>
+        </div>
+        <h2 class="text-5xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none">
+          Core <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-purple-900 italic">Innovation</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+        
+        <!-- Left side: The Dissected Feature List -->
+        <div class="space-y-16">
+          
+          <!-- Tech Item 1 -->
+          <div class="group relative pl-12 border-l border-white/10 hover:border-cyber-cyan transition-colors duration-500">
+            <div class="absolute top-0 left-[-5px] w-2 h-2 bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
+            <span class="text-[9px] font-cyber text-nav-grey uppercase tracking-widest mb-2 block opacity-50">Tech_Stack_01</span>
+            <h4 class="text-xl font-cyber font-bold uppercase text-white mb-4 group-hover:text-cyber-cyan transition-colors">Local Edge Processing</h4>
+            <p class="text-nav-grey text-sm leading-relaxed max-w-md font-light">
+              Our dashcam runs a powerful Neural Processing Unit (NPU) locally. It analyzes 30 frames per second to detect risks in <span class="text-white font-medium">under 100 milliseconds</span>—faster than a human blink.
+            </p>
+          </div>
+
+          <!-- Tech Item 2 -->
+          <div class="group relative pl-12 border-l border-white/10 hover:border-cyber-cyan transition-colors duration-500">
+              <div class="absolute top-0 left-[-5px] w-2 h-2 bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
+              <span class="text-[9px] font-cyber text-nav-grey uppercase tracking-widest mb-2 block opacity-50">Tech_Stack_02</span>
+              <h4 class="text-xl font-cyber font-bold uppercase text-white mb-4 group-hover:text-cyber-cyan transition-colors">OTA Intelligent Evolution</h4>
+              <p class="text-nav-grey text-sm leading-relaxed max-w-md font-light">
+                Through <span class="text-white font-medium">Over-the-Air (OTA) updates</span>, your fleet hardware stays modern. New AI detection models are pushed remotely, ensuring your investment improves over time.
+              </p>
+          </div>
+
+          <!-- Tech Item 3 -->
+          <div class="group relative pl-12 border-l border-white/10 hover:border-cyber-cyan transition-colors duration-500">
+              <div class="absolute top-0 left-[-5px] w-2 h-2 bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
+              <span class="text-[9px] font-cyber text-nav-grey uppercase tracking-widest mb-2 block opacity-50">Tech_Stack_03</span>
+              <h4 class="text-xl font-cyber font-bold uppercase text-white mb-4 group-hover:text-cyber-cyan transition-colors">Sensor Fusion Engine</h4>
+              <p class="text-nav-grey text-sm leading-relaxed max-w-md font-light">
+                Merging high-fidelity <span class="text-white font-medium">Sony Starvis</span> visual data with GPS, G-Sensor, and 4G telemetry to create a 360-degree digital twin of every critical event.
+              </p>
+          </div>
+
+        </div>
+
+        <!-- Right side: Technical Visual Representation -->
+        <div class="relative mt-10 lg:mt-0">
+          <div class="absolute -inset-10 bg-cyber-cyan/10 blur-[100px] rounded-full animate-pulse"></div>
+          
+          <!-- Blueprint Card -->
+          <div class="relative p-1 bg-black/30 rounded-[40px] border border-white/10 overflow-hidden group">
+            <!-- Glass Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-br from-cyber-cyan/5 to-transparent"></div>
+            
+            <div class="relative p-8 md:p-12 space-y-10">
+              <div class="flex justify-between items-start">
+                <div class="w-16 h-16 rounded-2xl bg-cyber-cyan/10 border border-cyber-cyan/20 flex items-center justify-center text-cyber-cyan">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                </div>
+                <div class="text-right">
+                    <div class="text-[10px] font-cyber text-nav-grey uppercase tracking-widest">Hardware ID</div>
+                    <div class="text-xs font-bold text-white uppercase">MF2-GEN-AI</div>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+                    <div class="h-full bg-cyber-cyan w-[90%] shadow-[0_0_10px_#00FFC2] animate-[loading_3s_infinite]"></div>
+                </div>
+                <div class="flex justify-between text-[9px] font-cyber text-nav-grey uppercase tracking-[0.2em]">
+                    <span>System Reliability</span>
+                    <span class="text-cyber-cyan italic">90% Optimized</span>
+                </div>
+              </div>
+
+              <p class="text-nav-grey text-sm leading-relaxed italic">
+                "We don't just record video; we understand the environment. Our innovation lies in the synergy between proprietary AI algorithms and industrial-grade hardware."
+              </p>
+
+              <div class="pt-6 grid grid-cols-2 gap-4">
+                  <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5 text-center">
+                      <div class="text-lg font-cyber font-bold text-white tracking-widest">FHD</div>
+                      <div class="text-[8px] text-nav-grey uppercase">Resolution</div>
+                  </div>
+                  <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5 text-center">
+                      <div class="text-lg font-cyber font-bold text-white tracking-widest">5G</div>
+                      <div class="text-[8px] text-nav-grey uppercase">Connectivity</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECTED DEVICES PROFICIENCY -->
+<section appScrollReveal class="py-40 px-6 lg:px-20 bg-[#391f5b] relative overflow-hidden">
+  
+  <!-- Network Pattern Background -->
+  <div class="absolute inset-0 opacity-[0.05] pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      
+      <!-- Left Side: Narrative & Scale -->
+      <div class="space-y-10">
+        <div class="flex items-center space-x-4 mb-4">
+          <div class="h-[1px] w-12 bg-cyber-cyan"></div>
+          <span class="text-[10px] font-cyber text-cyber-cyan uppercase tracking-[0.6em] font-bold">Ecosystem Authority</span>
+        </div>
+        
+        <h2 class="text-5xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none">
+          Edge <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-purple-900 italic">Ecosystem</span> <br>Proficiency
+        </h2>
+
+        <p class="text-nav-grey text-lg leading-relaxed font-light max-w-xl">
+          With over <span class="text-white font-bold italic">40,000 active devices</span> deployed across 15 countries, ACCENT manages one of the most robust industrial IoT infrastructures in the region.
+        </p>
+
+        <!-- The "Power in Numbers" Metric -->
+        <div class="p-8 rounded-[32px] bg-white/[0.02] border border-white/10 relative group overflow-hidden">
+            <div class="relative z-10">
+                <div class="text-6xl font-cyber font-black text-cyber-cyan mb-2">40K+</div>
+                <div class="text-[10px] font-cyber text-nav-grey uppercase tracking-[0.5em]">Live Connected Nodes</div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Technical proficiency grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Pillar 1: Integration -->
+        <div class="p-8 rounded-3xl border border-white/5 bg-black/10 hover:bg-black/20 transition-all group">
+          <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/></svg>
+          </div>
+          <h4 class="text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">Hardware Mastery</h4>
+          <p class="text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">Proprietary PCB design and firmware optimization for high-uptime environments.</p>
+        </div>
+
+        <!-- Pillar 2: Connectivity -->
+        <div class="p-8 rounded-3xl border border-white/5 bg-black/10 hover:bg-black/20 transition-all group">
+            <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
+            </div>
+            <h4 class="text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">LTE & V2X Sync</h4>
+            <p class="text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">Seamless 4G/LTE, 5G-ready, and V2X communication for ultra-low latency alerts.</p>
+        </div>
+
+        <!-- Pillar 3: Cloud Command -->
+        <div class="p-8 rounded-3xl border border-white/5 bg-black/10 hover:bg-black/20 transition-all group">
+            <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+            </div>
+            <h4 class="text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">Cloud Orchestration</h4>
+            <p class="text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">Centralized VSS/FMS platforms handling millions of data points every hour.</p>
+        </div>
+
+        <!-- Pillar 4: Precision -->
+        <div class="p-8 rounded-3xl border border-white/5 bg-black/10 hover:bg-black/20 transition-all group">
+            <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h4 class="text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">Reliability_Zero</h4>
+            <p class="text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">Engineered for 96.5% uptime in industrial transport applications.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- METRICS SECTION -->
+  <section appScrollReveal class="py-24 px-6 relative border-y border-white/5 bg-white/[0.01]">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 space-y-2">
+        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.5em]">Let our metrics</h2>
+        <p class="text-4xl font-cyber font-bold uppercase tracking-widest">Speak Volumes</p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/30 transition-all">
+          <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+60</div>
+          <p class="text-nav-grey text-xs uppercase tracking-widest leading-relaxed">Supervised IOT<br>Platform</p>
+        </div>
+        <div class="text-center p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/30 transition-all">
+          <div class="text-5xl font-cyber font-black text-white mb-2">+35</div>
+          <p class="text-nav-grey text-xs uppercase tracking-widest leading-relaxed">Solutions<br>IOT</p>
+        </div>
+        <div class="text-center p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/30 transition-all">
+          <div class="text-5xl font-cyber font-black text-white mb-2">+1097</div>
+          <p class="text-nav-grey text-xs uppercase tracking-widest leading-relaxed">Connected<br>Devices</p>
+        </div>
+        <div class="text-center p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/30 transition-all">
+          <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+15</div>
+          <p class="text-nav-grey text-xs uppercase tracking-widest leading-relaxed">Countries<br>Touched</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- OUR VALUES -->
-  <section class="py-32 px-6 bg-black">
+  <section appScrollReveal class="py-32 px-6 bg-[#391f5b]">
     <div class="max-w-7xl mx-auto">
       <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em]">Our <span class="text-cyber-cyan">Values</span></h2>
       
@@ -159,7 +438,7 @@
   </section>
 
   <!-- CONTACT FORM -->
-  <section class="py-32 px-6 relative">
+  <section appScrollReveal class="py-32 px-6 relative">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] bg-cyber-cyan/5 blur-[150px] pointer-events-none"></div>
     
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 relative z-10">

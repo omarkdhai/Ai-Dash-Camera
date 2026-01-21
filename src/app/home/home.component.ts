@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -6,16 +6,46 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+export class HomeComponent implements OnInit, OnDestroy {
+  currentImageIndex = 0;
+  private intervalId: any;
 
-export class HomeComponent implements OnInit {
+  carouselImages = [
+    {
+      url: 'assets/dash-camera9.png',
+      alt: 'AI Dashcam with digital safety overlays'
+    },
+    {
+      url: 'assets/dash-camera7.jpg',
+      alt: 'Smart fleet management and road tracking'
+    },
+    {
+      url: 'assets/dash-camera6.jpg',
+      alt: 'Smart fleet management and road tracking'
+    },
+    {
+      url: 'assets/dash-camera5.png',
+      alt: 'Smart fleet management and road tracking'
+    },
+  ];
+
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    // If there is NO fragment in the URL, force the window to the top
     this.route.fragment.subscribe(frag => {
       if (!frag) {
         window.scrollTo(0, 0);
       }
     });
+
+    this.intervalId = setInterval(() => {
+      this.currentImageIndex = (this.currentImageIndex + 1) % this.carouselImages.length;
+    }, 3000);
+  }
+
+  ngOnDestroy() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
   }
 }

@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Initial State: Far down, smaller, and blurred */
+.reveal-hidden {
+  opacity: 0;
+  /* 3D transform for hardware acceleration */
+  transform: translate3d(0, 100px, 0) scale(0.92) rotateX(10deg);
+  filter: blur(15px);
+  will-change: transform, opacity, filter;
+  transition: 
+    opacity 1.2s ease-out, 
+    transform 1.4s cubic-bezier(0.16, 1, 0.3, 1), 
+    filter 1.2s ease-out;
+}
+
+/* Revealed State: Snap to position with a "Spring" feel */
+.reveal-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1) rotateX(0deg);
+  filter: blur(0px);
+}
+
+/* Add a "Stagger" effect to the content inside the section */
+.reveal-visible > * {
+  animation: contentSlideIn 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes contentSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loading {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
