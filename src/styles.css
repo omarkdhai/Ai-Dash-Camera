@@ -43,3 +43,22 @@
   50% { transform: translateX(0%); }
   100% { transform: translateX(100%); }
 }
+
+
+.goog-te-banner-frame.skiptranslate, .goog-te-gadget-icon {
+    display: none !important;
+}
+body {
+    top: 0px !important;
+}
+.goog-te-gadget {
+    color: transparent !important;
+    font-size: 0 !important;
+}
+#google_translate_element {
+    display: none;
+}
+.goog-text-highlight {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
