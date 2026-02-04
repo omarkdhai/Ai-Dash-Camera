@@ -1,4 +1,4 @@
-<footer class="bg-[#251c2b] border-t border-white/10 pt-24 pb-12 px-6 lg:px-20 font-base relative overflow-hidden">
+<footer class="bg-white dark:bg-[#251c2b] border-t border-slate-200 dark:border-white/10 pt-24 pb-12 px-6 lg:px-20 font-base relative overflow-hidden transition-colors">
   
   <!-- Subtle Background Glow (Optional, matches the high-tech feel) -->
   <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyber-cyan/5 blur-[120px] rounded-full pointer-events-none"></div>
@@ -8,61 +8,62 @@
       
       <!-- Brand Column -->
       <div class="space-y-8">
-        <img src="assets/logo_accent_blanc.png" alt="Accent" class="h-10 w-auto brightness-110">
-        <p class="text-nav-grey text-[13px] leading-relaxed font-light">
-          We bring you the future of computing with innovative AI and IoT solutions that drive the global economy towards a safer, more sustainable horizon.
+        <img src="assets/logo_accent_blanc.png" alt="Accent" class="h-10 w-auto brightness-110 hidden dark:block">
+        <img src="assets/logo_accent.png" alt="Accent" class="h-10 w-auto block dark:hidden">
+        <p class="text-slate-600 dark:text-nav-grey text-[13px] leading-relaxed font-light">
+          {{ 'FOOTER.TAGLINE' | translate }}
         </p>
         <div class="flex items-center space-x-3 pt-2">
           <span class="h-[1px] w-8 bg-cyber-cyan shadow-[0_0_10px_#00FFC2]"></span>
-          <span class="text-[10px] font-cyber uppercase tracking-[0.4em] text-cyber-cyan font-bold">Think Smart, Do Right</span>
+          <span class="text-[10px] font-cyber uppercase tracking-[0.4em] text-purple-600 dark:text-cyber-cyan font-bold">{{ 'FOOTER.THINK_SMART' | translate }}</span>
         </div>
       </div>
 
       <!-- Navigation Column -->
       <div>
-        <h4 class="text-white font-cyber font-bold uppercase tracking-[0.3em] text-[11px] mb-10 border-l-2 border-cyber-cyan pl-4">Navigation</h4>
+        <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase tracking-[0.3em] text-[11px] mb-10 border-l-2 border-cyber-cyan pl-4">{{ 'FOOTER.NAVIGATION' | translate }}</h4>
         <ul class="space-y-4 font-cyber">
-          <li><a routerLink="/" class="text-nav-grey text-[11px] uppercase tracking-widest hover:text-white transition-colors">Home</a></li>
-          <li><a routerLink="/products" class="text-nav-grey text-[11px] uppercase tracking-widest hover:text-white transition-colors">Products</a></li>
-          <li><a routerLink="/solutions" class="text-nav-grey text-[11px] uppercase tracking-widest hover:text-white transition-colors">Solutions</a></li>
-          <li><a routerLink="/about-us" class="text-nav-grey text-[11px] uppercase tracking-widest hover:text-white transition-colors">About Us</a></li>
+          <li><a routerLink="/" class="text-slate-600 dark:text-nav-grey text-[11px] uppercase tracking-widest hover:text-slate-900 dark:hover:text-white transition-colors">{{ 'FOOTER.HOME' | translate }}</a></li>
+          <li><a routerLink="/products" class="text-slate-600 dark:text-nav-grey text-[11px] uppercase tracking-widest hover:text-slate-900 dark:hover:text-white transition-colors">{{ 'FOOTER.PRODUCTS' | translate }}</a></li>
+          <li><a routerLink="/solutions" class="text-slate-600 dark:text-nav-grey text-[11px] uppercase tracking-widest hover:text-slate-900 dark:hover:text-white transition-colors">{{ 'FOOTER.SOLUTIONS' | translate }}</a></li>
+          <li><a routerLink="/about-us" class="text-slate-600 dark:text-nav-grey text-[11px] uppercase tracking-widest hover:text-slate-900 dark:hover:text-white transition-colors">{{ 'FOOTER.ABOUT_US' | translate }}</a></li>
         </ul>
       </div>
 
       <!-- Solutions Column -->
       <div>
-        <h4 class="text-white font-cyber font-bold uppercase tracking-[0.3em] text-[11px] mb-10 border-l-2 border-cyber-cyan pl-4">Solutions</h4>
+        <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase tracking-[0.3em] text-[11px] mb-10 border-l-2 border-cyber-cyan pl-4">{{ 'FOOTER.SOLUTIONS' | translate }}</h4>
         <ul class="space-y-4 font-cyber">
-          <li><a routerLink="/solutions/logistics" class="text-nav-grey text-[11px] uppercase tracking-widest hover:text-cyber-cyan transition-colors">Logistics</a></li>
-          <li><a routerLink="/solutions/public-transport" class="text-nav-grey text-[11px] uppercase tracking-widest hover:text-cyber-cyan transition-colors">Public Transit</a></li>
-          <li><a routerLink="/solutions/hazardous" class="text-nav-grey text-[11px] uppercase tracking-widest hover:text-cyber-cyan transition-colors">Oil & Gas</a></li>
-          <li><a href="#" class="text-cyber-cyan font-bold text-[11px] uppercase tracking-widest hover:brightness-125 transition-all">Accentify Platform</a></li>
+          <li><a routerLink="/logistics" class="text-slate-600 dark:text-nav-grey text-[11px] uppercase tracking-widest hover:text-cyber-cyan transition-colors">{{ 'FOOTER.LOGISTICS' | translate }}</a></li>
+          <li><a routerLink="/public-bus" class="text-slate-600 dark:text-nav-grey text-[11px] uppercase tracking-widest hover:text-cyber-cyan transition-colors">{{ 'FOOTER.PUBLIC_TRANSIT' | translate }}</a></li>
+          <li><a routerLink="/oil-gas" class="text-slate-600 dark:text-nav-grey text-[11px] uppercase tracking-widest hover:text-cyber-cyan transition-colors">{{ 'FOOTER.OIL_GAS' | translate }}</a></li>
+          <li><a href="#" class="text-cyber-cyan font-bold text-[11px] uppercase tracking-widest hover:brightness-125 transition-all">{{ 'FOOTER.ACCENTIFY_PLATFORM' | translate }}</a></li>
         </ul>
       </div>
 
       <!-- Connect Column -->
       <div>
-        <h4 class="text-white font-cyber font-bold uppercase tracking-[0.3em] text-[11px] mb-10 border-l-2 border-cyber-cyan pl-4">Connect</h4>
+        <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase tracking-[0.3em] text-[11px] mb-10 border-l-2 border-cyber-cyan pl-4">{{ 'FOOTER.CONNECT' | translate }}</h4>
         <div class="space-y-6 mb-10">
           <div class="flex items-start group">
             <svg class="w-4 h-4 mr-4 text-cyber-cyan shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            <span class="text-nav-grey text-xs leading-relaxed group-hover:text-white transition-colors">Technopole bloc 1, Manouba, <br> 2010 Tunisia</span>
+            <span class="text-slate-600 dark:text-nav-grey text-xs leading-relaxed group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{{ 'FOOTER.ADDRESS' | translate }}</span>
           </div>
           <a href="mailto:contact@accent.tn" class="flex items-center group">
             <svg class="w-4 h-4 mr-4 text-cyber-cyan shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            <span class="text-nav-grey text-xs group-hover:text-white transition-colors">contact@accent.tn</span>
+            <span class="text-slate-600 dark:text-nav-grey text-xs group-hover:text-slate-900 dark:group-hover:text-white transition-colors">contact@accent.tn</span>
           </a>
         </div>
 
         <!-- Social Icon -->
          <div class="hidden xl:flex items-center space-x-4 mr-4">
-        <a href="https://www.linkedin.com/company/accent-tn/" target="_blank" class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-nav-grey hover:text-cyber-cyan hover:border-cyber-cyan transition-all">
+        <a href="https://www.linkedin.com/company/accent-tn/" target="_blank" class="w-11 h-11 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-600 dark:text-nav-grey hover:text-cyber-cyan hover:border-cyber-cyan transition-all">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         </a>
 
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@accent.tn" 
            target="_blank"
-           class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-nav-grey hover:text-cyber-cyan hover:border-cyber-cyan transition-all"
+           class="w-11 h-11 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-600 dark:text-nav-grey hover:text-cyber-cyan hover:border-cyber-cyan transition-all"
            title="Email us">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -73,11 +74,11 @@
     </div>
 
     <!-- Bottom Copyright -->
-    <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 font-cyber uppercase tracking-[0.2em] text-[9px] text-nav-grey">
-      <p>© 2026 ACCENT. <span class="opacity-30 ml-2">All Rights Reserved.</span></p>
+    <div class="pt-10 border-t border-slate-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 font-cyber uppercase tracking-[0.2em] text-[9px] text-slate-500 dark:text-nav-grey transition-colors">
+      <p>© 2026 ACCENT. <span class="opacity-30 ml-2">{{ 'FOOTER.ALL_RIGHTS_RESERVED' | translate }}</span></p>
       <div class="flex items-center space-x-10">
-        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        <a href="#" class="hover:text-slate-900 dark:hover:text-white transition-colors">{{ 'FOOTER.PRIVACY_POLICY' | translate }}</a>
+        <a href="#" class="hover:text-slate-900 dark:hover:text-white transition-colors">{{ 'FOOTER.TERMS_OF_SERVICE' | translate }}</a>
       </div>
     </div>
   </div>

@@ -1,34 +1,34 @@
-<div class="bg-[#251c2b] text-white font-base selection:bg-cyber-cyan selection:text-black overflow-hidden">
+<div class="bg-slate-50 dark:bg-[#251c2b] text-slate-900 dark:text-white font-base selection:bg-cyber-cyan selection:text-black overflow-hidden min-h-screen transition-colors">
  <!-- CONTACT FORM -->
   <section appScrollReveal id="contact-form" class="py-32 px-6 relative">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] bg-cyber-cyan/5 blur-[150px] pointer-events-none"></div>
     
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 relative z-10">
       <div>
-        <h2 class="text-5xl md:text-7xl font-cyber font-extrabold text-white mb-6 leading-none">Need Our <br><span class="text-cyber-cyan">Help?</span></h2>
-        <p class="text-nav-grey text-2xl font-cyber">Let's Get In Touch!</p>
+        <h2 class="text-5xl md:text-7xl font-cyber font-extrabold text-purple-900 dark:text-white mb-6 leading-none">{{ 'CONTACT.NEED_HELP' | translate }} <br><span class="text-cyber-cyan">{{ 'CONTACT.HELP' | translate }}</span></h2>
+        <p class="text-slate-600 dark:text-nav-grey text-2xl font-cyber">{{ 'CONTACT.GET_IN_TOUCH' | translate }}</p>
         
         <div class="mt-12 space-y-6">
           <div class="flex items-center space-x-4">
-            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-cyber-cyan">
+            <div class="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-cyber-cyan">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             </div>
-            <span class="text-white">contact@accent.tn</span>
+            <span class="text-slate-900 dark:text-white">contact@accent.tn</span>
           </div>
         </div>
       </div>
 
-      <div class="bg-white/[0.03] backdrop-blur-xl border border-white/10 p-10 rounded-3xl">
+      <div class="bg-white dark:bg-white/[0.03] backdrop-blur-xl border border-slate-200 dark:border-white/10 p-10 rounded-3xl shadow-lg dark:shadow-none transition-colors">
         <form class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <input type="text" placeholder="Full Name" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
-            <input type="email" placeholder="Email" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
+            <input type="text" [placeholder]="'CONTACT.FULL_NAME' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
+            <input type="email" [placeholder]="'CONTACT.EMAIL' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
           </div>
-          <input type="tel" placeholder="Phone" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
-          <textarea rows="4" placeholder="Enter your message" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all"></textarea>
+          <input type="tel" [placeholder]="'CONTACT.PHONE' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
+          <textarea rows="4" [placeholder]="'CONTACT.MESSAGE' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all"></textarea>
           
-          <button type="submit" class="w-full py-4 bg-white text-black font-cyber font-black uppercase tracking-widest rounded-xl hover:bg-cyber-cyan transition-all transform hover:-translate-y-1">
-            Submit
+          <button type="submit" class="w-full py-4 bg-slate-900 dark:bg-white text-white dark:text-black font-cyber font-black uppercase tracking-widest rounded-xl hover:bg-cyber-cyan dark:hover:text-black transition-all transform hover:-translate-y-1">
+            {{ 'CONTACT.SUBMIT' | translate }}
           </button>
         </form>
       </div>

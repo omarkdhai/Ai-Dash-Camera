@@ -1,4 +1,4 @@
-<div class="bg-[#251c2b] min-h-screen text-white font-base selection:bg-cyber-cyan selection:text-black pb-32">
+<div class="bg-slate-50 dark:bg-[#251c2b] min-h-screen text-slate-900 dark:text-white font-base selection:bg-cyber-cyan selection:text-black pb-32 transition-colors">
 
   <header appScrollReveal class="relative pt-40 pb-24 px-6 overflow-hidden">
     <!-- Ambient Tech Glow -->
@@ -7,19 +7,17 @@
 
     <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       <div class="space-y-8">
-        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[10px] font-cyber uppercase tracking-[0.3em] text-cyber-cyan">
-          Who We Are
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.3em] text-purple-600 dark:text-cyber-cyan">
+          {{ 'ABOUT_US.WHO_WE_ARE' | translate }}
         </div>
         
-        <h1 class="text-5xl md:text-5xl font-cyber font-extrabold uppercase tracking-tight leading-none">
-          Know <br>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">About Us</span>
+        <h1 class="text-5xl md:text-5xl font-cyber font-extrabold uppercase tracking-tight leading-none text-purple-900 dark:text-white">
+          {{ 'ABOUT_US.KNOW' | translate }} <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">{{ 'ABOUT_US.KNOW_ABOUT_US' | translate }}</span>
         </h1>
         
-        <p class="text-nav-grey text-sm leading-relaxed border-l-2 border-cyber-cyan pl-8">
-          ACCENT is a Tunisian tech firm established in 2018, operating at the forefront of the IOT sector. 
-          We specialize in crafting and developing connected devices tailored for safety and monitoring, 
-          offering dependable data for innovators keen on optimizing resource performance through precise solutions.
+        <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed border-l-2 border-cyber-cyan pl-8">
+          {{ 'ABOUT_US.INTRO' | translate }}
         </p>
       </div>
 
@@ -27,7 +25,7 @@
       <div class="relative group">
         <div class="absolute -inset-4 bg-cyber-cyan/10 blur-3xl opacity-50 group-hover:opacity-100 transition duration-1000"></div>
         <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000" 
-             class="relative rounded-3xl border border-white/10 grayscale hover:grayscale-0 transition duration-700 shadow-2xl" 
+             class="relative rounded-3xl border border-slate-200 dark:border-white/10 grayscale hover:grayscale-0 transition duration-700 shadow-2xl" 
              alt="Tech Innovation">
       </div>
     </div>
@@ -36,20 +34,20 @@
   <section appScrollReveal class="py-32 px-6">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="space-y-8">
-        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.5em] mb-4 italic">01 / Our Vision</h2>
-        <h3 class="text-3xl md:text-4xl font-cyber font-bold uppercase tracking-tight">
-          We envision a <span class="text-cyber-cyan">vibrant economy</span> and a <span class="text-cyber-cyan">better society</span>
+        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.5em] mb-4 italic">{{ 'ABOUT_US.OUR_VISION' | translate }}</h2>
+        <h3 class="text-3xl md:text-4xl font-cyber font-bold uppercase tracking-tight text-purple-900 dark:text-white">
+          {{ 'ABOUT_US.VISION_TITLE' | translate }}
         </h3>
-        <div class="space-y-6 text-sm text-nav-grey leading-relaxed font-light">
-          <p>Our vision is rooted in being a thriving business trusted by our stakeholders for the accuracy of our data. We are driven to elevate the technology sector by constantly innovating, creating, and exploring new models of growth.</p>
-          <p>We envision a vibrant economy and a better society shaped by our commitment to driving innovation in the technology sector.</p>
+        <div class="space-y-6 text-sm text-slate-600 dark:text-nav-grey leading-relaxed font-light">
+          <p>{{ 'ABOUT_US.VISION_P1' | translate }}</p>
+          <p>{{ 'ABOUT_US.VISION_P2' | translate }}</p>
         </div>
       </div>
 
       <div class="relative group h-[400px] w-full">
          <div class="absolute inset-0 bg-cyber-cyan/5 blur-2xl rounded-full translate-x-10"></div>
          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1000" 
-              class="h-full w-full object-cover rounded-[40px] border border-white/5 grayscale group-hover:grayscale-0 transition duration-1000 shadow-2xl" 
+              class="h-full w-full object-cover rounded-[40px] border border-slate-200 dark:border-white/5 grayscale group-hover:grayscale-0 transition duration-1000 shadow-2xl" 
               alt="Our Vision">
       </div>
     </div>
@@ -61,66 +59,66 @@
       <div class="relative group h-[400px] w-full order-2 lg:order-1">
          <div class="absolute inset-0 bg-blue-500/5 blur-2xl rounded-full -translate-x-10"></div>
          <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1000" 
-              class="h-full w-full object-cover rounded-[40px] border border-white/5 grayscale group-hover:grayscale-0 transition duration-1000 shadow-2xl" 
+              class="h-full w-full object-cover rounded-[40px] border border-slate-200 dark:border-white/5 grayscale group-hover:grayscale-0 transition duration-1000 shadow-2xl" 
               alt="Our Mission">
       </div>
 
       <div class="space-y-8 order-1 lg:order-2">
-        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.5em] mb-4 italic">02 / Our Mission</h2>
-        <h3 class="text-3xl md:text-4xl font-cyber font-bold uppercase tracking-tight leading-tight">
-          Facilitating with <span class="text-cyber-cyan">Optimal Assets</span>, Innovating for Security
+        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.5em] mb-4 italic">{{ 'ABOUT_US.OUR_MISSION' | translate }}</h2>
+        <h3 class="text-3xl md:text-4xl font-cyber font-bold uppercase tracking-tight leading-tight text-purple-900 dark:text-white">
+          {{ 'ABOUT_US.MISSION_TITLE' | translate }}
         </h3>
-        <p class="text-nav-grey text-sm leading-relaxed text-lg border-l-2 border-white/10 pl-8">
-          We facilitate effective asset optimisation and provide decision-makers and individuals with a wide range of services and applications to improve and secure the environment.
+        <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed text-lg border-l-2 border-slate-300 dark:border-white/10 pl-8">
+          {{ 'ABOUT_US.MISSION_P' | translate }}
         </p>
         
         <!-- Tech Checklist -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
-          <div class="flex items-center space-x-3 p-4 bg-white/[0.03] border border-white/5 rounded-2xl">
+          <div class="flex items-center space-x-3 p-4 bg-slate-100 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 rounded-2xl">
             <span class="w-2 h-2 rounded-full bg-cyber-cyan"></span>
-            <span class="text-xs uppercase tracking-widest font-cyber">Environmental Security</span>
+            <span class="text-xs uppercase tracking-widest font-cyber text-slate-900 dark:text-white">{{ 'ABOUT_US.ENVIRONMENTAL_SECURITY' | translate }}</span>
           </div>
-          <div class="flex items-center space-x-3 p-4 bg-white/[0.03] border border-white/5 rounded-2xl">
+          <div class="flex items-center space-x-3 p-4 bg-slate-100 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 rounded-2xl">
             <span class="w-2 h-2 rounded-full bg-cyber-cyan"></span>
-            <span class="text-xs uppercase tracking-widest font-cyber">Resource Optimization</span>
+            <span class="text-xs uppercase tracking-widest font-cyber text-slate-900 dark:text-white">{{ 'ABOUT_US.RESOURCE_OPTIMIZATION' | translate }}</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section appScrollReveal class="py-32 px-6 bg-[#251c2b]">
+  <section appScrollReveal class="py-32 px-6 bg-slate-50 dark:bg-[#251c2b] transition-colors">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em]">Our <span class="text-cyber-cyan">Values</span></h2>
+      <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em] text-purple-900 dark:text-white">{{ 'ABOUT_US.OUR_VALUES' | translate }} <span class="text-cyber-cyan">{{ 'HOME.VALUES' | translate }}</span></h2>
       
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <!-- Discovery -->
-        <div class="group h-32 flex flex-col items-center justify-center border border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative">
-          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10 transition-transform group-hover:scale-110">Discovery</span>
+        <div class="group h-32 flex flex-col items-center justify-center border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative text-slate-700 dark:text-white">
+          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10 transition-transform group-hover:scale-110">{{ 'HOME.DISCOVERY' | translate }}</span>
           <div class="absolute inset-0 bg-gradient-to-t from-cyber-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </div>
 
         <!-- Responsibility -->
-        <div class="group h-32 flex flex-col items-center justify-center border border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative">
-          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">Responsibility</span>
+        <div class="group h-32 flex flex-col items-center justify-center border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative text-slate-700 dark:text-white">
+          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">{{ 'HOME.RESPONSIBILITY' | translate }}</span>
           <div class="absolute inset-0 bg-gradient-to-t from-cyber-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </div>
 
         <!-- Creativity -->
-        <div class="group h-32 flex flex-col items-center justify-center border border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative">
-          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">Creativity</span>
+        <div class="group h-32 flex flex-col items-center justify-center border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative text-slate-700 dark:text-white">
+          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">{{ 'HOME.CREATIVITY' | translate }}</span>
           <div class="absolute inset-0 bg-gradient-to-t from-cyber-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </div>
 
         <!-- Teamwork -->
-        <div class="group h-32 flex flex-col items-center justify-center border border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative">
-          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">Teamwork</span>
+        <div class="group h-32 flex flex-col items-center justify-center border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative text-slate-700 dark:text-white">
+          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">{{ 'HOME.TEAMWORK' | translate }}</span>
           <div class="absolute inset-0 bg-gradient-to-t from-cyber-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </div>
       </div>
       
-      <p class="mt-16 text-center text-nav-grey max-w-4xl mx-auto leading-relaxed italic">
-        "At Accent, we foster a Culture of Discovery, propelling the tech sector forward with a creative strategy to meet your business goals. Socially responsible, we actively envision solutions for environment safety, energy optimization and carbon footprint reduction."
+      <p class="mt-16 text-center text-slate-600 dark:text-nav-grey max-w-4xl mx-auto leading-relaxed italic">
+        {{ 'ABOUT_US.VALUES_QUOTE' | translate }}
       </p>
     </div>
   </section>
@@ -130,30 +128,30 @@
     
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 relative z-10">
       <div>
-        <h2 class="text-5xl md:text-7xl font-cyber font-extrabold text-white mb-6 leading-none">Need Our <br><span class="text-cyber-cyan">Help?</span></h2>
-        <p class="text-nav-grey text-2xl font-cyber">Let's Get In Touch!</p>
+        <h2 class="text-5xl md:text-7xl font-cyber font-extrabold text-purple-900 dark:text-white mb-6 leading-none">{{ 'ABOUT_US.NEED_HELP' | translate }} <br><span class="text-cyber-cyan">{{ 'ABOUT_US.HELP' | translate }}</span></h2>
+        <p class="text-slate-600 dark:text-nav-grey text-2xl font-cyber">{{ 'ABOUT_US.GET_IN_TOUCH' | translate }}</p>
         
         <div class="mt-12 space-y-6">
           <div class="flex items-center space-x-4">
-            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-cyber-cyan">
+            <div class="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-cyber-cyan">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             </div>
-            <span class="text-white">contact@accent.tn</span>
+            <span class="text-slate-900 dark:text-white">contact@accent.tn</span>
           </div>
         </div>
       </div>
 
-      <div class="bg-white/[0.03] backdrop-blur-xl border border-white/10 p-10 rounded-3xl">
+      <div class="bg-white dark:bg-white/[0.03] backdrop-blur-xl border border-slate-200 dark:border-white/10 p-10 rounded-3xl transition-colors">
         <form class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <input type="text" placeholder="Full Name" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
-            <input type="email" placeholder="Email" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
+            <input type="text" [placeholder]="'ABOUT_US.FULL_NAME' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
+            <input type="email" [placeholder]="'ABOUT_US.EMAIL' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
           </div>
-          <input type="tel" placeholder="Phone" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
-          <textarea rows="4" placeholder="Enter your message" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all"></textarea>
+          <input type="tel" [placeholder]="'ABOUT_US.PHONE' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
+          <textarea rows="4" [placeholder]="'ABOUT_US.MESSAGE' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all"></textarea>
           
-          <button type="submit" class="w-full py-4 bg-white text-black font-cyber font-black uppercase tracking-widest rounded-xl hover:bg-cyber-cyan transition-all transform hover:-translate-y-1">
-            Submit
+          <button type="submit" class="w-full py-4 bg-slate-900 dark:bg-white text-white dark:text-black font-cyber font-black uppercase tracking-widest rounded-xl hover:bg-cyber-cyan dark:hover:bg-cyber-cyan dark:hover:text-black transition-all transform hover:-translate-y-1">
+            {{ 'ABOUT_US.SUBMIT' | translate }}
           </button>
         </form>
       </div>

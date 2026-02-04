@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Light mode: default page background */
+html {
+  @apply bg-slate-50;
+}
+html.dark {
+  @apply bg-[#251c2b];
+}
+
+/* Selection colors for both themes */
+::selection {
+  @apply bg-cyber-cyan text-black;
+}
+
 /* Initial State: Far down, smaller, and blurred */
 .reveal-hidden {
   opacity: 0;
@@ -44,21 +57,36 @@
   100% { transform: translateX(100%); }
 }
 
+/* SVG theme-aware classes for Performance Analytics section */
+.svg-grid-line {
+  stroke: rgb(203 213 225); /* slate-300 */
+  stroke-opacity: 0.2;
+}
+.dark .svg-grid-line {
+  stroke: white;
+  stroke-opacity: 0.05;
+}
 
-.goog-te-banner-frame.skiptranslate, .goog-te-gadget-icon {
-    display: none !important;
+.svg-text-label {
+  fill: rgb(71 85 105); /* slate-600 */
+  opacity: 0.6;
 }
-body {
-    top: 0px !important;
+.dark .svg-text-label {
+  fill: white;
+  opacity: 0.4;
 }
-.goog-te-gadget {
-    color: transparent !important;
-    font-size: 0 !important;
+
+.svg-text-main {
+  fill: rgb(15 23 42); /* slate-900 */
 }
-#google_translate_element {
-    display: none;
+.dark .svg-text-main {
+  fill: white;
 }
-.goog-text-highlight {
-    background-color: transparent !important;
-    box-shadow: none !important;
+
+.svg-circle-adas {
+  fill: rgb(15 23 42); /* slate-900 */
 }
+.dark .svg-circle-adas {
+  fill: white;
+}
+

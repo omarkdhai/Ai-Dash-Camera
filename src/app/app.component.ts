@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeService } from './services/theme.service';
+import { TranslateService } from '@ngx-translate/core';
+
+const LANG_STORAGE_KEY = 'accent-lang';
 
 @Component({
   selector: 'app-root',
@@ -6,12 +10,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  ngOnInit() {
-    const savedLang = localStorage.getItem('user-lang');
-    if (savedLang) {
-      const code = savedLang.toLowerCase();
-      // Reinforce the cookie to ensure Google engine picks it up on every page load
-      document.cookie = `googtrans=/en/${code}; path=/`;
+  constructor(
+    private theme: ThemeService,
+    private translate: TranslateService
+  ) {
+    translate.setDefaultLang('fr');
+    const saved = localStorage.getItem(LANG_STORAGE_KEY);
+    if (saved === 'en' || saved === 'fr') {
+      translate.use(saved);
+    } else {
+      translate.use('fr');
     }
+    document.documentElement.lang = translate.currentLang || 'fr';
+  }
+
+  ngOnInit() {
+    document.documentElement.lang = this.translate.currentLang || this.translate.defaultLang || 'fr';
+    this.translate.onLangChange?.subscribe(() => {
+      document.documentElement.lang = this.translate.currentLang || 'fr';
+    });
   }
 }

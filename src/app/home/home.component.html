@@ -1,5 +1,6 @@
-<div class="bg-[#251c2b] text-white font-base selection:bg-cyber-cyan selection:text-black overflow-hidden">
+<div class="bg-slate-50 dark:bg-[#251c2b] text-slate-900 dark:text-white font-base selection:bg-cyber-cyan selection:text-black overflow-hidden transition-colors">
 
+  <!-- HERO -->
   <section appScrollReveal class="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-6">
   <!-- Background Glows -->
   <div class="absolute top-[-20%] left-[-10%] w-[700px] h-[700px] bg-cyber-cyan/10 blur-[180px] rounded-full"></div>
@@ -9,26 +10,26 @@
     
     <!-- Left Content -->
     <div class="space-y-8">
-      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[10px] font-cyber uppercase tracking-[0.3em] text-cyber-cyan">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.3em] text-purple-600 dark:text-cyber-cyan">
         <span class="relative flex h-2 w-2 mr-2">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyber-cyan opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2 w-2 bg-cyber-cyan"></span>
         </span>
-        EDGE AI FOR SMART & SAFE MOBILITY
+        {{ 'HOME.HERO_BADGE' | translate }}
       </div>
       
-<h4 class="text-4xl md:text-5xl font-cyber font-extrabold leading-[1.1] tracking-tight">
-  AI-Powered <br>
+<h4 class="text-4xl md:text-5xl font-cyber font-extrabold leading-[1.1] tracking-tight text-purple-900 dark:text-white">
+  {{ 'HOME.HERO_TITLE_PREFIX' | translate }} <br>
   <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">
-    Road Safety
+    {{ 'HOME.HERO_TITLE' | translate }}
   </span>
 </h4>
-      <p class="text-nav-grey text-sm max-w-lg leading-relaxed border-l-2 border-cyber-cyan pl-6">
-       Our intelligent AI camera combines Driver Monitoring System (DMS) and Advanced Driver Assistance Systems (ADAS) to detect risks in real time and enhance road safety for drivers and pedestrians.
+      <p class="text-slate-600 dark:text-nav-grey text-sm max-w-lg leading-relaxed border-l-2 border-cyber-cyan pl-6">
+       {{ 'HOME.HERO_PARAGRAPH' | translate }}
       </p>
 
       <button routerLink="/contact" class="group relative px-8 py-4 bg-cyber-cyan text-black font-bold font-cyber uppercase tracking-widest rounded-xl shadow-[0_0_30px_rgba(0,255,194,0.3)] hover:scale-105 transition-all">
-        Request Information
+        {{ 'HOME.REQUEST_INFO' | translate }}
         <span class="ml-2 inline-block group-hover:translate-x-1 transition-transform">→</span>
       </button>
     </div>
@@ -36,7 +37,7 @@
     <!-- Right Content: Minimalistic Carousel -->
     <div class="relative hidden lg:block">
       <!-- Image Wrapper -->
-      <div class="relative rounded-3xl border border-white/10 overflow-hidden shadow-2xl">
+      <div class="relative rounded-3xl border border-slate-200 dark:border-white/10 overflow-hidden shadow-2xl">
         <div class="flex transition-transform duration-700 ease-in-out h-[400px]" 
              [style.transform]="'translateX(-' + (currentImageIndex * 100) + '%)'">
           <div class="min-w-full h-full" *ngFor="let image of carouselImages">
@@ -59,133 +60,8 @@
   </div>
 </section>
 
-  <!-- AI DASHCAM SECTOR APPLICATIONS -->
-  <section appScrollReveal class="py-32 px-6 lg:px-20 bg-[#251c2b] relative overflow-hidden">
-    
-    <!-- Background Blueprint Glow -->
-    <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(0,255,194,0.03)_0%,transparent_50%)] pointer-events-none"></div>
-
-    <div class="max-w-7xl mx-auto relative z-10">
-      
-      <!-- Section Header (Keeping as requested) -->
-      <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-6">
-        <div class="space-y-4">
-          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-tighter leading-tight">
-            Sector <br><span class="text-cyber-cyan">Applications</span>
-          </h2>
-        </div>
-        <div class="h-[1px] flex-grow mx-8 bg-white/10 hidden md:block"></div>
-        <p class="text-nav-grey text-sm max-w-xs text-right font-light italic leading-relaxed">
-          A single AI Dashcam system, engineered for the unique demands of every transport sector.
-        </p>
-      </div>
-
-      <!-- NEW ICON-BASED SECTORS ROW -->
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 items-start">
-        
-        <!-- 1. Logistics -->
-        <div [routerLink]="['/logistics']" fragment="logistics" class="group flex flex-col items-center cursor-pointer transition-all duration-500">
-          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-white/[0.02]">
-            <img src="assets/truck-moving (1).png" alt="">
-          </div>
-          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-nav-grey group-hover:text-white transition-colors">Logistics</span>
-        </div>
-
-        <!-- 2. Oil & Gas -->
-        <div [routerLink]="['/oil-gas']" fragment="hazardous" class="group flex flex-col items-center cursor-pointer transition-all duration-500">
-          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-white/[0.02]">
-            <img src="assets/car-oil.png" alt="">
-          </div>
-          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-nav-grey group-hover:text-white transition-colors">Oil & Gas</span>
-        </div>
-
-        <!-- 4. Taxi -->
-        <div [routerLink]="['/taxi']" fragment="private-hire" class="group flex flex-col items-center cursor-pointer transition-all duration-500">
-          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-white/[0.02]">
-            <img src="assets/taxi.png" alt="">
-          </div>
-          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-nav-grey group-hover:text-white transition-colors">Taxi</span>
-        </div>
-
-        <!-- 5. School Bus -->
-        <div [routerLink]="['/school-bus']" fragment="specialized" class="group flex flex-col items-center cursor-pointer transition-all duration-500">
-          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-white/[0.02]">
-            <img src="assets/school-bus.png" alt="">
-          </div>
-          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-nav-grey group-hover:text-white transition-colors">School Bus</span>
-        </div>
-
-        <!-- 6. Public Bus -->
-        <div [routerLink]="['/public-bus']" fragment="public-transport" class="group flex flex-col items-center cursor-pointer transition-all duration-500">
-          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-white/[0.02]">
-            <img src="assets/bus-alt.png" alt="">
-          </div>
-          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-nav-grey group-hover:text-white transition-colors">Public Bus</span>
-        </div>
-
-      </div>
-    </div>
-</section>
-
-  <!-- SERVICES -->
-  <section appScrollReveal class="py-32 px-6">
-    <div class="max-w-7xl mx-auto">
-      <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
-        <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-tighter">Services we <br><span class="text-cyber-cyan">Provide</span></h2>
-        <div class="h-[1px] flex-grow mx-8 bg-white/10 hidden md:block"></div>
-        <p class="text-nav-grey text-sm max-w-xs text-right">High-performance engineering for the next generation of business computing.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <div class="group p-10 rounded-3xl bg-cyber-cyan/5 border border-cyber-cyan/20 hover:bg-cyber-cyan/10 transition-all relative overflow-hidden">
-          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-cyber-cyan/10 blur-3xl"></div>
-          <h3 class="text-xl font-cyber font-bold mb-4 uppercase tracking-widest text-cyber-cyan">IOT Integration</h3>
-          <p class="text-white text-sm mb-8 leading-relaxed font-medium">Seamlessly connecting your hardware ecosystem with intelligent cloud infrastructures.</p>
-          <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">Read More →</a>
-        </div>
-
-        <div class="group p-10 rounded-3xl bg-cyber-cyan/5 border border-cyber-cyan/20 hover:bg-cyber-cyan/10 transition-all relative overflow-hidden">
-          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-cyber-cyan/10 blur-3xl"></div>
-          <h3 class="text-xl font-cyber font-bold mb-4 uppercase tracking-widest text-cyber-cyan">Hardware Design</h3>
-          <p class="text-white text-sm mb-8 leading-relaxed font-medium">From schematic to PCB layout, we build the physical foundations of your technical strategy.</p>
-          <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">Read More →</a>
-        </div>
-
-        <div class="group p-10 rounded-3xl bg-cyber-cyan/5 border border-cyber-cyan/20 hover:bg-cyber-cyan/10 transition-all relative overflow-hidden">
-          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-cyber-cyan/10 blur-3xl"></div>
-          <h3 class="text-xl font-cyber font-bold mb-4 uppercase tracking-widest text-cyber-cyan">Software Design</h3>
-          <p class="text-white text-sm mb-8 leading-relaxed font-medium">Custom enterprise applications and firmware optimized for performance and AI.</p>
-          <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">Read More →</a>
-        </div>
-
-        <div class="group p-10 rounded-3xl bg-cyber-cyan/5 border border-cyber-cyan/20 hover:bg-cyber-cyan/10 transition-all relative overflow-hidden">
-          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-cyber-cyan/10 blur-3xl"></div>
-          <h3 class="text-xl font-cyber font-bold mb-4 uppercase tracking-widest text-cyber-cyan">IOT Acceleration</h3>
-          <p class="text-white text-sm mb-8 leading-relaxed font-medium">Speed up your time-to-market with our pre-built frameworks and rapid deployment tools.</p>
-          <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">Read More →</a>
-        </div>
-
-        <div class="group p-10 rounded-3xl bg-cyber-cyan/5 border border-cyber-cyan/20 hover:bg-cyber-cyan/10 transition-all relative overflow-hidden">
-          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-cyber-cyan/10 blur-3xl"></div>
-          <h3 class="text-xl font-cyber font-bold mb-4 uppercase tracking-widest text-cyber-cyan">Accentify Platform</h3>
-          <p class="text-white text-sm mb-8 leading-relaxed font-medium">Our flagship orchestration platform for real-time fleet management and asset monitoring.</p>
-          <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">Platform Access →</a>
-        </div>
-
-        <div class="group p-10 rounded-3xl bg-cyber-cyan/5 border border-cyber-cyan/20 hover:bg-cyber-cyan/10 transition-all relative overflow-hidden">
-          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-cyber-cyan/10 blur-3xl"></div>
-          <h3 class="text-xl font-cyber font-bold mb-4 uppercase tracking-widest text-cyber-cyan">Prototyping</h3>
-          <p class="text-white text-sm mb-8 leading-relaxed font-medium">Transforming complex ideas into functional physical prototypes for testing and validation.</p>
-          <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">Read More →</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- INNOVATION SECTION -->
-  <section appScrollReveal class="py-40 px-6 lg:px-20 bg-[#251c2b] relative overflow-hidden">
+  <section appScrollReveal class="py-40 px-6 lg:px-20 bg-white dark:bg-[#251c2b] relative overflow-hidden transition-colors">
     
     <!-- Subtle Blueprint Grid Overlay -->
     <div class="absolute inset-0 opacity-[0.03] pointer-events-none" 
@@ -200,10 +76,10 @@
       <div class="mb-24">
         <div class="flex items-center space-x-4 mb-4">
           <div class="h-[1px] w-12 bg-cyber-cyan"></div>
-          <span class="text-[10px] font-cyber text-cyber-cyan uppercase tracking-[0.6em] font-bold">Future-Proof Tech</span>
+          <span class="text-[10px] font-cyber text-purple-600 dark:text-cyber-cyan uppercase tracking-[0.6em] font-bold">{{ 'HOME.FUTURE_PROOF_TECH' | translate }}</span>
         </div>
-        <h2 class="text-5xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none">
-          Core <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B] italic">Innovation</span>
+        <h2 class="text-5xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none text-purple-900 dark:text-white">
+          {{ 'HOME.CORE_INNOVATION_PREFIX' | translate }} <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B] italic">{{ 'HOME.CORE_INNOVATION' | translate }}</span>
         </h2>
       </div>
 
@@ -213,32 +89,32 @@
         <div class="space-y-16">
           
           <!-- Tech Item 1 -->
-          <div class="group relative pl-12 border-l border-white/10 hover:border-cyber-cyan transition-colors duration-500">
-            <div class="absolute top-0 left-[-5px] w-2 h-2 bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
-            <span class="text-[9px] font-cyber text-nav-grey uppercase tracking-widest mb-2 block opacity-50">Tech_Stack_01</span>
-            <h4 class="text-xl font-cyber font-bold uppercase text-white mb-4 group-hover:text-cyber-cyan transition-colors">Local Edge Processing</h4>
-            <p class="text-nav-grey text-sm leading-relaxed max-w-md font-light">
-              Our dashcam runs a powerful Neural Processing Unit (NPU) locally. It analyzes 30 frames per second to detect risks in <span class="text-white font-medium">under 100 milliseconds</span>—faster than a human blink.
+          <div class="group relative pl-12 border-l border-slate-200 dark:border-white/10 hover:border-cyber-cyan transition-colors duration-500">
+            <div class="absolute top-0 left-[-5px] w-2 h-2 bg-slate-400 dark:bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
+            <span class="text-[9px] font-cyber text-slate-500 dark:text-nav-grey uppercase tracking-widest mb-2 block opacity-50">{{ 'HOME.TECH_STACK_01' | translate }}</span>
+            <h4 class="text-xl font-cyber font-bold uppercase text-purple-900 dark:text-white mb-4 group-hover:text-cyber-cyan transition-colors">{{ 'HOME.LOCAL_EDGE_PROCESSING' | translate }}</h4>
+            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed max-w-md font-light">
+              {{ 'HOME.LOCAL_EDGE_DESC' | translate }}
             </p>
           </div>
 
           <!-- Tech Item 2 -->
-          <div class="group relative pl-12 border-l border-white/10 hover:border-cyber-cyan transition-colors duration-500">
-              <div class="absolute top-0 left-[-5px] w-2 h-2 bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
-              <span class="text-[9px] font-cyber text-nav-grey uppercase tracking-widest mb-2 block opacity-50">Tech_Stack_02</span>
-              <h4 class="text-xl font-cyber font-bold uppercase text-white mb-4 group-hover:text-cyber-cyan transition-colors">OTA Intelligent Evolution</h4>
-              <p class="text-nav-grey text-sm leading-relaxed max-w-md font-light">
-                Through <span class="text-white font-medium">Over-the-Air (OTA) updates</span>, your fleet hardware stays modern. New AI detection models are pushed remotely, ensuring your investment improves over time.
+          <div class="group relative pl-12 border-l border-slate-200 dark:border-white/10 hover:border-cyber-cyan transition-colors duration-500">
+              <div class="absolute top-0 left-[-5px] w-2 h-2 bg-slate-400 dark:bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
+              <span class="text-[9px] font-cyber text-slate-500 dark:text-nav-grey uppercase tracking-widest mb-2 block opacity-50">{{ 'HOME.TECH_STACK_02' | translate }}</span>
+              <h4 class="text-xl font-cyber font-bold uppercase text-purple-900 dark:text-white mb-4 group-hover:text-cyber-cyan transition-colors">{{ 'HOME.OTA_EVOLUTION' | translate }}</h4>
+              <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed max-w-md font-light">
+                {{ 'HOME.OTA_EVOLUTION_DESC' | translate }}
               </p>
           </div>
 
           <!-- Tech Item 3 -->
-          <div class="group relative pl-12 border-l border-white/10 hover:border-cyber-cyan transition-colors duration-500">
-              <div class="absolute top-0 left-[-5px] w-2 h-2 bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
-              <span class="text-[9px] font-cyber text-nav-grey uppercase tracking-widest mb-2 block opacity-50">Tech_Stack_03</span>
-              <h4 class="text-xl font-cyber font-bold uppercase text-white mb-4 group-hover:text-cyber-cyan transition-colors">Sensor Fusion Engine</h4>
-              <p class="text-nav-grey text-sm leading-relaxed max-w-md font-light">
-                Merging high-fidelity <span class="text-white font-medium">Sony Starvis</span> visual data with GPS, G-Sensor, and 4G telemetry to create a 360-degree digital twin of every critical event.
+          <div class="group relative pl-12 border-l border-slate-200 dark:border-white/10 hover:border-cyber-cyan transition-colors duration-500">
+              <div class="absolute top-0 left-[-5px] w-2 h-2 bg-slate-400 dark:bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
+              <span class="text-[9px] font-cyber text-slate-500 dark:text-nav-grey uppercase tracking-widest mb-2 block opacity-50">{{ 'HOME.TECH_STACK_03' | translate }}</span>
+              <h4 class="text-xl font-cyber font-bold uppercase text-purple-900 dark:text-white mb-4 group-hover:text-cyber-cyan transition-colors">{{ 'HOME.SENSOR_FUSION' | translate }}</h4>
+              <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed max-w-md font-light">
+                {{ 'HOME.SENSOR_FUSION_DESC' | translate }}
               </p>
           </div>
 
@@ -249,7 +125,7 @@
           <div class="absolute -inset-10 bg-cyber-cyan/10 blur-[100px] rounded-full animate-pulse"></div>
           
           <!-- Blueprint Card -->
-          <div class="relative p-1 bg-black/30 rounded-[40px] border border-white/10 overflow-hidden group">
+          <div class="relative p-1 bg-slate-200/80 dark:bg-black/30 rounded-[40px] border border-slate-200 dark:border-white/10 overflow-hidden group transition-colors">
             <!-- Glass Overlay -->
             <div class="absolute inset-0 bg-gradient-to-br from-cyber-cyan/5 to-transparent"></div>
             
@@ -259,33 +135,33 @@
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
                 </div>
                 <div class="text-right">
-                    <div class="text-[10px] font-cyber text-nav-grey uppercase tracking-widest">Hardware ID</div>
-                    <div class="text-xs font-bold text-white uppercase">MF2-GEN-AI</div>
+                    <div class="text-[10px] font-cyber text-slate-500 dark:text-nav-grey uppercase tracking-widest">{{ 'HOME.HARDWARE_ID' | translate }}</div>
+                    <div class="text-xs font-bold text-purple-900 dark:text-white uppercase">MF2-GEN-AI</div>
                 </div>
               </div>
 
               <div class="space-y-4">
-                <div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+                <div class="h-1 w-full bg-slate-300 dark:bg-white/5 rounded-full overflow-hidden">
                     <div class="h-full bg-cyber-cyan w-[90%] shadow-[0_0_10px_#00FFC2] animate-[loading_3s_infinite]"></div>
                 </div>
-                <div class="flex justify-between text-[9px] font-cyber text-nav-grey uppercase tracking-[0.2em]">
-                    <span>System Reliability</span>
-                    <span class="text-cyber-cyan italic">90% Optimized</span>
+                <div class="flex justify-between text-[9px] font-cyber text-slate-500 dark:text-nav-grey uppercase tracking-[0.2em]">
+                    <span>{{ 'HOME.SYSTEM_RELIABILITY' | translate }}</span>
+                    <span class="text-cyber-cyan italic">{{ 'HOME.OPTIMIZED' | translate }}</span>
                 </div>
               </div>
 
-              <p class="text-nav-grey text-sm leading-relaxed italic">
-                "We don't just record video; we understand the environment. Our innovation lies in the synergy between proprietary AI algorithms and industrial-grade hardware."
+              <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed italic">
+                {{ 'HOME.INNOVATION_QUOTE' | translate }}
               </p>
 
               <div class="pt-6 grid grid-cols-2 gap-4">
-                  <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5 text-center">
-                      <div class="text-lg font-cyber font-bold text-white tracking-widest">FHD</div>
-                      <div class="text-[8px] text-nav-grey uppercase">Resolution</div>
+                  <div class="p-4 rounded-2xl bg-slate-100 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 text-center transition-colors">
+                      <div class="text-lg font-cyber font-bold text-purple-900 dark:text-white tracking-widest">FHD</div>
+                      <div class="text-[8px] text-slate-500 dark:text-nav-grey uppercase">{{ 'HOME.RESOLUTION' | translate }}</div>
                   </div>
-                  <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5 text-center">
-                      <div class="text-lg font-cyber font-bold text-white tracking-widest">5G</div>
-                      <div class="text-[8px] text-nav-grey uppercase">Connectivity</div>
+                  <div class="p-4 rounded-2xl bg-slate-100 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 text-center transition-colors">
+                      <div class="text-lg font-cyber font-bold text-purple-900 dark:text-white tracking-widest">5G</div>
+                      <div class="text-[8px] text-slate-500 dark:text-nav-grey uppercase">{{ 'HOME.CONNECTIVITY' | translate }}</div>
                   </div>
               </div>
             </div>
@@ -297,7 +173,7 @@
   </section>
 
   <!-- CONNECTED DEVICES PROFICIENCY -->
-<section appScrollReveal class="py-40 px-6 lg:px-20 bg-[#251c2b] relative overflow-hidden">
+<section appScrollReveal class="py-40 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] relative overflow-hidden transition-colors">
   
   <!-- Network Pattern Background -->
   <div class="absolute inset-0 opacity-[0.05] pointer-events-none"></div>
@@ -310,22 +186,22 @@
       <div class="space-y-10">
         <div class="flex items-center space-x-4 mb-4">
           <div class="h-[1px] w-12 bg-cyber-cyan"></div>
-          <span class="text-[10px] font-cyber text-cyber-cyan uppercase tracking-[0.6em] font-bold">Ecosystem Authority</span>
+          <span class="text-[10px] font-cyber text-purple-600 dark:text-cyber-cyan uppercase tracking-[0.6em] font-bold">{{ 'HOME.ECOSYSTEM_AUTHORITY' | translate }}</span>
         </div>
         
-        <h2 class="text-5xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none">
-          Edge <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B] italic">Ecosystem</span> <br>Proficiency
+        <h2 class="text-5xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none text-purple-900 dark:text-white">
+          Edge <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B] italic">{{ 'HOME.EDGE_ECOSYSTEM' | translate }}</span> <br>{{ 'HOME.ECOSYSTEM_PROFICIENCY' | translate }}
         </h2>
 
-        <p class="text-nav-grey text-lg leading-relaxed font-light max-w-xl">
-          With over <span class="text-white font-bold italic">40,000 active devices</span> deployed across 15 countries, ACCENT manages one of the most robust industrial IoT infrastructures in the region.
+        <p class="text-slate-600 dark:text-nav-grey text-lg leading-relaxed font-light max-w-xl">
+          {{ 'HOME.ECOSYSTEM_PARAGRAPH' | translate }}
         </p>
 
         <!-- The "Power in Numbers" Metric -->
-        <div class="p-8 rounded-[32px] bg-white/[0.02] border border-white/10 relative group overflow-hidden">
+        <div class="p-8 rounded-[32px] bg-slate-100 dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 relative group overflow-hidden transition-colors">
             <div class="relative z-10">
                 <div class="text-6xl font-cyber font-black text-cyber-cyan mb-2">40K+</div>
-                <div class="text-[10px] font-cyber text-nav-grey uppercase tracking-[0.5em]">Live Connected Nodes</div>
+                <div class="text-[10px] font-cyber text-slate-500 dark:text-nav-grey uppercase tracking-[0.5em]">{{ 'HOME.LIVE_NODES' | translate }}</div>
             </div>
         </div>
       </div>
@@ -334,39 +210,39 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         
         <!-- Pillar 1: Integration -->
-        <div class="p-8 rounded-3xl border border-white/5 bg-black/10 hover:bg-black/20 transition-all group">
+        <div class="p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-white dark:bg-black/10 hover:bg-slate-100 dark:hover:bg-black/20 transition-all group">
           <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/></svg>
           </div>
-          <h4 class="text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">Hardware Mastery</h4>
-          <p class="text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">Proprietary PCB design and firmware optimization for high-uptime environments.</p>
+          <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">{{ 'HOME.HARDWARE_MASTERY' | translate }}</h4>
+          <p class="text-slate-600 dark:text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">{{ 'HOME.HARDWARE_MASTERY_DESC' | translate }}</p>
         </div>
 
         <!-- Pillar 2: Connectivity -->
-        <div class="p-8 rounded-3xl border border-white/5 bg-black/10 hover:bg-black/20 transition-all group">
+        <div class="p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-white dark:bg-black/10 hover:bg-slate-100 dark:hover:bg-black/20 transition-all group">
             <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
             </div>
-            <h4 class="text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">LTE & V2X Sync</h4>
-            <p class="text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">Seamless 4G/LTE, 5G-ready, and V2X communication for ultra-low latency alerts.</p>
+            <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">{{ 'HOME.LTE_V2X' | translate }}</h4>
+            <p class="text-slate-600 dark:text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">{{ 'HOME.LTE_V2X_DESC' | translate }}</p>
         </div>
 
         <!-- Pillar 3: Cloud Command -->
-        <div class="p-8 rounded-3xl border border-white/5 bg-black/10 hover:bg-black/20 transition-all group">
+        <div class="p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-white dark:bg-black/10 hover:bg-slate-100 dark:hover:bg-black/20 transition-all group">
             <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
             </div>
-            <h4 class="text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">Cloud Orchestration</h4>
-            <p class="text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">Centralized VSS/FMS platforms handling millions of data points every hour.</p>
+            <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">{{ 'HOME.CLOUD_ORCHESTRATION' | translate }}</h4>
+            <p class="text-slate-600 dark:text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">{{ 'HOME.CLOUD_ORCHESTRATION_DESC' | translate }}</p>
         </div>
 
         <!-- Pillar 4: Precision -->
-        <div class="p-8 rounded-3xl border border-white/5 bg-black/10 hover:bg-black/20 transition-all group">
+        <div class="p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-white dark:bg-black/10 hover:bg-slate-100 dark:hover:bg-black/20 transition-all group">
             <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
             </div>
-            <h4 class="text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">Reliability_Zero</h4>
-            <p class="text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">Engineered for 96.5% uptime in industrial transport applications.</p>
+            <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">{{ 'HOME.RELIABILITY_ZERO' | translate }}</h4>
+            <p class="text-slate-600 dark:text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">{{ 'HOME.RELIABILITY_ZERO_DESC' | translate }}</p>
         </div>
 
       </div>
@@ -375,98 +251,228 @@
   </div>
 </section>
 
-<!-- METRICS SECTION -->
-  <section appScrollReveal class="py-24 px-6 relative border-y border-white/5 bg-white/[0.01]">
+  <!-- METRICS SECTION -->
+  <section appScrollReveal class="py-24 px-6 relative border-y border-slate-200 dark:border-white/5 bg-slate-100/50 dark:bg-white/[0.01] transition-colors">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16 space-y-2">
-        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.5em]">Let our metrics</h2>
-        <p class="text-4xl font-cyber font-bold uppercase tracking-widest">Speak Volumes</p>
+        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.5em]">{{ 'HOME.METRICS_INTRO' | translate }}</h2>
+        <p class="text-4xl font-cyber font-bold uppercase tracking-widest text-slate-900 dark:text-white">{{ 'HOME.SPEAK_VOLUMES' | translate }}</p>
       </div>
 
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="text-center p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/30 transition-all">
+        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
           <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+60</div>
-          <p class="text-nav-grey text-xs uppercase tracking-widest leading-relaxed">Supervised IOT<br>Platform</p>
+          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">{{ 'HOME.SUPERVISED_IOT' | translate }}</p>
         </div>
-        <div class="text-center p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/30 transition-all">
-          <div class="text-5xl font-cyber font-black text-white mb-2">+35</div>
-          <p class="text-nav-grey text-xs uppercase tracking-widest leading-relaxed">Solutions<br>IOT</p>
+        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
+          <div class="text-5xl font-cyber font-black text-slate-900 dark:text-white mb-2">+35</div>
+          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">{{ 'HOME.SOLUTIONS_IOT' | translate }}</p>
         </div>
-        <div class="text-center p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/30 transition-all">
-          <div class="text-5xl font-cyber font-black text-white mb-2">+1097</div>
-          <p class="text-nav-grey text-xs uppercase tracking-widest leading-relaxed">Connected<br>Devices</p>
+        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
+          <div class="text-5xl font-cyber font-black text-slate-900 dark:text-white mb-2">+1097</div>
+          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">{{ 'HOME.CONNECTED_DEVICES' | translate }}</p>
         </div>
-        <div class="text-center p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/30 transition-all">
+        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
           <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+15</div>
-          <p class="text-nav-grey text-xs uppercase tracking-widest leading-relaxed">Countries<br>Touched</p>
+          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">{{ 'HOME.COUNTRIES_TOUCHED' | translate }}</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- AI DASHCAM SECTOR APPLICATIONS -->
+  <section appScrollReveal class="py-32 px-6 lg:px-20 bg-white dark:bg-[#251c2b] relative overflow-hidden transition-colors">
+    
+    <!-- Background Blueprint Glow -->
+    <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(0,255,194,0.03)_0%,transparent_50%)] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      
+      <!-- Section Header (Keeping as requested) -->
+      <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-6">
+        <div class="space-y-4">
+          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-tighter leading-tight text-purple-900 dark:text-white">
+            {{ 'HOME.SECTOR_TITLE' | translate }} <br><span class="text-cyber-cyan">{{ 'HOME.SECTOR_APPLICATIONS' | translate }}</span>
+          </h2>
+        </div>
+        <div class="h-[1px] flex-grow mx-8 bg-slate-200 dark:bg-white/10 hidden md:block"></div>
+        <p class="text-slate-600 dark:text-nav-grey text-sm max-w-xs text-right font-light italic leading-relaxed">
+          {{ 'HOME.SECTOR_SUBTITLE' | translate }}
+        </p>
+      </div>
+
+      <!-- NEW ICON-BASED SECTORS ROW -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 items-start">
+        
+        <!-- 1. Logistics -->
+        <div [routerLink]="['/logistics']" fragment="logistics" class="group flex flex-col items-center text-center cursor-pointer transition-all duration-500">
+          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-slate-300 dark:bg-white/[0.02]">
+            <img src="assets/truck-moving (1).png" alt="">
+          </div>
+          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{{ 'HOME.LOGISTICS' | translate }}</span>
+          <p class="mt-3 text-[11px] md:text-xs text-slate-500 dark:text-nav-grey leading-relaxed max-w-[200px] group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors">{{ 'HOME.LOGISTICS_DESC' | translate }}</p>
+        </div>
+
+        <!-- 2. Oil & Gas -->
+        <div [routerLink]="['/oil-gas']" fragment="hazardous" class="group flex flex-col items-center text-center cursor-pointer transition-all duration-500">
+          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-slate-300 dark:bg-white/[0.02]">
+            <img src="assets/car-oil.png" alt="">
+          </div>
+          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{{ 'HOME.OIL_GAS' | translate }}</span>
+          <p class="mt-3 text-[11px] md:text-xs text-slate-500 dark:text-nav-grey leading-relaxed max-w-[200px] group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors">{{ 'HOME.OIL_GAS_DESC' | translate }}</p>
+        </div>
+
+        <!-- 4. Taxi -->
+        <div [routerLink]="['/taxi']" fragment="private-hire" class="group flex flex-col items-center text-center cursor-pointer transition-all duration-500">
+          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-slate-300 dark:bg-white/[0.02]">
+            <img src="assets/taxi.png" alt="">
+          </div>
+          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{{ 'HOME.TAXI' | translate }}</span>
+          <p class="mt-3 text-[11px] md:text-xs text-slate-500 dark:text-nav-grey leading-relaxed max-w-[200px] group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors">{{ 'HOME.TAXI_DESC' | translate }}</p>
+        </div>
+
+        <!-- 5. School Bus -->
+        <div [routerLink]="['/school-bus']" fragment="specialized" class="group flex flex-col items-center text-center cursor-pointer transition-all duration-500">
+          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-slate-300 dark:bg-white/[0.02]">
+            <img src="assets/school-bus.png" alt="">
+          </div>
+          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{{ 'HOME.SCHOOL_BUS' | translate }}</span>
+          <p class="mt-3 text-[11px] md:text-xs text-slate-500 dark:text-nav-grey leading-relaxed max-w-[200px] group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors">{{ 'HOME.SCHOOL_BUS_DESC' | translate }}</p>
+        </div>
+
+        <!-- 6. Public Bus -->
+        <div [routerLink]="['/public-bus']" fragment="public-transport" class="group flex flex-col items-center text-center cursor-pointer transition-all duration-500">
+          <div class="w-24 h-24 md:w-24 md:h-24 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center relative transition-all duration-500 group-hover:border-cyber-cyan group-hover:shadow-[0_0_30px_rgba(0,255,194,0.3)] bg-slate-300 dark:bg-white/[0.02]">
+            <img src="assets/bus-alt.png" alt="">
+          </div>
+          <span class="mt-6 text-[10px] md:text-[12px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-slate-900 dark:group-hover:text-white transition-colors">{{ 'HOME.PUBLIC_BUS' | translate }}</span>
+          <p class="mt-3 text-[11px] md:text-xs text-slate-500 dark:text-nav-grey leading-relaxed max-w-[200px] group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors">{{ 'HOME.PUBLIC_BUS_DESC' | translate }}</p>
+        </div>
+
+      </div>
+    </div>
+</section>
+
   <!-- OUR VALUES -->
-  <section appScrollReveal class="py-32 px-6 bg-[#251c2b]">
+  <section appScrollReveal class="py-32 px-6 bg-slate-50 dark:bg-[#251c2b] transition-colors">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em]">Our <span class="text-cyber-cyan">Values</span></h2>
+      <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em] text-purple-900 dark:text-white">{{ 'HOME.OUR_VALUES' | translate }} <span class="text-cyber-cyan">{{ 'HOME.VALUES' | translate }}</span></h2>
       
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="group h-32 flex flex-col items-center justify-center border border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative">
-          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10 transition-transform group-hover:scale-110">Discovery</span>
+        <div class="group h-32 flex flex-col items-center justify-center border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative text-slate-700 dark:text-white">
+          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10 transition-transform group-hover:scale-110">{{ 'HOME.DISCOVERY' | translate }}</span>
           <div class="absolute inset-0 bg-gradient-to-t from-cyber-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </div>
 
-        <div class="group h-32 flex flex-col items-center justify-center border border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative">
-          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">Responsibility</span>
+        <div class="group h-32 flex flex-col items-center justify-center border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative text-slate-700 dark:text-white">
+          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">{{ 'HOME.RESPONSIBILITY' | translate }}</span>
           <div class="absolute inset-0 bg-gradient-to-t from-cyber-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </div>
 
-        <div class="group h-32 flex flex-col items-center justify-center border border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative">
-          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">Creativity</span>
+        <div class="group h-32 flex flex-col items-center justify-center border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative text-slate-700 dark:text-white">
+          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">{{ 'HOME.CREATIVITY' | translate }}</span>
           <div class="absolute inset-0 bg-gradient-to-t from-cyber-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </div>
 
-        <div class="group h-32 flex flex-col items-center justify-center border border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative">
-          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">Teamwork</span>
+        <div class="group h-32 flex flex-col items-center justify-center border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative text-slate-700 dark:text-white">
+          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">{{ 'HOME.TEAMWORK' | translate }}</span>
           <div class="absolute inset-0 bg-gradient-to-t from-cyber-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </div>
       </div>
       
-      <p class="mt-16 text-center text-nav-grey max-w-4xl mx-auto leading-relaxed italic">
-        "At Accent, we foster a Culture of Discovery, propelling the tech sector forward with a creative strategy to meet your business goals. Socially responsible, we actively envision solutions for environment safety, energy optimization and carbon footprint reduction."
+      <p class="mt-16 text-center text-slate-600 dark:text-nav-grey max-w-4xl mx-auto leading-relaxed italic">
+        {{ 'HOME.VALUES_QUOTE' | translate }}
       </p>
     </div>
   </section>
 
+  <!-- SERVICES -->
+  <section appScrollReveal class="py-32 px-6 bg-slate-50 dark:bg-[#251c2b] transition-colors">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+        <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-tighter text-purple-900 dark:text-white">{{ 'HOME.SERVICES_TITLE' | translate }} <br><span class="text-cyber-cyan">{{ 'HOME.SERVICES_PROVIDE' | translate }}</span></h2>
+        <div class="h-[1px] flex-grow mx-8 bg-slate-200 dark:bg-white/10 hidden md:block"></div>
+        <p class="text-slate-600 dark:text-nav-grey text-sm max-w-xs text-right">{{ 'HOME.SERVICES_SUBTITLE' | translate }}</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="group p-10 rounded-3xl bg-cyber-cyan/5 border border-cyber-cyan/20 hover:bg-cyber-cyan/10 transition-all relative overflow-hidden">
+          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-cyber-cyan/10 blur-3xl"></div>
+          <h3 class="text-xl font-cyber font-bold mb-4 uppercase tracking-widest text-cyber-cyan">{{ 'HOME.IOT_INTEGRATION' | translate }}</h3>
+          <p class="text-slate-700 dark:text-white text-sm mb-8 leading-relaxed font-medium">{{ 'HOME.IOT_INTEGRATION_DESC' | translate }}</p>
+          <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">{{ 'HOME.READ_MORE' | translate }}</a>
+        </div>
+
+        <div class="group p-10 rounded-3xl bg-cyber-cyan/5 border border-cyber-cyan/20 hover:bg-cyber-cyan/10 transition-all relative overflow-hidden">
+          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-cyber-cyan/10 blur-3xl"></div>
+          <h3 class="text-xl font-cyber font-bold mb-4 uppercase tracking-widest text-cyber-cyan">{{ 'HOME.HARDWARE_DESIGN' | translate }}</h3>
+          <p class="text-slate-700 dark:text-white text-sm mb-8 leading-relaxed font-medium">{{ 'HOME.HARDWARE_DESIGN_DESC' | translate }}</p>
+          <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">{{ 'HOME.READ_MORE' | translate }}</a>
+        </div>
+
+        <div class="group p-10 rounded-3xl bg-cyber-cyan/5 border border-cyber-cyan/20 hover:bg-cyber-cyan/10 transition-all relative overflow-hidden">
+          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-cyber-cyan/10 blur-3xl"></div>
+          <h3 class="text-xl font-cyber font-bold mb-4 uppercase tracking-widest text-cyber-cyan">{{ 'HOME.SOFTWARE_DESIGN' | translate }}</h3>
+          <p class="text-slate-700 dark:text-white text-sm mb-8 leading-relaxed font-medium">{{ 'HOME.SOFTWARE_DESIGN_DESC' | translate }}</p>
+          <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">{{ 'HOME.READ_MORE' | translate }}</a>
+        </div>
+
+        <div class="group p-10 rounded-3xl bg-cyber-cyan/5 border border-cyber-cyan/20 hover:bg-cyber-cyan/10 transition-all relative overflow-hidden">
+          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-cyber-cyan/10 blur-3xl"></div>
+          <h3 class="text-xl font-cyber font-bold mb-4 uppercase tracking-widest text-cyber-cyan">{{ 'HOME.IOT_ACCELERATION' | translate }}</h3>
+          <p class="text-slate-700 dark:text-white text-sm mb-8 leading-relaxed font-medium">{{ 'HOME.IOT_ACCELERATION_DESC' | translate }}</p>
+          <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">{{ 'HOME.READ_MORE' | translate }}</a>
+        </div>
+
+        <div class="group p-10 rounded-3xl bg-cyber-cyan/5 border border-cyber-cyan/20 hover:bg-cyber-cyan/10 transition-all relative overflow-hidden">
+          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-cyber-cyan/10 blur-3xl"></div>
+          <h3 class="text-xl font-cyber font-bold mb-4 uppercase tracking-widest text-cyber-cyan">{{ 'HOME.ACCENTIFY_PLATFORM' | translate }}</h3>
+          <p class="text-slate-700 dark:text-white text-sm mb-8 leading-relaxed font-medium">{{ 'HOME.ACCENTIFY_PLATFORM_DESC' | translate }}</p>
+          <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">{{ 'HOME.PLATFORM_ACCESS' | translate }}</a>
+        </div>
+
+        <div class="group p-10 rounded-3xl bg-cyber-cyan/5 border border-cyber-cyan/20 hover:bg-cyber-cyan/10 transition-all relative overflow-hidden">
+          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-cyber-cyan/10 blur-3xl"></div>
+          <h3 class="text-xl font-cyber font-bold mb-4 uppercase tracking-widest text-cyber-cyan">{{ 'HOME.PROTOTYPING' | translate }}</h3>
+          <p class="text-slate-700 dark:text-white text-sm mb-8 leading-relaxed font-medium">{{ 'HOME.PROTOTYPING_DESC' | translate }}</p>
+          <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">{{ 'HOME.READ_MORE' | translate }}</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT FORM -->
-  <section appScrollReveal class="py-32 px-6 relative">
+  <section appScrollReveal class="py-32 px-6 relative bg-slate-50 dark:bg-[#251c2b] transition-colors">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] bg-cyber-cyan/5 blur-[150px] pointer-events-none"></div>
     
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 relative z-10">
       <div>
-        <h2 class="text-5xl md:text-7xl font-cyber font-extrabold text-white mb-6 leading-none">Need Our <br><span class="text-cyber-cyan">Help?</span></h2>
-        <p class="text-nav-grey text-2xl font-cyber">Let's Get In Touch!</p>
+        <h2 class="text-5xl md:text-7xl font-cyber font-extrabold text-purple-900 dark:text-white mb-6 leading-none">{{ 'HOME.NEED_HELP' | translate }} <br><span class="text-cyber-cyan">{{ 'HOME.HELP' | translate }}</span></h2>
+        <p class="text-slate-600 dark:text-nav-grey text-2xl font-cyber">{{ 'HOME.GET_IN_TOUCH' | translate }}</p>
         
         <div class="mt-12 space-y-6">
           <div class="flex items-center space-x-4">
-            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-cyber-cyan">
+            <div class="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-cyber-cyan">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             </div>
-            <span class="text-white">contact@accent.tn</span>
+            <span class="text-slate-900 dark:text-white">contact@accent.tn</span>
           </div>
         </div>
       </div>
 
-      <div class="bg-white/[0.03] backdrop-blur-xl border border-white/10 p-10 rounded-3xl">
+      <div class="bg-white dark:bg-white/[0.03] backdrop-blur-xl border border-slate-200 dark:border-white/10 p-10 rounded-3xl shadow-lg dark:shadow-none transition-colors">
         <form class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <input type="text" placeholder="Full Name" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
-            <input type="email" placeholder="Email" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
+            <input type="text" [placeholder]="'HOME.FULL_NAME' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
+            <input type="email" [placeholder]="'HOME.EMAIL' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
           </div>
-          <input type="tel" placeholder="Phone" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
-          <textarea rows="4" placeholder="Enter your message" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all"></textarea>
+          <input type="tel" [placeholder]="'HOME.PHONE' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">
+          <textarea rows="4" [placeholder]="'HOME.MESSAGE' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all"></textarea>
           
-          <button type="submit" class="w-full py-4 bg-white text-black font-cyber font-black uppercase tracking-widest rounded-xl hover:bg-cyber-cyan transition-all transform hover:-translate-y-1">
-            Submit
+          <button type="submit" class="w-full py-4 bg-slate-900 dark:bg-white text-white dark:text-black font-cyber font-black uppercase tracking-widest rounded-xl hover:bg-cyber-cyan dark:hover:bg-cyber-cyan dark:hover:text-black transition-all transform hover:-translate-y-1">
+            {{ 'HOME.SUBMIT' | translate }}
           </button>
         </form>
       </div>

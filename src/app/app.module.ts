@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
+import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,9 +45,15 @@ import { PublicBusComponent } from './public-bus/public-bus.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'fr'
+    })
   ],
-  providers: [],
+  providers: [
+    ...provideTranslateHttpLoader({ prefix: './assets/i18n/', suffix: '.json' })
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
