@@ -11,7 +11,9 @@
       if (theme === 'dark' || theme === 'light') {
         document.documentElement.classList.toggle('dark', theme === 'dark');
       } else {
-        document.documentElement.classList.add('dark');
+        // Detect system/browser preference
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.classList.toggle('dark', prefersDark);
       }
     })();
   </script>
