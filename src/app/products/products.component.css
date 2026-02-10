@@ -26,8 +26,6 @@
   max-width: 220px;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: rgba(241, 245, 249, 1); /* slate-100 in light mode */
-  border: 1px solid rgba(148, 163, 184, 0.35); /* slate-400 */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -36,16 +34,16 @@
   z-index: 20; /* ensure cards are in foreground above image/glow */
 }
 
-html.dark .product-orbit-card {
-  background-color: rgba(15, 23, 42, 0.8); /* slate-900/80 */
-  border-color: rgba(148, 163, 184, 0.4);
-}
-
 .product-orbit-connector {
   position: absolute;
   height: 1px;
   background: linear-gradient(to right, rgba(148,163,184,0.6), rgba(217,227,63,0.9));
   z-index: 5; /* keep lines behind the foreground cards */
+}
+
+html.dark .product-orbit-connector,
+.dark .product-orbit-connector {
+  background: linear-gradient(to right, rgba(148,163,184,0.25), rgba(217,227,63,0.9));
 }
 
 /* Hide description text until hover */

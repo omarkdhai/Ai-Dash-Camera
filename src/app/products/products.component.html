@@ -11,19 +11,19 @@
       
 
       <h1 class="text-5xl md:text-4xl font-cyber font-extrabold leading-[1.1] tracking-tighter uppercase text-purple-900 dark:text-white">
-        Drive <span class="text-cyber-cyan italic">Smarter.</span> <br>
-        Drive <span class="text-cyber-cyan italic">Safer.</span>
+        {{ 'PRODUCTS.HERO_DRIVE' | translate }} <span class="text-cyber-cyan italic">{{ 'PRODUCTS.HERO_SMARTER' | translate }}</span> <br>
+        {{ 'PRODUCTS.HERO_DRIVE' | translate }} <span class="text-cyber-cyan italic">{{ 'PRODUCTS.HERO_SAFER' | translate }}</span>
       </h1>
 
       <p class="text-nav-grey text-lg md:text-sm leading-relaxed font-light uppercase tracking-widest border-l-2 border-cyber-cyan pl-6">
-        Experience AI-powered safety, clarity, and control. <br class="hidden md:block">
-        All in one professional dash cam system.
+        {{ 'PRODUCTS.HERO_SUBTITLE_LINE1' | translate }} <br class="hidden md:block">
+        {{ 'PRODUCTS.HERO_SUBTITLE_LINE2' | translate }}
       </p>
 
       <div class="pt-4">
         <button [routerLink]="['/contact']" 
                 class="group px-8 py-3 bg-cyber-cyan text-black font-cyber font-bold uppercase tracking-[0.2em] rounded-xl shadow-[0_0_30px_rgba(217,227,63,0.4)] hover:shadow-[0_0_50px_rgba(217,227,63,0.6)] hover:scale-105 transition-all duration-300">
-          Request Demo
+          {{ 'PRODUCTS.HERO_REQUEST_DEMO' | translate }}
           <span class="inline-block ml-2 group-hover:translate-x-2 transition-transform">→</span>
         </button>
       </div>
@@ -40,90 +40,90 @@
         <!-- Advantage Orbit Cards (Desktop) -->
         <div class="hidden lg:block">
           <!-- Top Left -->
-          <div class="product-orbit-card orbit-1">
+          <div class="product-orbit-card orbit-1 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 shadow-[0_0_25px_rgba(15,23,42,0.08)] dark:shadow-[0_0_35px_rgba(0,0,0,0.7)]">
             <div class="product-orbit-connector"></div>
             <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.25em] mb-1 text-purple-900 dark:text-white">
-              Dual FHD Vision
+              {{ 'PRODUCTS.ORBIT_DUAL_FHD_TITLE' | translate }}
             </h4>
             <p class="text-[11px] text-nav-grey leading-relaxed">
-              Road and cabin captured simultaneously in 1080p.
+              {{ 'PRODUCTS.ORBIT_DUAL_FHD_TEXT' | translate }}
             </p>
           </div>
 
           <!-- Top Right -->
-          <div class="product-orbit-card orbit-2">
+          <div class="product-orbit-card orbit-2 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 shadow-[0_0_25px_rgba(15,23,42,0.08)] dark:shadow-[0_0_35px_rgba(0,0,0,0.7)]">
             <div class="product-orbit-connector"></div>
             <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.25em] mb-1 text-purple-900 dark:text-white">
-              Edge AI Alerts
+              {{ 'PRODUCTS.ORBIT_EDGE_AI_TITLE' | translate }}
             </h4>
             <p class="text-[11px] text-nav-grey leading-relaxed">
-              ADAS and DMS running on-device for instant warnings.
+              {{ 'PRODUCTS.ORBIT_EDGE_AI_TEXT' | translate }}
             </p>
           </div>
 
           <!-- Mid Left Upper -->
-          <div class="product-orbit-card orbit-3">
+          <div class="product-orbit-card orbit-3 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 shadow-[0_0_25px_rgba(15,23,42,0.08)] dark:shadow-[0_0_35px_rgba(0,0,0,0.7)]">
             <div class="product-orbit-connector"></div>
             <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.25em] mb-1 text-purple-900 dark:text-white">
-              LTE Connectivity
+              {{ 'PRODUCTS.ORBIT_LTE_TITLE' | translate }}
             </h4>
             <p class="text-[11px] text-nav-grey leading-relaxed">
-              4G uplink for live streaming and remote video pull.
+              {{ 'PRODUCTS.ORBIT_LTE_TEXT' | translate }}
             </p>
           </div>
 
           <!-- Mid Right Upper -->
-          <div class="product-orbit-card orbit-4">
+          <div class="product-orbit-card orbit-4 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 shadow-[0_0_25px_rgba(15,23,42,0.08)] dark:shadow-[0_0_35px_rgba(0,0,0,0.7)]">
             <div class="product-orbit-connector"></div>
             <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.25em] mb-1 text-purple-900 dark:text-white">
-              Cloud Evidence
+              {{ 'PRODUCTS.ORBIT_CLOUD_TITLE' | translate }}
             </h4>
             <p class="text-[11px] text-nav-grey leading-relaxed">
-              Critical clips stored securely for claims and audits.
+              {{ 'PRODUCTS.ORBIT_CLOUD_TEXT' | translate }}
             </p>
           </div>
 
           <!-- Mid Left Lower -->
-          <div class="product-orbit-card orbit-5">
+          <div class="product-orbit-card orbit-5 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 shadow-[0_0_25px_rgba(15,23,42,0.08)] dark:shadow-[0_0_35px_rgba(0,0,0,0.7)]">
             <div class="product-orbit-connector"></div>
             <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.25em] mb-1 text-purple-900 dark:text-white">
-              Driver Coaching
+              {{ 'PRODUCTS.ORBIT_COACHING_TITLE' | translate }}
             </h4>
             <p class="text-[11px] text-nav-grey leading-relaxed">
-              Real-time voice feedback to correct risky behavior.
+              {{ 'PRODUCTS.ORBIT_COACHING_TEXT' | translate }}
             </p>
           </div>
 
           <!-- Mid Right Lower -->
-          <div class="product-orbit-card orbit-6">
+          <div class="product-orbit-card orbit-6 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 shadow-[0_0_25px_rgba(15,23,42,0.08)] dark:shadow-[0_0_35px_rgba(0,0,0,0.7)]">
             <div class="product-orbit-connector"></div>
             <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.25em] mb-1 text-purple-900 dark:text-white">
-              Night Vision
+              {{ 'PRODUCTS.ORBIT_NIGHT_TITLE' | translate }}
             </h4>
             <p class="text-[11px] text-nav-grey leading-relaxed">
-              Sony WDR sensor keeps details clear after dark.
+              {{ 'PRODUCTS.ORBIT_NIGHT_TEXT' | translate }}
             </p>
           </div>
 
           <!-- Bottom Left -->
-          <div class="product-orbit-card orbit-7">
+          <div class="product-orbit-card orbit-7 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 shadow-[0_0_25px_rgba(15,23,42,0.08)] dark:shadow-[0_0_35px_rgba(0,0,0,0.7)]">
             <div class="product-orbit-connector"></div>
             <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.25em] mb-1 text-purple-900 dark:text-white">
-              Tamper-Proof Storage
+              {{ 'PRODUCTS.ORBIT_TAMPER_TITLE' | translate }}
             </h4>
             <p class="text-[11px] text-nav-grey leading-relaxed">
-              Industrial-grade storage to safeguard evidence.
+              {{ 'PRODUCTS.ORBIT_TAMPER_TEXT' | translate }}
             </p>
           </div>
 
           <!-- Bottom Right -->
-          <div class="product-orbit-card orbit-8">
+          <div class="product-orbit-card orbit-8 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 shadow-[0_0_25px_rgba(15,23,42,0.08)] dark:shadow-[0_0_35px_rgba(0,0,0,0.7)]">
             <div class="product-orbit-connector"></div>
             <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.25em] mb-1 text-purple-900 dark:text-white">
-              Fleet Integration
+              {{ 'PRODUCTS.ORBIT_FLEET_TITLE' | translate }}
             </h4>
             <p class="text-[11px] text-nav-grey leading-relaxed">
-              Open APIs connect natively to existing FMS / VSS.
+              {{ 'PRODUCTS.ORBIT_FLEET_TEXT' | translate }}
             </p>
           </div>
         </div>
@@ -136,7 +136,9 @@
   <section appScrollReveal class="py-32 px-6">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-20">
-        <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em] text-purple-900 dark:text-white">Core <span class="text-cyber-cyan">Features</span></h2>
+        <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em] text-purple-900 dark:text-white">
+          {{ 'PRODUCTS.CORE_FEATURES_TITLE' | translate }} <span class="text-cyber-cyan">{{ 'PRODUCTS.CORE_FEATURES_HIGHLIGHT' | translate }}</span>
+        </h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -144,43 +146,67 @@
           <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan group-hover:scale-110 transition-transform">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           </div>
-          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">AI-triggered Events</h3>
-          <p class="text-nav-grey text-xs leading-relaxed">Identifies in real time numerous distracting behaviors: phone use, smoking, and lack of attention.</p>
+          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">
+            {{ 'PRODUCTS.CORE_AI_EVENTS_TITLE' | translate }}
+          </h3>
+          <p class="text-nav-grey text-xs leading-relaxed">
+            {{ 'PRODUCTS.CORE_AI_EVENTS_TEXT' | translate }}
+          </p>
         </div>
         <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 text-center group hover:bg-white/[0.04] transition-all">
           <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan group-hover:scale-110 transition-transform">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
           </div>
-          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">Emergency Button Events</h3>
-          <p class="text-nav-grey text-xs leading-relaxed">Instantly generate and transmit video events to the fleet manager for documented response.</p>
+          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">
+            {{ 'PRODUCTS.CORE_EMERGENCY_TITLE' | translate }}
+          </h3>
+          <p class="text-nav-grey text-xs leading-relaxed">
+            {{ 'PRODUCTS.CORE_EMERGENCY_TEXT' | translate }}
+          </p>
         </div>
         <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 text-center group hover:bg-white/[0.04] transition-all">
           <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan group-hover:scale-110 transition-transform">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
           </div>
-          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">In-Vehicle Feedback</h3>
-          <p class="text-nav-grey text-xs leading-relaxed">Real-time audio alerts to the driver in case of risky behavior, promoting safer driving.</p>
+          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">
+            {{ 'PRODUCTS.CORE_FEEDBACK_TITLE' | translate }}
+          </h3>
+          <p class="text-nav-grey text-xs leading-relaxed">
+            {{ 'PRODUCTS.CORE_FEEDBACK_TEXT' | translate }}
+          </p>
         </div>
         <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 text-center group hover:bg-white/[0.04] transition-all">
           <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan group-hover:scale-110 transition-transform">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
           </div>
-          <h3 class="text-lg font-cyber font-bold uppercase mb-4">Live Streaming</h3>
-          <p class="text-nav-grey text-xs leading-relaxed">Instantly access live video from road-facing or driver-facing cameras for full fleet control.</p>
+          <h3 class="text-lg font-cyber font-bold uppercase mb-4">
+            {{ 'PRODUCTS.CORE_LIVE_TITLE' | translate }}
+          </h3>
+          <p class="text-nav-grey text-xs leading-relaxed">
+            {{ 'PRODUCTS.CORE_LIVE_TEXT' | translate }}
+          </p>
         </div>
         <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 text-center group hover:bg-white/[0.04] transition-all">
           <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan group-hover:scale-110 transition-transform">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
-          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">Geolocation and Tracking</h3>
-          <p class="text-nav-grey text-xs leading-relaxed">Track in real time the location of your vehicles, driving times, and total distance traveled.</p>
+          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">
+            {{ 'PRODUCTS.CORE_GEO_TITLE' | translate }}
+          </h3>
+          <p class="text-nav-grey text-xs leading-relaxed">
+            {{ 'PRODUCTS.CORE_GEO_TEXT' | translate }}
+          </p>
         </div>
         <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 text-center group hover:bg-white/[0.04] transition-all">
           <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan group-hover:scale-110 transition-transform">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
           </div>
-          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">Video Recording</h3>
-          <p class="text-nav-grey text-xs leading-relaxed">Continuous Full HD recording as soon as powered, with smart energy standby modes.</p>
+          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">
+            {{ 'PRODUCTS.CORE_RECORDING_TITLE' | translate }}
+          </h3>
+          <p class="text-nav-grey text-xs leading-relaxed">
+            {{ 'PRODUCTS.CORE_RECORDING_TEXT' | translate }}
+          </p>
         </div>
       </div>
     </div>
@@ -188,23 +214,41 @@
 
   <section appScrollReveal class="py-32 px-6">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em] text-purple-900 dark:text-white">Our <span class="text-cyber-cyan">Advantages</span></h2>
+      <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em] text-purple-900 dark:text-white">
+        {{ 'PRODUCTS.ADVANTAGES_TITLE' | translate }}
+      </h2>
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="p-8 border border-white/10 rounded-2xl hover:border-cyber-cyan/50 transition-all">
-          <h4 class="text-cyber-cyan font-cyber font-bold uppercase mb-4 tracking-widest">Security</h4>
-          <p class="text-nav-grey text-xs leading-relaxed">Intelligent real-time monitoring of road and driver with proactive alerts to prevent accidents.</p>
+          <h4 class="text-cyber-cyan font-cyber font-bold uppercase mb-4 tracking-widest">
+            {{ 'PRODUCTS.ADV_SECURITY_TITLE' | translate }}
+          </h4>
+          <p class="text-nav-grey text-xs leading-relaxed">
+            {{ 'PRODUCTS.ADV_SECURITY_TEXT' | translate }}
+          </p>
         </div>
         <div class="p-8 border border-white/10 rounded-2xl hover:border-cyber-cyan/50 transition-all">
-          <h4 class="text-white font-cyber font-bold uppercase mb-4 tracking-widest">Flexibility</h4>
-          <p class="text-nav-grey text-xs leading-relaxed">Easily connect multiple auxiliary cameras for complete coverage and enhanced deterrence.</p>
+          <h4 class="text-white font-cyber font-bold uppercase mb-4 tracking-widest">
+            {{ 'PRODUCTS.ADV_FLEXIBILITY_TITLE' | translate }}
+          </h4>
+          <p class="text-nav-grey text-xs leading-relaxed">
+            {{ 'PRODUCTS.ADV_FLEXIBILITY_TEXT' | translate }}
+          </p>
         </div>
         <div class="p-8 border border-white/10 rounded-2xl hover:border-cyber-cyan/50 transition-all">
-          <h4 class="text-white font-cyber font-bold uppercase mb-4 tracking-widest">Compliance</h4>
-          <p class="text-nav-grey text-xs leading-relaxed">Meets local regulations (DVS, PSS) while improving overall road user safety standards.</p>
+          <h4 class="text-white font-cyber font-bold uppercase mb-4 tracking-widest">
+            {{ 'PRODUCTS.ADV_COMPLIANCE_TITLE' | translate }}
+          </h4>
+          <p class="text-nav-grey text-xs leading-relaxed">
+            {{ 'PRODUCTS.ADV_COMPLIANCE_TEXT' | translate }}
+          </p>
         </div>
         <div class="p-8 border border-white/10 rounded-2xl hover:border-cyber-cyan/50 transition-all">
-          <h4 class="text-cyber-cyan font-cyber font-bold uppercase mb-4 tracking-widest">Insurance</h4>
-          <p class="text-nav-grey text-xs leading-relaxed">Reliable HD video evidence to prevent fraud and speed up valid claim processing.</p>
+          <h4 class="text-cyber-cyan font-cyber font-bold uppercase mb-4 tracking-widest">
+            {{ 'PRODUCTS.ADV_INSURANCE_TITLE' | translate }}
+          </h4>
+          <p class="text-nav-grey text-xs leading-relaxed">
+            {{ 'PRODUCTS.ADV_INSURANCE_TEXT' | translate }}
+          </p>
         </div>
       </div>
     </div>
@@ -214,15 +258,21 @@
     <div class="max-w-7xl mx-auto">
       
       <div class="text-center mb-32">
-        <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em] text-purple-900 dark:text-white">Smart features <span class="text-cyber-cyan">that protect your vehicle</span></h2>
+        <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em] text-purple-900 dark:text-white">
+          {{ 'PRODUCTS.SMART_FEATURES_TITLE' | translate }} <span class="text-cyber-cyan">{{ 'PRODUCTS.SMART_FEATURES_SUBTITLE' | translate }}</span>
+        </h2>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 items-center">
         <div class="space-y-6">
-          <div class="text-[10px] font-cyber text-purple-600 dark:text-cyber-cyan tracking-[0.4em] uppercase">Module 01</div>
-          <h3 class="text-3xl font-cyber font-bold uppercase">Real-Time <span class="text-cyber-cyan">Alerts</span></h3>
+          <div class="text-[10px] font-cyber text-purple-600 dark:text-cyber-cyan tracking-[0.4em] uppercase">
+            {{ 'PRODUCTS.MODULE_01' | translate }}
+          </div>
+          <h3 class="text-3xl font-cyber font-bold uppercase">
+            {{ 'PRODUCTS.MODULE1_TITLE' | translate }}
+          </h3>
           <p class="text-nav-grey text-sm md:text-base leading-relaxed border-l-2 border-cyber-cyan pl-6">
-            Advanced Driver Assistance System (ADAS) helps you stay safe by delivering instant alerts for lane departures and forward collisions using real-time AI analysis.
+            {{ 'PRODUCTS.MODULE1_TEXT' | translate }}
           </p>
         </div>
         <div class="relative h-[300px] md:h-[450px] w-full group">
@@ -237,20 +287,28 @@
           <img src="assets/dash-camera5.png" class="h-full w-full object-cover rounded-3xl border border-white/10 shadow-2xl grayscale hover:grayscale-0 transition duration-700" alt="DMS">
         </div>
         <div class="space-y-6 order-1 lg:order-2">
-          <div class="text-[10px] font-cyber text-purple-600 dark:text-cyber-cyan tracking-[0.4em] uppercase">Module 02</div>
-          <h3 class="text-3xl font-cyber font-bold uppercase text-purple-900 dark:text-white">Driver Monitoring <span class="text-cyber-cyan">System</span></h3>
+          <div class="text-[10px] font-cyber text-purple-600 dark:text-cyber-cyan tracking-[0.4em] uppercase">
+            {{ 'PRODUCTS.MODULE_02' | translate }}
+          </div>
+          <h3 class="text-3xl font-cyber font-bold uppercase text-purple-900 dark:text-white">
+            {{ 'PRODUCTS.MODULE2_TITLE' | translate }}
+          </h3>
           <p class="text-nav-grey text-sm md:text-base leading-relaxed border-l-2 border-white/20 pl-6">
-            Equipped with both front and rear lenses, capture everything in stunning FULL HD. No blind spots, perfect for insurance evidence or peace of mind.
+            {{ 'PRODUCTS.MODULE2_TEXT' | translate }}
           </p>
         </div>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 items-center">
         <div class="space-y-6">
-          <div class="text-[10px] font-cyber text-cyber-cyan tracking-[0.4em] uppercase">Module 03</div>
-          <h3 class="text-3xl font-cyber font-bold uppercase">Human <span class="text-cyber-cyan">Detection</span></h3>
+          <div class="text-[10px] font-cyber text-cyber-cyan tracking-[0.4em] uppercase">
+            {{ 'PRODUCTS.MODULE_03' | translate }}
+          </div>
+          <h3 class="text-3xl font-cyber font-bold uppercase">
+            {{ 'PRODUCTS.MODULE3_TITLE' | translate }}
+          </h3>
           <p class="text-nav-grey text-sm md:text-base leading-relaxed border-l-2 border-cyber-cyan pl-6">
-            Advanced AI detects pedestrians and road users in real-time, even in challenging conditions, reducing collision risk in busy urban areas.
+            {{ 'PRODUCTS.MODULE3_TEXT' | translate }}
           </p>
         </div>
         <div class="relative h-[300px] md:h-[450px] w-full group">
@@ -265,22 +323,34 @@
           <img src="assets/dash-camera6.jpg" class="h-full w-full object-cover rounded-3xl border border-white/10 shadow-2xl grayscale hover:grayscale-0 transition duration-700" alt="GPS">
         </div>
         <div class="space-y-6 order-1 lg:order-2">
-          <div class="text-[10px] font-cyber text-purple-600 dark:text-cyber-cyan tracking-[0.4em] uppercase">Module 04</div>
-          <h3 class="text-3xl font-cyber font-bold uppercase text-purple-900 dark:text-white">GPS Tracking & <span class="text-cyber-cyan">Route History</span></h3>
+          <div class="text-[10px] font-cyber text-purple-600 dark:text-cyber-cyan tracking-[0.4em] uppercase">
+            {{ 'PRODUCTS.MODULE_04' | translate }}
+          </div>
+          <h3 class="text-3xl font-cyber font-bold uppercase text-purple-900 dark:text-white">
+            {{ 'PRODUCTS.MODULE4_TITLE' | translate }}
+          </h3>
           <p class="text-nav-grey text-sm md:text-base leading-relaxed border-l-2 border-white/20 pl-6">
-            Review every trip on a map with high-precision time stamps and speed data. Essential for fleet managers wanting full accountability.
+            {{ 'PRODUCTS.MODULE4_TEXT' | translate }}
           </p>
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-20">
         <div class="p-10 rounded-3xl bg-white/[0.03] border border-white/5 hover:border-cyber-cyan/30 transition-all group">
-          <h3 class="text-2xl font-cyber font-bold uppercase text-cyber-cyan mb-4 tracking-widest">Night Vision</h3>
-          <p class="text-nav-grey text-sm leading-relaxed">Sony WDR technology captures sharp video even in complete darkness or direct headlight glare.</p>
+          <h3 class="text-2xl font-cyber font-bold uppercase text-cyber-cyan mb-4 tracking-widest">
+            {{ 'PRODUCTS.EXTRA_NIGHT_TITLE' | translate }}
+          </h3>
+          <p class="text-nav-grey text-sm leading-relaxed">
+            {{ 'PRODUCTS.EXTRA_NIGHT_TEXT' | translate }}
+          </p>
         </div>
         <div class="p-10 rounded-3xl bg-white/[0.03] border border-white/5 hover:border-cyber-cyan/30 transition-all group">
-          <h3 class="text-2xl font-cyber font-bold uppercase text-cyber-cyan mb-4 tracking-widest">Mobile App Integration</h3>
-          <p class="text-nav-grey text-sm leading-relaxed">Control your dashcam, watch live video, and share clips instantly from your smartphone.</p>
+          <h3 class="text-2xl font-cyber font-bold uppercase text-cyber-cyan mb-4 tracking-widest">
+            {{ 'PRODUCTS.EXTRA_MOBILE_TITLE' | translate }}
+          </h3>
+          <p class="text-nav-grey text-sm leading-relaxed">
+            {{ 'PRODUCTS.EXTRA_MOBILE_TEXT' | translate }}
+          </p>
         </div>
       </div>
 
@@ -292,57 +362,85 @@
   <div class="max-w-7xl mx-auto">
     
     <div class="mb-20">
-      <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em] text-purple-900 dark:text-white">technical <span class="text-cyber-cyan">specifications</span></h2>
+      <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em] text-purple-900 dark:text-white">
+        {{ 'PRODUCTS.TECH_SPEC_TITLE' | translate }} <span class="text-cyber-cyan">{{ 'PRODUCTS.TECH_SPEC_HIGHLIGHT' | translate }}</span>
+      </h2>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-2">
       
       <div class="flex justify-between py-6 border-b border-white/5 group hover:bg-white/[0.02] transition-all px-4">
-        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">Storage</span>
-        <span class="text-slate-900 dark:text-white text-sm text-right font-light max-w-[250px]">SD card up to 256 GB + Cloud storage</span>
+        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">
+          {{ 'PRODUCTS.TECH_STORAGE' | translate }}
+        </span>
+        <span class="text-slate-900 dark:text-white text-sm text-right font-light max-w-[250px]" [innerHTML]="'PRODUCTS.TECH_STORAGE_TEXT' | translate"></span>
       </div>
 
       <div class="flex justify-between py-6 border-b border-white/5 group hover:bg-white/[0.02] transition-all px-4">
-        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">Connectivity</span>
-        <span class="text-slate-900 dark:text-white text-sm text-right font-light max-w-[250px] leading-relaxed">4G + 3G/2G backup system<br>Local WiFi connectivity</span>
+        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">
+          {{ 'PRODUCTS.TECH_CONNECTIVITY' | translate }}
+        </span>
+        <span class="text-slate-900 dark:text-white text-sm text-right font-light max-w-[250px] leading-relaxed" [innerHTML]="'PRODUCTS.TECH_CONNECTIVITY_TEXT' | translate"></span>
       </div>
 
       <div class="flex justify-between py-6 border-b border-white/5 group hover:bg-white/[0.02] transition-all px-4">
-        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">Optics</span>
-        <span class="text-slate-900 dark:text-white text-sm text-right font-light max-w-[250px] leading-relaxed">Front: 1080p HD, 125° diagonal<br>DMS: 1080p HD, 120° diagonal</span>
+        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">
+          {{ 'PRODUCTS.TECH_OPTICS' | translate }}
+        </span>
+        <span class="text-slate-900 dark:text-white text-sm text-right font-light max-w-[250px] leading-relaxed" [innerHTML]="'PRODUCTS.TECH_OPTICS_TEXT' | translate"></span>
       </div>
 
       <div class="flex justify-between py-6 border-b border-white/5 group hover:bg-white/[0.02] transition-all px-4">
-        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">Power Supply</span>
-        <span class="text-slate-900 dark:text-white text-sm text-right font-light max-w-[250px] leading-relaxed">12-24V DC input<br>Hardwired fuse connection</span>
+        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">
+          {{ 'PRODUCTS.TECH_POWER' | translate }}
+        </span>
+        <span class="text-slate-900 dark:text-white text-sm text-right font-light max-w-[250px] leading-relaxed" [innerHTML]="'PRODUCTS.TECH_POWER_TEXT' | translate"></span>
       </div>
 
       <div class="flex justify-between py-6 border-b border-white/5 group hover:bg-white/[0.02] transition-all px-4">
-        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">Battery</span>
-        <span class="text-slate-900 dark:text-white text-sm text-right font-light">10-second backup power supply</span>
+        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">
+          {{ 'PRODUCTS.TECH_BATTERY' | translate }}
+        </span>
+        <span class="text-slate-900 dark:text-white text-sm text-right font-light">
+          {{ 'PRODUCTS.TECH_BATTERY_TEXT' | translate }}
+        </span>
       </div>
 
       <div class="flex justify-between py-6 border-b border-white/5 group hover:bg-white/[0.02] transition-all px-4">
-        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">GPS</span>
-        <span class="text-slate-900 dark:text-white text-sm text-right font-light">Geolocation & Time Sync</span>
+        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">
+          {{ 'PRODUCTS.TECH_GPS' | translate }}
+        </span>
+        <span class="text-slate-900 dark:text-white text-sm text-right font-light">
+          {{ 'PRODUCTS.TECH_GPS_TEXT' | translate }}
+        </span>
       </div>
 
       <div class="flex justify-between py-6 border-b border-white/5 group hover:bg-white/[0.02] transition-all px-4">
-        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">Audio</span>
-        <span class="text-slate-900 dark:text-white text-sm text-right font-light">Built-in speaker for audio alerts</span>
+        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">
+          {{ 'PRODUCTS.TECH_AUDIO' | translate }}
+        </span>
+        <span class="text-slate-900 dark:text-white text-sm text-right font-light">
+          {{ 'PRODUCTS.TECH_AUDIO_TEXT' | translate }}
+        </span>
       </div>
 
       <div class="flex justify-between py-6 border-b border-white/5 group hover:bg-white/[0.02] transition-all px-4">
-        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">Temperature</span>
-        <span class="text-slate-900 dark:text-white text-sm text-right font-light">Operating: -20°C to +70°C</span>
+        <span class="text-cyber-cyan font-cyber text-xs uppercase tracking-widest self-center">
+          {{ 'PRODUCTS.TECH_TEMPERATURE' | translate }}
+        </span>
+        <span class="text-slate-900 dark:text-white text-sm text-right font-light">
+          {{ 'PRODUCTS.TECH_TEMPERATURE_TEXT' | translate }}
+        </span>
       </div>
 
     </div>
 
     <div class="mt-8 p-8 rounded-2xl bg-white/[0.02] border border-white/5">
-        <h4 class="text-cyber-cyan font-cyber text-xs uppercase tracking-[0.3em] mb-4">Package Contents</h4>
+        <h4 class="text-cyber-cyan font-cyber text-xs uppercase tracking-[0.3em] mb-4">
+          {{ 'PRODUCTS.TECH_PACKAGE_TITLE' | translate }}
+        </h4>
         <p class="text-slate-700 dark:text-white/70 text-sm leading-relaxed font-light">
-          Dashcam (ADAS+DMS), mounting bracket, professional 256GB microSD card, installation kit (wiring kit, fuse add-on kit, fuse cap), alert button, user manual.
+          {{ 'PRODUCTS.TECH_PACKAGE_TEXT' | translate }}
         </p>
     </div>
   </div>
@@ -357,12 +455,14 @@
   <div class="max-w-7xl mx-auto relative z-10">
     
     <div class="text-center mb-24 space-y-4">
-        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.6em] font-black">Performance Analytics</h2>
+        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.6em] font-black">
+          {{ 'PRODUCTS.PERF_ANALYTICS_BADGE' | translate }}
+        </h2>
         <h3 class="text-4xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter text-purple-900 dark:text-white">
-            The Safety <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 dark:from-white to-[#8BFF8B] italic">Evolution</span>
+            {{ 'PRODUCTS.PERF_ANALYTICS_TITLE' | translate }}
         </h3>
         <p class="text-slate-600 dark:text-nav-grey text-sm md:text-base max-w-2xl mx-auto font-light">
-            Visualizing the transition from reactive driving to AI-powered proactive protection for drivers and passengers.
+          {{ 'PRODUCTS.PERF_ANALYTICS_TEXT' | translate }}
         </p>
     </div>
 
@@ -373,20 +473,32 @@
         
         <!-- Stage 1 -->
         <div class="group pl-8 border-l border-slate-300 dark:border-white/10 hover:border-red-500 transition-colors">
-            <h4 class="text-red-500 font-cyber font-bold uppercase text-sm mb-2 tracking-widest">Phase 01: Reactive</h4>
-            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">Conventional fleet monitoring. High reliance on driver reflex. Statistical incident rate: <span class="text-red-500">Baseline</span>.</p>
+            <h4 class="text-red-500 font-cyber font-bold uppercase text-sm mb-2 tracking-widest">
+              {{ 'PRODUCTS.PERF_PHASE1_TITLE' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
+              {{ 'PRODUCTS.PERF_PHASE1_TEXT' | translate }}
+            </p>
         </div>
 
         <!-- Stage 2 -->
         <div class="group pl-8 border-l border-slate-300 dark:border-white/10 hover:border-cyber-cyan transition-colors">
-            <h4 class="text-cyber-cyan font-cyber font-bold uppercase text-sm mb-2 tracking-widest">Phase 02: Proactive (ADAS)</h4>
-            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">Collision warnings active. Lane departure prevention enabled. <span class="text-cyber-cyan font-bold">+40% Safety Score</span>.</p>
+            <h4 class="text-cyber-cyan font-cyber font-bold uppercase text-sm mb-2 tracking-widest">
+              {{ 'PRODUCTS.PERF_PHASE2_TITLE' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
+              {{ 'PRODUCTS.PERF_PHASE2_TEXT' | translate }}
+            </p>
         </div>
 
         <!-- Stage 3 -->
         <div class="group pl-8 border-l border-slate-300 dark:border-white/10 hover:border-green-300 transition-colors">
-            <h4 class="text-green-300 font-cyber font-bold uppercase text-sm mb-2 tracking-widest italic">Phase 03: Optimized (DMS+VSS)</h4>
-            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">Total driver & passenger synergy. AI cabin analysis and 24/7 cloud sync. <span class="text-green-300 font-bold">99.8% Risk Mitigation</span>.</p>
+            <h4 class="text-green-300 font-cyber font-bold uppercase text-sm mb-2 tracking-widest italic">
+              {{ 'PRODUCTS.PERF_PHASE3_TITLE' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
+              {{ 'PRODUCTS.PERF_PHASE3_TEXT' | translate }}
+            </p>
         </div>
 
       </div>
@@ -419,21 +531,35 @@
             <circle cx="750" cy="50" r="8" fill="#00FFC2" class="glow-point animate-pulse" /> <!-- AI Total -->
 
             <!-- Floating Data Badges -->
-            <text x="60" y="330" class="svg-text-label uppercase tracking-widest" font-size="10" font-family="Syne">High Risk</text>
-            <text x="410" y="180" class="svg-text-main uppercase tracking-widest" font-size="10" font-family="Syne">ADAS Sync</text>
-            <text x="660" y="40" fill="#00FFC2" font-size="12" font-family="Syne" font-weight="900" class="uppercase tracking-widest">Max Safety</text>
+            <text x="60" y="330" class="svg-text-label uppercase tracking-widest" font-size="10" font-family="Syne">
+              {{ 'PRODUCTS.PERF_BADGE_HIGH_RISK' | translate }}
+            </text>
+            <text x="410" y="180" class="svg-text-main uppercase tracking-widest" font-size="10" font-family="Syne">
+              {{ 'PRODUCTS.PERF_BADGE_ADAS_SYNC' | translate }}
+            </text>
+            <text x="660" y="40" fill="#00FFC2" font-size="12" font-family="Syne" font-weight="900" class="uppercase tracking-widest">
+              {{ 'PRODUCTS.PERF_BADGE_MAX_SAFETY' | translate }}
+            </text>
           </svg>
 
           <!-- Bottom Summary Bar -->
           <div class="mt-12 flex justify-between items-center border-t border-slate-200 dark:border-white/5 pt-8">
             <div class="text-left">
-                <div class="text-slate-900 dark:text-white font-cyber font-bold text-xl uppercase tracking-tighter">Passenger Comfort</div>
-                <div class="text-[11px] text-cyber-cyan uppercase tracking-widest">Enhanced by AI Stability</div>
+                <div class="text-slate-900 dark:text-white font-cyber font-bold text-xl uppercase tracking-tighter">
+                  {{ 'PRODUCTS.PERF_SUMMARY_PASSENGER_TITLE' | translate }}
+                </div>
+                <div class="text-[11px] text-cyber-cyan uppercase tracking-widest">
+                  {{ 'PRODUCTS.PERF_SUMMARY_PASSENGER_TEXT' | translate }}
+                </div>
             </div>
             <div class="h-10 w-[2px] bg-slate-300 dark:bg-white/10 hidden md:block"></div>
             <div class="text-right">
-                <div class="text-purple-900 dark:text-white font-cyber font-bold text-xl uppercase tracking-tighter">Driver Confidence</div>
-                <div class="text-[11px] text-cyber-cyan uppercase tracking-widest">Fatigue Risk Neutralized</div>
+                <div class="text-purple-900 dark:text-white font-cyber font-bold text-xl uppercase tracking-tighter">
+                  {{ 'PRODUCTS.PERF_SUMMARY_DRIVER_TITLE' | translate }}
+                </div>
+                <div class="text-[11px] text-cyber-cyan uppercase tracking-widest">
+                  {{ 'PRODUCTS.PERF_SUMMARY_DRIVER_TEXT' | translate }}
+                </div>
             </div>
           </div>
         </div>
@@ -454,21 +580,20 @@
       <div class="absolute bottom-8 left-8 w-4 h-4 border-b-2 border-l-2 border-cyber-cyan/40"></div>
 
       <h2 class="text-3xl md:text-3xl font-cyber font-extrabold uppercase tracking-tighter mb-8 leading-tight text-purple-900 dark:text-white">
-        Return on Investment in <br>
+        {{ 'PRODUCTS.ROI_TITLE_LINE1' | translate }} <br>
         <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">
-          Six to Nine Months
+          {{ 'PRODUCTS.ROI_TITLE_LINE2' | translate }}
         </span>
       </h2>
 
       <p class="text-nav-grey text-base md:text-sm max-w-3xl mx-auto leading-relaxed mb-12 font-light">
-        Do you want full visibility into critical events, enhanced safety for your drivers and fleet, while reducing the cost and frequency of insurance claims? 
-        Discover how the MF2 AI Dash Cam effectively protects your vehicles and optimizes risk management.
+        {{ 'PRODUCTS.ROI_TEXT' | translate }}
       </p>
 
       <div class="flex justify-center">
         <button [routerLink]="['/contact']" fragment="contact-form" 
                 class="px-8 py-4 bg-cyber-cyan text-black font-cyber font-bold uppercase tracking-[0.2em] rounded-2xl shadow-[0_0_40px_rgba(217,227,63,0.5)] hover:shadow-[0_0_60px_rgba(217,227,63,0.7)] hover:scale-105 transition-all duration-300">
-          Request a Demo
+          {{ 'PRODUCTS.HERO_REQUEST_DEMO' | translate }}
         </button>
       </div>
     </div>
