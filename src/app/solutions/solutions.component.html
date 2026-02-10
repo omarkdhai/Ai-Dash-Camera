@@ -4,20 +4,99 @@
   <header appScrollReveal class="relative pt-48 pb-32 px-6 overflow-hidden">
     <div class="absolute top-[-20%] right-[-10%] w-[800px] h-[800px] bg-cyber-cyan/10 blur-[200px] rounded-full"></div>
     
-    <div class="max-w-7xl mx-auto relative z-10 text-center">
-      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.4em] text-purple-600 dark:text-cyber-cyan mb-10">
-        AI Powered Solutions
-      </div>
-      
-      <h1 class="text-5xl md:text-7xl font-cyber font-extrabold uppercase tracking-tighter leading-none mb-10 text-purple-900 dark:text-white">
-        Explore our <br>
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">Solutions</span>
-      </h1>
-      
-      <p class="text-nav-grey text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-light uppercase tracking-widest italic">
-        Tailored AI Monitoring for every <br class="hidden md:block"> transport application.
-      </p>
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- Left: Title & Description -->
+        <div class="text-center lg:text-left space-y-8">
+          <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.4em] text-purple-600 dark:text-cyber-cyan mb-10">
+            AI Powered Solutions
+          </div>
+          
+          <h1 class="text-5xl md:text-7xl font-cyber font-extrabold uppercase tracking-tighter leading-none mb-10 text-purple-900 dark:text-white">
+            Explore our <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">Solutions</span>
+          </h1>
+          
+          <p class="text-nav-grey text-lg md:text-xl max-w-3xl mx-auto lg:mx-0 leading-relaxed font-light uppercase tracking-widest italic">
+            Tailored AI Monitoring for every <br class="hidden md:block"> transport application.
+          </p>
+        </div>
 
+        <!-- Right: Navigation Cards (Stair Alignment) -->
+        <div class="mt-6 lg:mt-2 grid grid-cols-1 gap-4">
+          <!-- Logistics -->
+          <div [routerLink]="['/logistics']" class="solution-hero-card p-4 lg:ml-0 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3 cursor-pointer hover:border-cyber-cyan/50 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                      d="M9 12.75l2 2 4-4.5M5 6.5h14a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H5A1.5 1.5 0 013.5 17V8A1.5 1.5 0 015 6.5z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.2em] mb-1 text-purple-900 dark:text-white">{{ 'HOME.LOGISTICS' | translate }}</h4>
+              <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'HOME.LOGISTICS_DESC' | translate }}</p>
+            </div>
+          </div>
+
+          <!-- Oil & Gas -->
+          <div [routerLink]="['/oil-gas']" class="solution-hero-card p-4 lg:ml-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3 cursor-pointer hover:border-cyber-cyan/50 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                      d="M9 12.75l2 2 4-4.5M5 6.5h14a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H5A1.5 1.5 0 013.5 17V8A1.5 1.5 0 015 6.5z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.2em] mb-1 text-purple-900 dark:text-white">{{ 'HOME.OIL_GAS' | translate }}</h4>
+              <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'HOME.OIL_GAS_DESC' | translate }}</p>
+            </div>
+          </div>
+
+          <!-- Taxi -->
+          <div [routerLink]="['/taxi']" class="solution-hero-card p-4 lg:ml-12 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3 cursor-pointer hover:border-cyber-cyan/50 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                      d="M9 12.75l2 2 4-4.5M5 6.5h14a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H5A1.5 1.5 0 013.5 17V8A1.5 1.5 0 015 6.5z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.2em] mb-1 text-purple-900 dark:text-white">{{ 'HOME.TAXI' | translate }}</h4>
+              <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'HOME.TAXI_DESC' | translate }}</p>
+            </div>
+          </div>
+
+          <!-- School Bus -->
+          <div [routerLink]="['/school-bus']" class="solution-hero-card p-4 lg:ml-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3 cursor-pointer hover:border-cyber-cyan/50 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                      d="M9 12.75l2 2 4-4.5M5 6.5h14a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H5A1.5 1.5 0 013.5 17V8A1.5 1.5 0 015 6.5z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.2em] mb-1 text-purple-900 dark:text-white">{{ 'HOME.SCHOOL_BUS' | translate }}</h4>
+              <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'HOME.SCHOOL_BUS_DESC' | translate }}</p>
+            </div>
+          </div>
+
+          <!-- Public Bus -->
+          <div [routerLink]="['/public-bus']" class="solution-hero-card p-4 lg:ml-0 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3 cursor-pointer hover:border-cyber-cyan/50 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                      d="M9 12.75l2 2 4-4.5M5 6.5h14a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H5A1.5 1.5 0 013.5 17V8A1.5 1.5 0 015 6.5z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.2em] mb-1 text-purple-900 dark:text-white">{{ 'HOME.PUBLIC_BUS' | translate }}</h4>
+              <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'HOME.PUBLIC_BUS_DESC' | translate }}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </header>
 
@@ -32,7 +111,12 @@
     <section appScrollReveal id="logistics" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="space-y-8">
         <div class="text-purple-600 dark:text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_01</div>
-        <h2 [routerLink]="['/logistics']" class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight cursor-pointer text-purple-900 dark:text-white">Logistics</h2>
+        <div [routerLink]="['/logistics']" class="group flex items-center justify-between p-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 cursor-pointer hover:border-cyber-cyan/50 transition-all">
+          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight text-purple-900 dark:text-white">Logistics</h2>
+          <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </div>
         <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
           In long-haul freight, our AI Dashcam monitors driver fatigue during extended shifts, detects lane drifting instantly, and provides evidence for high-value cargo protection.
         </p>
@@ -55,7 +139,12 @@
         </div>
         <div class="space-y-8 order-1 lg:order-2">
           <div class="text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_02</div>
-          <h2 [routerLink]="['/oil-gas']" class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight cursor-pointer">Oil & Gas</h2>
+          <div [routerLink]="['/oil-gas']" class="group flex items-center justify-between p-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 cursor-pointer hover:border-cyber-cyan/50 transition-all">
+            <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight text-purple-900 dark:text-white">Oil & Gas</h2>
+            <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </div>
           <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
             Transporting volatile materials requires extreme compliance. Our industrial-grade hardware operates in temperatures from -20°C to +70°C and uses tamper-proof storage.
           </p>
@@ -72,7 +161,12 @@
     <section appScrollReveal id="private-hire" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="space-y-8">
         <div class="text-purple-600 dark:text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_03</div>
-        <h2 [routerLink]="['/taxi']" class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight cursor-pointer text-purple-900 dark:text-white">Taxi</h2>
+        <div [routerLink]="['/taxi']" class="group flex items-center justify-between p-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 cursor-pointer hover:border-cyber-cyan/50 transition-all">
+          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight text-purple-900 dark:text-white">Taxi</h2>
+          <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </div>
         <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
           Dual-lens monitoring protects drivers and passengers. High-definition cabin analysis records interactions, providing crucial evidence and professional standards.
         </p>
@@ -89,7 +183,12 @@
         <img src="assets/students.jpg" class="rounded-[40px] border border-white/10 shadow-2xl order-2 lg:order-1 grayscale hover:grayscale-0 transition duration-700 h-[450px] w-full object-cover" alt="School Bus">
         <div class="space-y-8 order-1 lg:order-2">
           <div class="text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_04</div>
-          <h2 [routerLink]="['/school-bus']" class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight cursor-pointer text-purple-900 dark:text-white">School Bus</h2>
+          <div [routerLink]="['/school-bus']" class="group flex items-center justify-between p-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 cursor-pointer hover:border-cyber-cyan/50 transition-all">
+            <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight text-purple-900 dark:text-white">School Bus</h2>
+            <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </div>
           <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
             Protecting students is our priority. Cloud-integrated logs and student-left checking ensure peace of mind, featuring SOS emergency buttons and instant event uploads.
           </p>
@@ -104,7 +203,12 @@
     <section appScrollReveal id="public-transport" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="space-y-8">
         <div class="text-purple-600 dark:text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_05</div>
-        <h2 [routerLink]="['/public-bus']" class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight cursor-pointer text-purple-900 dark:text-white">Public Bus <br>Transit</h2>
+        <div [routerLink]="['/public-bus']" class="group flex items-center justify-between p-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 cursor-pointer hover:border-cyber-cyan/50 transition-all">
+          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight text-purple-900 dark:text-white">Public Bus <br>Transit</h2>
+          <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </div>
         <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
           Our solution features multi-channel live-streaming, allowing dispatchers to view cabin and road conditions in real-time, ensuring urban passenger safety 24/7.
         </p>
