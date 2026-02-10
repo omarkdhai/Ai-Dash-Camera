@@ -10,6 +10,27 @@ html.dark {
   @apply bg-[#251c2b];
 }
 
+/* Typography adaptation for light vs dark theme */
+/* Make "nav-grey" more readable on light background while keeping softer tone in dark mode */
+.text-nav-grey {
+  color: rgb(71 85 105); /* slate-600 on light */
+}
+html.dark .text-nav-grey {
+  color: #94A3B8; /* custom nav-grey on dark */
+}
+
+/* In light theme, render any "text-white" usage as purple instead of white for better contrast */
+html:not(.dark) [class*="text-white"] {
+  color: rgb(76 29 149); /* purple-900 */
+}
+
+/* Global card background highlight in light mode
+   Any element using translucent white backgrounds becomes a grey card on light theme */
+html:not(.dark) [class*="bg-white/[0.02]"],
+html:not(.dark) [class*="bg-white/10"] {
+  background-color: rgb(241 245 249); /* slate-100 */
+}
+
 /* Selection colors for both themes */
 ::selection {
   @apply bg-cyber-cyan text-black;

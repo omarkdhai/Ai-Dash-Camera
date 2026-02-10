@@ -130,6 +130,14 @@
     "EMAIL": "Email",
     "PHONE": "Phone",
     "MESSAGE": "Enter your message",
+    "SAFETY_SLIDE_1_TITLE": "Proactive road safety",
+    "SAFETY_SLIDE_1_TEXT": "AI detects risky situations in real time, helping prevent accidents before they happen.",
+    "SAFETY_SLIDE_2_TITLE": "Clear incident evidence",
+    "SAFETY_SLIDE_2_TEXT": "Critical events are automatically recorded in high definition, providing reliable evidence when you need it.",
+    "SAFETY_SLIDE_3_TITLE": "Privacy-first protection",
+    "SAFETY_SLIDE_3_TEXT": "Sensitive data is processed securely, so drivers and passengers stay protected without compromising privacy.",
+    "SAFETY_SLIDE_4_TITLE": "24/7 intelligent monitoring",
+    "SAFETY_SLIDE_4_TEXT": "Smart alerts and continuous monitoring keep every vehicle under watch, day and night, in all conditions.",
     "SUBMIT": "Submit"
   },
   "CONTACT": {

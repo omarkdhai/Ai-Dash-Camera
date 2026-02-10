@@ -18,15 +18,18 @@
         {{ 'HOME.HERO_BADGE' | translate }}
       </div>
       
-<h4 class="text-4xl md:text-5xl font-cyber font-extrabold leading-[1.1] tracking-tight text-purple-900 dark:text-white">
-  {{ 'HOME.HERO_TITLE_PREFIX' | translate }} <br>
-  <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">
-    {{ 'HOME.HERO_TITLE' | translate }}
-  </span>
-</h4>
-      <p class="text-slate-600 dark:text-nav-grey text-sm max-w-lg leading-relaxed border-l-2 border-cyber-cyan pl-6">
-       {{ 'HOME.HERO_PARAGRAPH' | translate }}
-      </p>
+      <ng-container *ngFor="let image of carouselImages; let i = index">
+        <div *ngIf="i === currentImageIndex" class="space-y-4">
+          <h4 class="text-4xl md:text-5xl font-cyber font-extrabold leading-[1.1] tracking-tight text-purple-900 dark:text-white slide-text-title">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">
+              {{ image.titleKey | translate }}
+            </span>
+          </h4>
+          <p class="text-slate-600 dark:text-nav-grey text-sm max-w-lg leading-relaxed border-l-2 border-cyber-cyan pl-6 slide-text-body">
+            {{ image.textKey | translate }}
+          </p>
+        </div>
+      </ng-container>
 
       <button routerLink="/contact" class="group relative px-8 py-4 bg-cyber-cyan text-black font-bold font-cyber uppercase tracking-widest rounded-xl shadow-[0_0_30px_rgba(0,255,194,0.3)] hover:scale-105 transition-all">
         {{ 'HOME.REQUEST_INFO' | translate }}
@@ -41,9 +44,11 @@
         <div class="flex transition-transform duration-700 ease-in-out h-[400px]" 
              [style.transform]="'translateX(-' + (currentImageIndex * 100) + '%)'">
           <div class="min-w-full h-full" *ngFor="let image of carouselImages">
-            <img [src]="image.url" [alt]="image.alt" 
-                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
-          </div>
+            <img 
+              [src]="image.url" 
+              [alt]="image.alt" 
+              class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
+           </div>
         </div>
       </div>
 

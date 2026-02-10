@@ -130,6 +130,14 @@
     "EMAIL": "E-mail",
     "PHONE": "Téléphone",
     "MESSAGE": "Votre message",
+    "SAFETY_SLIDE_1_TITLE": "Sécurité routière proactive",
+    "SAFETY_SLIDE_1_TEXT": "L’IA détecte les situations à risque en temps réel et aide à prévenir les accidents avant qu’elles ne surviennent.",
+    "SAFETY_SLIDE_2_TITLE": "Preuve claire des incidents",
+    "SAFETY_SLIDE_2_TEXT": "Les événements critiques sont automatiquement enregistrés en haute définition, fournissant des preuves fiables lorsque vous en avez besoin.",
+    "SAFETY_SLIDE_3_TITLE": "Protection axée sur la confidentialité",
+    "SAFETY_SLIDE_3_TEXT": "Les données sensibles sont traitées de façon sécurisée, afin de protéger conducteurs et passagers sans compromettre leur vie privée.",
+    "SAFETY_SLIDE_4_TITLE": "Surveillance intelligente 24h/24",
+    "SAFETY_SLIDE_4_TEXT": "Des alertes intelligentes et une surveillance continue protègent chaque véhicule, de jour comme de nuit, dans toutes les conditions.",
     "SUBMIT": "Envoyer"
   },
   "CONTACT": {
