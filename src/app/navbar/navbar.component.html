@@ -51,6 +51,10 @@
                 <a routerLink="/public-bus" class="block px-6 py-4 text-[11px] font-bold tracking-[0.2em] uppercase text-slate-600 dark:text-nav-grey hover:bg-cyber-cyan/10 hover:text-cyber-cyan transition-all">
                     {{ 'NAV.PUBLIC_BUS' | translate }}
                 </a>
+
+                <a routerLink="/car-rental" class="block px-6 py-4 text-[11px] font-bold tracking-[0.2em] uppercase text-slate-600 dark:text-nav-grey hover:bg-cyber-cyan/10 hover:text-cyber-cyan transition-all">
+                    {{ 'NAV.RENT_CAR' | translate }}
+                </a>
                 
             </div>
         </div>
@@ -86,12 +90,26 @@
                 </a>
 
                 <a routerLink="/integrator" class="block px-6 py-4 text-[11px] font-bold tracking-[0.2em] uppercase text-slate-600 dark:text-nav-grey hover:bg-cyber-cyan/10 hover:text-cyber-cyan transition-all">
-                    {{ 'NAV.PARTNER' | translate }}
+                    {{ 'NAV.INTEGRATOR' | translate }}
+                </a>
+
+                <a routerLink="/company" class="block px-6 py-4 text-[11px] font-bold tracking-[0.2em] uppercase text-slate-600 dark:text-nav-grey hover:bg-cyber-cyan/10 hover:text-cyber-cyan transition-all">
+                    {{ 'NAV.COMPANY' | translate }}
+                </a>
+
+                <a routerLink="/integrator" class="block px-6 py-4 text-[11px] font-bold tracking-[0.2em] uppercase text-slate-600 dark:text-nav-grey hover:bg-cyber-cyan/10 hover:text-cyber-cyan transition-all">
+                    {{ 'NAV.INSURER' | translate }}
                 </a>
                 
             </div>
         </div>
     </div>
+
+    <a routerLink="/compliance"
+       routerLinkActive="text-slate-900 dark:text-white font-bold"
+       class="text-[13px] tracking-[0.2em] uppercase text-slate-600 dark:text-nav-grey font-medium hover:text-cyber-cyan transition-all duration-300">
+        {{ 'NAV.COMPLIANCE' | translate }}
+    </a>
 </div>
 
     <div class="flex items-center space-x-4">

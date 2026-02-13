@@ -22,6 +22,9 @@ import { OilGasComponent } from './oil-gas/oil-gas.component';
 import { TaxiComponent } from './taxi/taxi.component';
 import { SchoolBusComponent } from './school-bus/school-bus.component';
 import { PublicBusComponent } from './public-bus/public-bus.component';
+import { CarRentalComponent } from './car-rental/car-rental.component';
+import { ComplianceComponent } from './compliance/compliance.component';
+import { CompanyComponent } from './company/company.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { PublicBusComponent } from './public-bus/public-bus.component';
     OilGasComponent,
     TaxiComponent,
     SchoolBusComponent,
-    PublicBusComponent
+    PublicBusComponent,
+    CarRentalComponent,
+    ComplianceComponent,
+    CompanyComponent
   ],
   imports: [
     BrowserModule,

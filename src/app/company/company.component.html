@@ -1,0 +1,149 @@
+<div class="bg-slate-50 dark:bg-[#251c2b] min-h-screen text-slate-900 dark:text-white font-base selection:bg-cyber-cyan selection:text-black pb-32 transition-colors">
+
+  <!-- 1. HERO SECTION -->
+  <header appScrollReveal class="relative pt-48 pb-32 px-6 overflow-hidden">
+    <div class="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-cyber-cyan/10 blur-[200px] rounded-full"></div>
+    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/5 blur-[150px] rounded-full"></div>
+    
+    <div class="max-w-7xl mx-auto relative z-10 text-center">
+      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.4em] text-purple-600 dark:text-cyber-cyan mb-10">
+        {{ 'COMPANY.HERO_BADGE' | translate }}
+      </div>
+      
+      <h1 class="text-5xl md:text-7xl font-cyber font-extrabold uppercase tracking-tighter leading-none mb-10 text-purple-900 dark:text-white">
+        {{ 'COMPANY.HERO_TITLE' | translate }} <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">{{ 'COMPANY.HERO_TITLE_PARTNER' | translate }}</span>
+      </h1>
+      
+      <p class="text-slate-600 dark:text-nav-grey text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-light">
+        {{ 'COMPANY.HERO_SUBTITLE' | translate }}
+      </p>
+
+      <div class="mt-16">
+        <button [routerLink]="['/contact']" fragment="contact-form" 
+                class="px-10 py-5 bg-cyber-cyan text-black font-cyber font-bold uppercase tracking-[0.2em] rounded-2xl shadow-[0_0_40px_rgba(0,255,194,0.4)] hover:scale-105 transition-all">
+          Enquire for Fleet
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. MAIN BENEFITS GRID -->
+  <section appScrollReveal class="py-32 px-6 lg:px-20">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-24">
+        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.6em] mb-4">
+            {{ 'COMPANY.BENEFITS_TITLE' | translate }}
+        </h2>
+        <h3 class="text-4xl md:text-6xl font-cyber font-bold uppercase tracking-tight text-purple-900 dark:text-white">
+            {{ 'COMPANY.BENEFITS_SUBTITLE' | translate }}
+        </h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Accident Reduction -->
+        <div class="p-10 rounded-[32px] bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all group overflow-hidden relative">
+          <div class="absolute -top-10 -right-10 w-24 h-24 bg-cyber-cyan/5 blur-2xl"></div>
+          <div class="w-16 h-16 rounded-2xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan mb-8 group-hover:bg-cyber-cyan group-hover:text-black transition-all">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          </div>
+          <h3 class="text-xl font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">{{ 'COMPANY.BENEFIT_1_TITLE' | translate }}</h3>
+          <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed font-light">{{ 'COMPANY.BENEFIT_1_DESC' | translate }}</p>
+        </div>
+
+        <!-- Video Evidence -->
+        <div class="p-10 rounded-[32px] bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all group overflow-hidden relative">
+          <div class="w-16 h-16 rounded-2xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan mb-8 group-hover:bg-cyber-cyan group-hover:text-black transition-all">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="text-xl font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">{{ 'COMPANY.BENEFIT_2_TITLE' | translate }}</h3>
+          <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed font-light">{{ 'COMPANY.BENEFIT_2_DESC' | translate }}</p>
+        </div>
+
+        <!-- Driver Protection -->
+        <div class="p-10 rounded-[32px] bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all group overflow-hidden relative">
+          <div class="w-16 h-16 rounded-2xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan mb-8 group-hover:bg-cyber-cyan group-hover:text-black transition-all">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-xl font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">{{ 'COMPANY.BENEFIT_3_TITLE' | translate }}</h3>
+          <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed font-light">{{ 'COMPANY.BENEFIT_3_DESC' | translate }}</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. TCO & ROI STRATEGY -->
+  <section appScrollReveal class="py-40 px-6 lg:px-20 bg-white dark:bg-white/[0.01] border-y border-slate-200 dark:border-white/5 relative">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div class="space-y-8">
+        <div class="text-cyber-cyan font-cyber font-black text-[10px] tracking-[0.5em] uppercase italic">Financial Efficiency</div>
+        <h2 class="text-3xl md:text-6xl font-cyber font-bold uppercase tracking-tight text-slate-900 dark:text-white leading-none">
+          Total Cost of <br><span class="text-cyber-cyan">Ownership</span>
+        </h2>
+        <p class="text-slate-600 dark:text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-lg font-light">
+          {{ 'COMPANY.BENEFIT_4_DESC' | translate }} Our dashcam technology reduces operational waste, prevents vehicle downtime, and extends your asset lifecycle.
+        </p>
+      </div>
+
+      <div class="relative group">
+        <div class="absolute -inset-4 bg-cyber-cyan/10 blur-2xl group-hover:bg-cyber-cyan/20 transition-all duration-700"></div>
+        <div class="relative p-12 rounded-[40px] border border-slate-200 dark:border-white/10 bg-[#251c2b]/60 shadow-2xl">
+          <div class="space-y-10">
+            <div class="flex justify-between items-end">
+                <div>
+                    <div class="text-[9px] font-cyber text-nav-grey uppercase tracking-[0.3em] mb-2">Fleet Management Status</div>
+                    <div class="text-3xl font-cyber font-black text-white">TCO REDUCED</div>
+                </div>
+                <div class="text-cyber-cyan animate-pulse font-black text-xl">↓</div>
+            </div>
+            
+            <div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+                <div class="h-full bg-cyber-cyan w-[85%] shadow-[0_0_15px_#00FFC2]"></div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
+                    <div class="text-cyber-cyan font-bold text-lg mb-1">ACCIDENT FREE</div>
+                    <p class="text-[8px] uppercase tracking-widest text-nav-grey">Proactive Target</p>
+                </div>
+                <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
+                    <div class="text-white font-bold text-lg mb-1">ROI: 6 MO</div>
+                    <p class="text-[8px] uppercase tracking-widest text-nav-grey">Investment Recovery</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. INSURANCE REBATES (Final Section) -->
+  <section appScrollReveal class="py-40 px-6 lg:px-20">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
+        <div class="lg:w-1/2 relative order-2 lg:order-1">
+            <div class="absolute -inset-10 bg-cyber-cyan/5 blur-[100px] rounded-full"></div>
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1000" 
+                 class="rounded-3xl border border-white/10 shadow-2xl h-[400px] w-full object-cover order-2 lg:order-1 grayscale hover:grayscale-0 transition duration-700" alt="Insurance Compliance">
+        </div>
+
+        <div class="lg:w-1/2 space-y-10 order-1 lg:order-2">
+            <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-tight text-slate-900 dark:text-white">
+                Insurance <span class="text-cyber-cyan italic">Rebates</span>
+            </h2>
+            <p class="text-slate-600 dark:text-nav-grey text-lg leading-relaxed">
+                By providing provable safety data, our final clients often unlock substantial discounts on fleet insurance premiums. 
+                Our platform generates compliance-ready logs for seamless broker interaction.
+            </p>
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 rounded-xl bg-cyber-cyan/10 border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <span class="text-xs font-cyber font-bold uppercase tracking-[0.2em]">Compliance Document Generation</span>
+            </div>
+        </div>
+    </div>
+  </section>
+
+</div>

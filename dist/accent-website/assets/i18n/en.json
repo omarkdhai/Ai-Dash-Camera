@@ -11,7 +11,10 @@
     "PRODUCTS": "Products",
     "ABOUT_US": "About Us",
     "CLIENT": "Client",
-    "RESELLER": "Reseller",
+    "RESELLER": "Revendeur",
+    "COMPANY": "Entreprise",
+    "INSURER": "Assureur",
+    "INTEGRATOR": "Intégrateur",
     "PARTNER": "Partner",
     "CONTACT": "Contact"
   },

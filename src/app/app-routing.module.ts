@@ -13,6 +13,9 @@ import { OilGasComponent } from './oil-gas/oil-gas.component';
 import { TaxiComponent } from './taxi/taxi.component';
 import { SchoolBusComponent } from './school-bus/school-bus.component';
 import { PublicBusComponent } from './public-bus/public-bus.component';
+import { CarRentalComponent } from './car-rental/car-rental.component';
+import { ComplianceComponent } from './compliance/compliance.component';
+import { CompanyComponent } from './company/company.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -28,6 +31,9 @@ const routes: Routes = [
   { path: 'taxi', component: TaxiComponent},
   { path: 'school-bus', component: SchoolBusComponent},
   { path: 'public-bus', component: PublicBusComponent},
+  { path: 'car-rental', component: CarRentalComponent},
+  { path: 'compliance', component: ComplianceComponent},
+  { path: 'company', component: CompanyComponent},
 ];
 
 @NgModule({
