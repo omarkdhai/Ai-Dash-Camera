@@ -16,6 +16,7 @@ import { PublicBusComponent } from './public-bus/public-bus.component';
 import { CarRentalComponent } from './car-rental/car-rental.component';
 import { ComplianceComponent } from './compliance/compliance.component';
 import { CompanyComponent } from './company/company.component';
+import { InsurerComponent } from './insurer/insurer.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'car-rental', component: CarRentalComponent},
   { path: 'compliance', component: ComplianceComponent},
   { path: 'company', component: CompanyComponent},
+  { path: 'insurer', component: InsurerComponent},
 ];
 
 @NgModule({

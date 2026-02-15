@@ -10,6 +10,11 @@ export class HomeComponent implements OnInit, OnDestroy {
   currentImageIndex = 0;
   private intervalId: any;
 
+  displayCount: number = 0;
+  private targetCount: number = 1;
+  private counterInterval: any;
+  private infiniteInterval: any;
+
   carouselImages = [
     {
       url: 'assets/dash-camera9.png',
@@ -53,11 +58,39 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.intervalId = setInterval(() => {
       this.currentImageIndex = (this.currentImageIndex + 1) % this.carouselImages.length;
     }, 3000);
+
+    this.startRollingNumbers();
+  }
+
+  startRollingNumbers() {
+    const duration = 2000;
+    const steps = 60; 
+    const increment = this.targetCount / steps;
+    let current = 0;
+
+    this.counterInterval = setInterval(() => {
+      current += increment;
+      if (current >= this.targetCount) {
+        this.displayCount = this.targetCount;
+        clearInterval(this.counterInterval);
+        this.startInfiniteGrowth();
+      } else {
+        this.displayCount = Math.floor(current);
+      }
+    }, duration / steps);
+  }
+
+  startInfiniteGrowth() {
+    this.infiniteInterval = setInterval(() => {
+      this.displayCount++;
+    }, 80); // Adjust speed here
   }
 
   ngOnDestroy() {
     if (this.intervalId) {
       clearInterval(this.intervalId);
     }
+    if (this.counterInterval) clearInterval(this.counterInterval);
+    if (this.infiniteInterval) clearInterval(this.infiniteInterval);
   }
 }

@@ -25,6 +25,7 @@ import { PublicBusComponent } from './public-bus/public-bus.component';
 import { CarRentalComponent } from './car-rental/car-rental.component';
 import { ComplianceComponent } from './compliance/compliance.component';
 import { CompanyComponent } from './company/company.component';
+import { InsurerComponent } from './insurer/insurer.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { CompanyComponent } from './company/company.component';
     PublicBusComponent,
     CarRentalComponent,
     ComplianceComponent,
-    CompanyComponent
+    CompanyComponent,
+    InsurerComponent
   ],
   imports: [
     BrowserModule,

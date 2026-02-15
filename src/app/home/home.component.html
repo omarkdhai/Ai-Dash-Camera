@@ -144,6 +144,49 @@
   </div>
 </section>
 
+<!-- METRICS SECTION (moved from Home) -->
+  <section appScrollReveal class="py-24 px-6 relative border-y border-slate-200 dark:border-white/5 bg-slate-100/50 dark:bg-white/[0.01] transition-colors">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 space-y-2">
+        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.5em]">
+          {{ 'HOME.METRICS_INTRO' | translate }}
+        </h2>
+        <p class="text-4xl font-cyber font-bold uppercase tracking-widest text-slate-900 dark:text-white">
+          {{ 'HOME.SPEAK_VOLUMES' | translate }}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
+          <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+60</div>
+          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
+            {{ 'HOME.SUPERVISED_IOT' | translate }}
+          </p>
+        </div>
+        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
+          <div class="text-5xl font-cyber font-black text-slate-900 dark:text-white mb-2">+35</div>
+          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
+            {{ 'HOME.SOLUTIONS_IOT' | translate }}
+          </p>
+        </div>
+        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none group">
+            <div class="text-5xl font-cyber font-black text-slate-900 dark:text-white mb-2 tabular-nums">
+                +{{ displayCount }}
+            </div>
+            <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
+                {{ 'HOME.CONNECTED_DEVICES' | translate }}
+            </p>
+        </div>
+        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
+          <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+15</div>
+          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
+            {{ 'HOME.COUNTRIES_TOUCHED' | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- AI DASHCAM SECTOR APPLICATIONS -->
   <section appScrollReveal class="py-32 px-6 lg:px-20 bg-white dark:bg-[#251c2b] relative overflow-hidden transition-colors">
     
@@ -225,6 +268,42 @@
       </div>
     </div>
 </section>
+
+<section appScrollReveal class="py-32 px-6 bg-slate-50 dark:bg-[#251c2b] transition-colors">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-center text-4xl font-cyber font-bold mb-20 uppercase tracking-[0.2em] text-purple-900 dark:text-white">{{ 'ABOUT_US.OUR_VALUES' | translate }} <span class="text-cyber-cyan">{{ 'HOME.VALUES' | translate }}</span></h2>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Discovery -->
+        <div class="group h-32 flex flex-col items-center justify-center border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative text-slate-700 dark:text-white">
+          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10 transition-transform group-hover:scale-110">{{ 'HOME.DISCOVERY' | translate }}</span>
+          <div class="absolute inset-0 bg-gradient-to-t from-cyber-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+
+        <!-- Responsibility -->
+        <div class="group h-32 flex flex-col items-center justify-center border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative text-slate-700 dark:text-white">
+          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">{{ 'HOME.RESPONSIBILITY' | translate }}</span>
+          <div class="absolute inset-0 bg-gradient-to-t from-cyber-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+
+        <!-- Creativity -->
+        <div class="group h-32 flex flex-col items-center justify-center border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative text-slate-700 dark:text-white">
+          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">{{ 'HOME.CREATIVITY' | translate }}</span>
+          <div class="absolute inset-0 bg-gradient-to-t from-cyber-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+
+        <!-- Teamwork -->
+        <div class="group h-32 flex flex-col items-center justify-center border border-slate-200 dark:border-white/10 rounded-2xl hover:bg-cyber-cyan hover:text-black transition-all cursor-default overflow-hidden relative text-slate-700 dark:text-white">
+          <span class="text-sm font-cyber font-bold uppercase tracking-[0.2em] z-10">{{ 'HOME.TEAMWORK' | translate }}</span>
+          <div class="absolute inset-0 bg-gradient-to-t from-cyber-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+      </div>
+      
+      <p class="mt-16 text-center text-slate-600 dark:text-nav-grey max-w-4xl mx-auto leading-relaxed italic">
+        {{ 'ABOUT_US.VALUES_QUOTE' | translate }}
+      </p>
+    </div>
+  </section>
 
   <!-- CONTACT FORM -->
   <section appScrollReveal class="py-32 px-6 relative bg-slate-50 dark:bg-[#251c2b] transition-colors">
