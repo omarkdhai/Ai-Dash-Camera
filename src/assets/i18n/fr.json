@@ -20,16 +20,19 @@
     "COMPLIANCE": "Conformité",
     "CONTACT": "Contact"
   },
+
   "LANG": {
     "FR": "FR",
     "EN": "EN"
   },
+
   "THEME": {
     "LIGHT_MODE": "Mode clair",
     "DARK_MODE": "Mode sombre",
     "SWITCH_TO_LIGHT": "Passer en mode clair",
     "SWITCH_TO_DARK": "Passer en mode sombre"
   },
+
   "FOOTER": {
     "TAGLINE": "Nous vous apportons l'avenir du numérique avec des solutions innovantes en IA et IoT qui orientent l'économie mondiale vers un horizon plus sûr et plus durable.",
     "THINK_SMART": "Pensez malin, Agissez bien",
@@ -48,6 +51,7 @@
     "TERMS_OF_SERVICE": "Conditions d'utilisation",
     "ALL_RIGHTS_RESERVED": "Tous droits réservés."
   },
+
   "HOME": {
     "HERO_BADGE": "IA DE POINTE POUR UNE MOBILITÉ INTELLIGENTE ET SÛRE",
     "HERO_TITLE": "Sécurité routière",
@@ -147,6 +151,7 @@
     "SAFETY_SLIDE_4_TEXT": "Protection et gestion des données personnelles conformes au RGPD dès la conception du système, garantissant la confidentialité et la sécurité des utilisateurs.",
     "SUBMIT": "Envoyer"
   },
+
   "CONTACT": {
     "NEED_HELP": "Besoin de notre",
     "HELP": "aide ?",
@@ -157,6 +162,7 @@
     "MESSAGE": "Votre message",
     "SUBMIT": "Envoyer"
   },
+
   "ABOUT_US": {
     "WHO_WE_ARE": "Qui sommes-nous",
     "KNOW_ABOUT_US": "À propos de nous",
@@ -184,12 +190,14 @@
     "MESSAGE": "Votre message",
     "SUBMIT": "Envoyer"
   },
+
   "SERVICES": {
     "OUR_SOLUTIONS": "Nos solutions",
     "INTEGRATED_SOLUTIONS": "Nos solutions intégrées pour",
     "DIVERSE_APPLICATIONS": "des applications diversifiées",
     "INTRO": "En s'appuyant sur une expertise dans plusieurs domaines, Accent a conçu des solutions qui s'assemblent dans sa riche histoire. Ces composants s'intègrent de manière fluide dans diverses applications grâce à notre flexibilité."
   },
+
   "SOLUTIONS": {
     "AI_POWERED": "Solutions propulsées par l'IA",
     "EXPLORE": "Explorez nos",
@@ -210,6 +218,7 @@
     "TAXI_DESC": "La surveillance double objectif protège conducteurs et passagers. L'analyse cabine haute définition enregistre les interactions, fournissant des preuves cruciales et des normes professionnelles.",
     "DURABILITY_RATING": "Indice de durabilité"
   },
+  
   "PRODUCTS": {
     "HERO_DRIVE": "Conduisez",
     "HERO_SMARTER": "Plus intelligemment.",

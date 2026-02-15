@@ -15,7 +15,7 @@
         {{ 'PRODUCTS.HERO_DRIVE' | translate }} <span class="text-cyber-cyan italic">{{ 'PRODUCTS.HERO_SAFER' | translate }}</span>
       </h1>
 
-      <p class="text-nav-grey text-lg md:text-sm leading-relaxed font-light uppercase tracking-widest border-l-2 border-cyber-cyan pl-6">
+      <p class="text-nav-grey text-lg md:text-sm leading-relaxed font-light tracking-widest border-l-2 border-cyber-cyan pl-6">
         {{ 'PRODUCTS.HERO_SUBTITLE_LINE1' | translate }} <br class="hidden md:block">
         {{ 'PRODUCTS.HERO_SUBTITLE_LINE2' | translate }}
       </p>
@@ -253,6 +253,129 @@
       </div>
     </div>
   </section>
+ 
+<!-- SAFETY IMPACT CURVE SECTION -->
+<section appScrollReveal class="py-40 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] relative overflow-hidden transition-colors">
+  
+  <!-- Subtle Grid Background -->
+  <div class="absolute inset-0 opacity-[0.03] pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    
+    <div class="text-center mb-24 space-y-4">
+        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.6em] font-black">
+          {{ 'PRODUCTS.PERF_ANALYTICS_BADGE' | translate }}
+        </h2>
+        <h3 class="text-4xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter text-purple-900 dark:text-white">
+            {{ 'PRODUCTS.PERF_ANALYTICS_TITLE' | translate }}
+        </h3>
+        <p class="text-slate-600 dark:text-nav-grey text-sm md:text-base max-w-2xl mx-auto font-light">
+          {{ 'PRODUCTS.PERF_ANALYTICS_TEXT' | translate }}
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Left side: Narrative Stages -->
+      <div class="lg:col-span-4 space-y-12 order-2 lg:order-1">
+        
+        <!-- Stage 1 -->
+        <div class="group pl-8 border-l border-slate-300 dark:border-white/10 hover:border-red-500 transition-colors">
+            <h4 class="text-red-500 font-cyber font-bold uppercase text-sm mb-2 tracking-widest">
+              {{ 'PRODUCTS.PERF_PHASE1_TITLE' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
+              {{ 'PRODUCTS.PERF_PHASE1_TEXT' | translate }}
+            </p>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="group pl-8 border-l border-slate-300 dark:border-white/10 hover:border-cyber-cyan transition-colors">
+            <h4 class="text-cyber-cyan font-cyber font-bold uppercase text-sm mb-2 tracking-widest">
+              {{ 'PRODUCTS.PERF_PHASE2_TITLE' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
+              {{ 'PRODUCTS.PERF_PHASE2_TEXT' | translate }}
+            </p>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="group pl-8 border-l border-slate-300 dark:border-white/10 hover:border-green-300 transition-colors">
+            <h4 class="text-green-300 font-cyber font-bold uppercase text-sm mb-2 tracking-widest italic">
+              {{ 'PRODUCTS.PERF_PHASE3_TITLE' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
+              {{ 'PRODUCTS.PERF_PHASE3_TEXT' | translate }}
+            </p>
+        </div>
+
+      </div>
+
+      <!-- Right side: The Animated Curve Chart -->
+      <div class="lg:col-span-8 relative order-1 lg:order-2">
+        <div class="relative bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 p-8 md:p-12 rounded-[40px] overflow-hidden transition-colors">
+          
+          <!-- Chart Labels -->
+          <div class="absolute top-8 left-8 text-[11px] font-cyber text-slate-400 dark:text-white/20 uppercase tracking-[0.4em]">Safety_Performance_Index</div>
+          <div class="absolute bottom-8 right-8 text-[11px] font-cyber text-slate-400 dark:text-white/20 uppercase tracking-[0.4em]">Technology_Adoption_Timeline</div>
+
+          <!-- The SVG Curve -->
+          <svg viewBox="0 0 800 400" class="w-full h-auto drop-shadow-[0_0_25px_rgba(0,255,194,0.2)]">
+            <!-- Grid Lines -->
+            <line x1="0" y1="350" x2="800" y2="350" class="svg-grid-line" stroke-width="1" />
+            <line x1="0" y1="250" x2="800" y2="250" class="svg-grid-line" stroke-width="1" />
+            <line x1="0" y1="150" x2="800" y2="150" class="svg-grid-line" stroke-width="1" />
+            
+            <!-- The Impact Curve Path -->
+            <path d="M 50 350 Q 200 350, 400 200 T 750 50" 
+                  fill="none" 
+                  stroke="#00FFC2" 
+                  stroke-width="4" 
+                  class="safety-path" />
+            
+            <!-- Indicator Points (Circles) -->
+            <circle cx="50" cy="350" r="6" fill="#ef4444" class="glow-point" /> <!-- Reactive -->
+            <circle cx="400" cy="200" r="6" class="svg-circle-adas glow-point" /> <!-- ADAS -->
+            <circle cx="750" cy="50" r="8" fill="#00FFC2" class="glow-point animate-pulse" /> <!-- AI Total -->
+
+            <!-- Floating Data Badges -->
+            <text x="60" y="330" class="svg-text-label uppercase tracking-widest" font-size="10" font-family="Syne">
+              {{ 'PRODUCTS.PERF_BADGE_HIGH_RISK' | translate }}
+            </text>
+            <text x="410" y="180" class="svg-text-main uppercase tracking-widest" font-size="10" font-family="Syne">
+              {{ 'PRODUCTS.PERF_BADGE_ADAS_SYNC' | translate }}
+            </text>
+            <text x="660" y="40" fill="#00FFC2" font-size="12" font-family="Syne" font-weight="900" class="uppercase tracking-widest">
+              {{ 'PRODUCTS.PERF_BADGE_MAX_SAFETY' | translate }}
+            </text>
+          </svg>
+
+          <!-- Bottom Summary Bar -->
+          <div class="mt-12 flex justify-between items-center border-t border-slate-200 dark:border-white/5 pt-8">
+            <div class="text-left">
+                <div class="text-slate-900 dark:text-white font-cyber font-bold text-xl uppercase tracking-tighter">
+                  {{ 'PRODUCTS.PERF_SUMMARY_PASSENGER_TITLE' | translate }}
+                </div>
+                <div class="text-[11px] text-cyber-cyan uppercase tracking-widest">
+                  {{ 'PRODUCTS.PERF_SUMMARY_PASSENGER_TEXT' | translate }}
+                </div>
+            </div>
+            <div class="h-10 w-[2px] bg-slate-300 dark:bg-white/10 hidden md:block"></div>
+            <div class="text-right">
+                <div class="text-purple-900 dark:text-white font-cyber font-bold text-xl uppercase tracking-tighter">
+                  {{ 'PRODUCTS.PERF_SUMMARY_DRIVER_TITLE' | translate }}
+                </div>
+                <div class="text-[11px] text-cyber-cyan uppercase tracking-widest">
+                  {{ 'PRODUCTS.PERF_SUMMARY_DRIVER_TEXT' | translate }}
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <section appScrollReveal class="py-32 px-6 lg:px-20 space-y-64">
     <div class="max-w-7xl mx-auto">
@@ -442,129 +565,6 @@
         <p class="text-slate-700 dark:text-white/70 text-sm leading-relaxed font-light">
           {{ 'PRODUCTS.TECH_PACKAGE_TEXT' | translate }}
         </p>
-    </div>
-  </div>
-</section>
-
-<!-- SAFETY IMPACT CURVE SECTION -->
-<section appScrollReveal class="py-40 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] relative overflow-hidden transition-colors">
-  
-  <!-- Subtle Grid Background -->
-  <div class="absolute inset-0 opacity-[0.03] pointer-events-none"></div>
-
-  <div class="max-w-7xl mx-auto relative z-10">
-    
-    <div class="text-center mb-24 space-y-4">
-        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.6em] font-black">
-          {{ 'PRODUCTS.PERF_ANALYTICS_BADGE' | translate }}
-        </h2>
-        <h3 class="text-4xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter text-purple-900 dark:text-white">
-            {{ 'PRODUCTS.PERF_ANALYTICS_TITLE' | translate }}
-        </h3>
-        <p class="text-slate-600 dark:text-nav-grey text-sm md:text-base max-w-2xl mx-auto font-light">
-          {{ 'PRODUCTS.PERF_ANALYTICS_TEXT' | translate }}
-        </p>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-      
-      <!-- Left side: Narrative Stages -->
-      <div class="lg:col-span-4 space-y-12 order-2 lg:order-1">
-        
-        <!-- Stage 1 -->
-        <div class="group pl-8 border-l border-slate-300 dark:border-white/10 hover:border-red-500 transition-colors">
-            <h4 class="text-red-500 font-cyber font-bold uppercase text-sm mb-2 tracking-widest">
-              {{ 'PRODUCTS.PERF_PHASE1_TITLE' | translate }}
-            </h4>
-            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
-              {{ 'PRODUCTS.PERF_PHASE1_TEXT' | translate }}
-            </p>
-        </div>
-
-        <!-- Stage 2 -->
-        <div class="group pl-8 border-l border-slate-300 dark:border-white/10 hover:border-cyber-cyan transition-colors">
-            <h4 class="text-cyber-cyan font-cyber font-bold uppercase text-sm mb-2 tracking-widest">
-              {{ 'PRODUCTS.PERF_PHASE2_TITLE' | translate }}
-            </h4>
-            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
-              {{ 'PRODUCTS.PERF_PHASE2_TEXT' | translate }}
-            </p>
-        </div>
-
-        <!-- Stage 3 -->
-        <div class="group pl-8 border-l border-slate-300 dark:border-white/10 hover:border-green-300 transition-colors">
-            <h4 class="text-green-300 font-cyber font-bold uppercase text-sm mb-2 tracking-widest italic">
-              {{ 'PRODUCTS.PERF_PHASE3_TITLE' | translate }}
-            </h4>
-            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
-              {{ 'PRODUCTS.PERF_PHASE3_TEXT' | translate }}
-            </p>
-        </div>
-
-      </div>
-
-      <!-- Right side: The Animated Curve Chart -->
-      <div class="lg:col-span-8 relative order-1 lg:order-2">
-        <div class="relative bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 p-8 md:p-12 rounded-[40px] overflow-hidden transition-colors">
-          
-          <!-- Chart Labels -->
-          <div class="absolute top-8 left-8 text-[11px] font-cyber text-slate-400 dark:text-white/20 uppercase tracking-[0.4em]">Safety_Performance_Index</div>
-          <div class="absolute bottom-8 right-8 text-[11px] font-cyber text-slate-400 dark:text-white/20 uppercase tracking-[0.4em]">Technology_Adoption_Timeline</div>
-
-          <!-- The SVG Curve -->
-          <svg viewBox="0 0 800 400" class="w-full h-auto drop-shadow-[0_0_25px_rgba(0,255,194,0.2)]">
-            <!-- Grid Lines -->
-            <line x1="0" y1="350" x2="800" y2="350" class="svg-grid-line" stroke-width="1" />
-            <line x1="0" y1="250" x2="800" y2="250" class="svg-grid-line" stroke-width="1" />
-            <line x1="0" y1="150" x2="800" y2="150" class="svg-grid-line" stroke-width="1" />
-            
-            <!-- The Impact Curve Path -->
-            <path d="M 50 350 Q 200 350, 400 200 T 750 50" 
-                  fill="none" 
-                  stroke="#00FFC2" 
-                  stroke-width="4" 
-                  class="safety-path" />
-            
-            <!-- Indicator Points (Circles) -->
-            <circle cx="50" cy="350" r="6" fill="#ef4444" class="glow-point" /> <!-- Reactive -->
-            <circle cx="400" cy="200" r="6" class="svg-circle-adas glow-point" /> <!-- ADAS -->
-            <circle cx="750" cy="50" r="8" fill="#00FFC2" class="glow-point animate-pulse" /> <!-- AI Total -->
-
-            <!-- Floating Data Badges -->
-            <text x="60" y="330" class="svg-text-label uppercase tracking-widest" font-size="10" font-family="Syne">
-              {{ 'PRODUCTS.PERF_BADGE_HIGH_RISK' | translate }}
-            </text>
-            <text x="410" y="180" class="svg-text-main uppercase tracking-widest" font-size="10" font-family="Syne">
-              {{ 'PRODUCTS.PERF_BADGE_ADAS_SYNC' | translate }}
-            </text>
-            <text x="660" y="40" fill="#00FFC2" font-size="12" font-family="Syne" font-weight="900" class="uppercase tracking-widest">
-              {{ 'PRODUCTS.PERF_BADGE_MAX_SAFETY' | translate }}
-            </text>
-          </svg>
-
-          <!-- Bottom Summary Bar -->
-          <div class="mt-12 flex justify-between items-center border-t border-slate-200 dark:border-white/5 pt-8">
-            <div class="text-left">
-                <div class="text-slate-900 dark:text-white font-cyber font-bold text-xl uppercase tracking-tighter">
-                  {{ 'PRODUCTS.PERF_SUMMARY_PASSENGER_TITLE' | translate }}
-                </div>
-                <div class="text-[11px] text-cyber-cyan uppercase tracking-widest">
-                  {{ 'PRODUCTS.PERF_SUMMARY_PASSENGER_TEXT' | translate }}
-                </div>
-            </div>
-            <div class="h-10 w-[2px] bg-slate-300 dark:bg-white/10 hidden md:block"></div>
-            <div class="text-right">
-                <div class="text-purple-900 dark:text-white font-cyber font-bold text-xl uppercase tracking-tighter">
-                  {{ 'PRODUCTS.PERF_SUMMARY_DRIVER_TITLE' | translate }}
-                </div>
-                <div class="text-[11px] text-cyber-cyan uppercase tracking-widest">
-                  {{ 'PRODUCTS.PERF_SUMMARY_DRIVER_TEXT' | translate }}
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>

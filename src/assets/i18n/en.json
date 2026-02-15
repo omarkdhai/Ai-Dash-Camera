@@ -30,6 +30,7 @@
     "SWITCH_TO_LIGHT": "Switch to light mode",
     "SWITCH_TO_DARK": "Switch to dark mode"
   },
+  
   "FOOTER": {
     "TAGLINE": "We bring you the future of computing with innovative AI and IoT solutions that drive the global economy towards a safer, more sustainable horizon.",
     "THINK_SMART": "Think Smart, Do Right",
@@ -48,6 +49,7 @@
     "TERMS_OF_SERVICE": "Terms of Service",
     "ALL_RIGHTS_RESERVED": "All Rights Reserved."
   },
+
   "HOME": {
     "HERO_BADGE": "EDGE AI FOR SMART & SAFE MOBILITY",
     "HERO_TITLE": "Road Safety",
@@ -147,6 +149,7 @@
     "SAFETY_SLIDE_4_TEXT": "Personal data protection and management compliant with GDPR by design, ensuring user privacy and data security.",
     "SUBMIT": "Submit"
   },
+
   "CONTACT": {
     "NEED_HELP": "Need Our",
     "HELP": "Help?",
@@ -157,6 +160,7 @@
     "MESSAGE": "Enter your message",
     "SUBMIT": "Submit"
   },
+
   "ABOUT_US": {
     "WHO_WE_ARE": "Who We Are",
     "KNOW_ABOUT_US": "About Us",
@@ -184,12 +188,14 @@
     "MESSAGE": "Enter your message",
     "SUBMIT": "Submit"
   },
+
   "SERVICES": {
     "OUR_SOLUTIONS": "Our Solutions",
     "INTEGRATED_SOLUTIONS": "Our Integrated Solutions for",
     "DIVERSE_APPLICATIONS": "Diverse Applications",
     "INTRO": "Drawing upon expertise across multiple domains, Accent has crafted solutions that piece together its rich history. These components seamlessly integrate into various applications through our flexibility."
   },
+
   "SOLUTIONS": {
     "AI_POWERED": "AI Powered Solutions",
     "EXPLORE": "Explore our",
@@ -210,6 +216,7 @@
     "TAXI_DESC": "Dual-lens monitoring protects drivers and passengers. High-definition cabin analysis records interactions, providing crucial evidence and professional standards.",
     "DURABILITY_RATING": "Durability Rating"
   },
+
   "PRODUCTS": {
     "HERO_DRIVE": "Drive",
     "HERO_SMARTER": "Smarter.",
@@ -324,7 +331,9 @@
     "ROI_TITLE_LINE2": "Six to Nine Months",
     "ROI_TEXT": "Do you want full visibility into critical events, enhanced safety for your drivers and fleet, while reducing the cost and frequency of insurance claims? Discover how the MF2 AI Dash Cam effectively protects your vehicles and optimizes risk management."
   },
+
   "OFFER": {},
+
   "PARTNER": {
     "HERO_BADGE": "Integration Ecosystem",
     "HERO_TITLE": "Become our",
@@ -352,6 +361,7 @@
     "CTA_TITLE_2": "our partner",
     "GET_STARTED": "Get Started"
   },
+
   "INSURER": {
     "HERO_BADGE": "integration ecosystem",
     "HERO_TITLE": "Transforming risk",
@@ -389,11 +399,13 @@
     "CTA_SUBTITLE": "Risk Mastery?",
     "CTA_BUTTON": "Become an Insurance Partner"
   },
+
   "LOGISTICS_PAGE": {},
   "OIL_GAS_PAGE": {},
   "TAXI_PAGE": {},
   "SCHOOL_BUS_PAGE": {},
   "PUBLIC_BUS_PAGE": {},
+
   "COMPANY": {
   "HERO_BADGE": "Enterprise Solutions",
   "HERO_TITLE": "Fleet & Enterprise",

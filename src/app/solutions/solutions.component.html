@@ -2,223 +2,161 @@
 
   <!-- 1. HEADER -->
   <header appScrollReveal class="relative pt-48 pb-32 px-6 overflow-hidden">
-    <div class="absolute top-[-20%] right-[-10%] w-[800px] h-[800px] bg-cyber-cyan/10 blur-[200px] rounded-full"></div>
+    <div class="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-blue-500/10 blur-[200px] rounded-full"></div>
+    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyber-cyan/5 blur-[150px] rounded-full"></div>
     
-    <div class="max-w-7xl mx-auto relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        
-        <!-- Left: Title & Description -->
-        <div class="text-center lg:text-left space-y-8">
-          <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.4em] text-purple-600 dark:text-cyber-cyan mb-10">
-            AI Powered Solutions
-          </div>
-          
-          <h1 class="text-5xl md:text-7xl font-cyber font-extrabold uppercase tracking-tighter leading-none mb-10 text-purple-900 dark:text-white">
-            Explore our <br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">Solutions</span>
-          </h1>
-          
-          <p class="text-nav-grey text-lg md:text-xl max-w-3xl mx-auto lg:mx-0 leading-relaxed font-light uppercase tracking-widest italic">
-            Tailored AI Monitoring for every <br class="hidden md:block"> transport application.
-          </p>
-        </div>
-
-        <!-- Right: Navigation Cards (Stair Alignment) -->
-        <div class="mt-6 lg:mt-2 grid grid-cols-1 gap-4">
-          <!-- Logistics -->
-          <div [routerLink]="['/logistics']" class="solution-hero-card p-4 lg:ml-0 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3 cursor-pointer hover:border-cyber-cyan/50 transition-all">
-            <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                      d="M9 12.75l2 2 4-4.5M5 6.5h14a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H5A1.5 1.5 0 013.5 17V8A1.5 1.5 0 015 6.5z"/>
-              </svg>
-            </div>
-            <div>
-              <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.2em] mb-1 text-purple-900 dark:text-white">{{ 'HOME.LOGISTICS' | translate }}</h4>
-              <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'HOME.LOGISTICS_DESC' | translate }}</p>
-            </div>
-          </div>
-
-          <!-- Oil & Gas -->
-          <div [routerLink]="['/oil-gas']" class="solution-hero-card p-4 lg:ml-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3 cursor-pointer hover:border-cyber-cyan/50 transition-all">
-            <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                      d="M9 12.75l2 2 4-4.5M5 6.5h14a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H5A1.5 1.5 0 013.5 17V8A1.5 1.5 0 015 6.5z"/>
-              </svg>
-            </div>
-            <div>
-              <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.2em] mb-1 text-purple-900 dark:text-white">{{ 'HOME.OIL_GAS' | translate }}</h4>
-              <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'HOME.OIL_GAS_DESC' | translate }}</p>
-            </div>
-          </div>
-
-          <!-- Taxi -->
-          <div [routerLink]="['/taxi']" class="solution-hero-card p-4 lg:ml-12 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3 cursor-pointer hover:border-cyber-cyan/50 transition-all">
-            <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                      d="M9 12.75l2 2 4-4.5M5 6.5h14a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H5A1.5 1.5 0 013.5 17V8A1.5 1.5 0 015 6.5z"/>
-              </svg>
-            </div>
-            <div>
-              <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.2em] mb-1 text-purple-900 dark:text-white">{{ 'HOME.TAXI' | translate }}</h4>
-              <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'HOME.TAXI_DESC' | translate }}</p>
-            </div>
-          </div>
-
-          <!-- School Bus -->
-          <div [routerLink]="['/school-bus']" class="solution-hero-card p-4 lg:ml-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3 cursor-pointer hover:border-cyber-cyan/50 transition-all">
-            <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                      d="M9 12.75l2 2 4-4.5M5 6.5h14a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H5A1.5 1.5 0 013.5 17V8A1.5 1.5 0 015 6.5z"/>
-              </svg>
-            </div>
-            <div>
-              <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.2em] mb-1 text-purple-900 dark:text-white">{{ 'HOME.SCHOOL_BUS' | translate }}</h4>
-              <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'HOME.SCHOOL_BUS_DESC' | translate }}</p>
-            </div>
-          </div>
-
-          <!-- Public Bus -->
-          <div [routerLink]="['/public-bus']" class="solution-hero-card p-4 lg:ml-0 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3 cursor-pointer hover:border-cyber-cyan/50 transition-all">
-            <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                      d="M9 12.75l2 2 4-4.5M5 6.5h14a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H5A1.5 1.5 0 013.5 17V8A1.5 1.5 0 015 6.5z"/>
-              </svg>
-            </div>
-            <div>
-              <h4 class="text-[11px] font-cyber font-bold uppercase tracking-[0.2em] mb-1 text-purple-900 dark:text-white">{{ 'HOME.PUBLIC_BUS' | translate }}</h4>
-              <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'HOME.PUBLIC_BUS_DESC' | translate }}</p>
-            </div>
-          </div>
-        </div>
-
+    <div class="max-w-7xl mx-auto relative z-10 text-center">
+      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.4em] text-purple-600 dark:text-cyber-cyan mb-10">
+        AI Powered Solutions
       </div>
+      
+      <h1 class="text-5xl md:text-7xl font-cyber font-extrabold uppercase tracking-tighter leading-none mb-10 text-purple-900 dark:text-white">
+        Explore our <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">Solutions</span>
+      </h1>
+      
+      <p class="text-nav-grey text-lg md:text-xl max-w-4xl mx-auto leading-relaxed font-light uppercase tracking-widest italic">
+        Tailored AI Monitoring for every transport application.
+      </p>
     </div>
   </header>
 
-  <!-- 2. SECTOR DETAILS -->
-  <div class="bg-slate-50 dark:bg-[#251c2b] min-h-screen text-slate-900 dark:text-white font-base selection:bg-cyber-cyan pb-32 transition-colors">
-
-  
-
+  <!-- 2. SECTOR APPLICATIONS DEEP DIVE -->
   <div class="max-w-7xl mx-auto px-6 space-y-64 mt-20">
 
-    <!-- SECTOR 01: LOGISTICS -->
+    <!-- SECTOR 01: LOGISTICS (Text Left, Image Right) -->
     <section appScrollReveal id="logistics" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="space-y-8">
-        <div class="text-purple-600 dark:text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_01</div>
-        <div [routerLink]="['/logistics']" class="group flex items-center justify-between p-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 cursor-pointer hover:border-cyber-cyan/50 transition-all">
-          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight text-purple-900 dark:text-white">Logistics</h2>
-          <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
+        <div class="text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_01</div>
+        <div [routerLink]="['/logistics']" class="group flex items-center justify-between p-6 rounded-2xl cursor-pointer hover:border-cyber-cyan/50 transition-all">
+          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest text-white">{{ 'NAV.LOGISTICS' | translate }}</h2>
+          <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
         </div>
         <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
           In long-haul freight, our AI Dashcam monitors driver fatigue during extended shifts, detects lane drifting instantly, and provides evidence for high-value cargo protection.
         </p>
         <div class="p-8 bg-white/[0.02] border border-white/10 rounded-[32px] backdrop-blur-md">
-           <h4 class="text-white font-bold text-xs uppercase mb-4 tracking-widest">Efficiency Metrics:</h4>
+           <h4 class="text-white font-bold text-xs uppercase mb-4 tracking-widest">Core Impact:</h4>
            <ul class="text-nav-grey text-[11px] space-y-3 uppercase tracking-widest leading-relaxed">
-              <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyber-cyan rounded-full mr-3"></span> 30% reduction in collision risks</li>
-              <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyber-cyan rounded-full mr-3"></span> Automated incident log generation</li>
+              <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyber-cyan rounded-full mr-3 shadow-[0_0_10px_#00FFC2]"></span> 30% reduction in collision risks</li>
+              <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyber-cyan rounded-full mr-3 shadow-[0_0_10px_#00FFC2]"></span> Automated incident log generation</li>
            </ul>
         </div>
       </div>
-      <img src="assets/solutions1.jpg" class="rounded-[40px] border border-white/10 shadow-2xl h-[450px] w-full object-cover grayscale hover:grayscale-0 transition duration-700" alt="Logistics">
+      <div class="relative group h-[450px]">
+        <div class="absolute -inset-4 bg-cyber-cyan/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <img src="assets/solutions1.jpg" class="rounded-[40px] border border-white/10 shadow-2xl h-full w-full object-cover grayscale hover:grayscale-0 transition duration-700" alt="Logistics">
+      </div>
     </section>
 
-    <!-- SECTOR 02: OIL & GAS -->
+    <!-- SECTOR 02: OIL & GAS (Image Left, Text Right) -->
     <section appScrollReveal id="hazardous" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-        <div class="relative group order-2 lg:order-1">
+        <div class="relative group order-2 lg:order-1 h-[450px]">
             <div class="absolute -inset-4 bg-red-500/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <img src="assets/oil-truck.jpg" class="rounded-[40px] border border-white/10 shadow-2xl grayscale hover:grayscale-0 transition duration-700 h-[450px] w-full object-cover" alt="Oil & Gas">
+            <img src="assets/oil-truck.jpg" class="rounded-[40px] border border-white/10 shadow-2xl h-full w-full object-cover grayscale hover:grayscale-0 transition duration-700" alt="Oil & Gas">
         </div>
         <div class="space-y-8 order-1 lg:order-2">
           <div class="text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_02</div>
-          <div [routerLink]="['/oil-gas']" class="group flex items-center justify-between p-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 cursor-pointer hover:border-cyber-cyan/50 transition-all">
-            <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight text-purple-900 dark:text-white">Oil & Gas</h2>
-            <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
+          <div [routerLink]="['/oil-gas']" class="group flex items-center justify-between p-6 rounded-2xl cursor-pointer hover:border-red-500/50 transition-all">
+            <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest text-white">{{ 'NAV.OIL_GAS' | translate }}</h2>
+            <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
           </div>
           <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
             Transporting volatile materials requires extreme compliance. Our industrial-grade hardware operates in temperatures from -20°C to +70°C and uses tamper-proof storage.
           </p>
-          <div class="grid grid-cols-2 gap-4">
-             <div class="p-6 rounded-2xl bg-white/[0.03] border border-white/5 text-center">
-                <div class="text-white font-cyber font-bold text-lg">IP67</div>
-                <div class="text-[8px] uppercase tracking-widest text-nav-grey">Durability Rating</div>
-             </div>
-          </div>
+          <div class="p-8 bg-white/[0.02] border border-white/10 rounded-[32px]">
+            <div class="text-white font-cyber font-bold text-lg mb-1 tracking-widest">IP67 RATING</div>
+            <div class="text-[9px] uppercase tracking-[0.3em] text-nav-grey">Hazardous Environment Ready</div>
+         </div>
         </div>
     </section>
 
-    <!-- SECTOR 03: TAXI -->
+    <!-- SECTOR 03: TAXI (Text Left, Image Right) -->
     <section appScrollReveal id="private-hire" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="space-y-8">
-        <div class="text-purple-600 dark:text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_03</div>
-        <div [routerLink]="['/taxi']" class="group flex items-center justify-between p-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 cursor-pointer hover:border-cyber-cyan/50 transition-all">
-          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight text-purple-900 dark:text-white">Taxi</h2>
-          <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
+        <div class="text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_03</div>
+        <div [routerLink]="['/taxi']" class="group flex items-center justify-between p-6 rounded-2xl cursor-pointer hover:border-cyber-cyan/50 transition-all">
+          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest text-white">{{ 'NAV.TAXI' | translate }}</h2>
+          <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
         </div>
         <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
           Dual-lens monitoring protects drivers and passengers. High-definition cabin analysis records interactions, providing crucial evidence and professional standards.
         </p>
-        <div class="flex items-center space-x-4">
-            <div class="w-14 h-12 bg-cyber-cyan/10 rounded-xl flex items-center justify-center text-cyber-cyan shadow-[0_0_20px_rgba(0,255,194,0.2)] font-black">FHD</div>
-            <span class="text-xs font-cyber uppercase tracking-[0.2em] font-bold">Evidence Quality Active</span>
+        <div class="flex items-center space-x-6 p-6 bg-white/[0.02] border border-white/5 rounded-2xl">
+            <div class="w-14 h-14 bg-cyber-cyan/10 rounded-xl flex items-center justify-center text-cyber-cyan shadow-[0_0_20px_rgba(0,255,194,0.2)] font-black italic">FHD</div>
+            <span class="text-xs font-cyber uppercase tracking-[0.2em] font-bold">Cabin Evidence Active</span>
          </div>
       </div>
       <img src="assets/solutions3.jpg" class="rounded-[40px] border border-white/10 shadow-2xl h-[450px] w-full object-cover grayscale hover:grayscale-0 transition duration-700" alt="Taxi">
     </section>
 
-    <!-- SECTOR 04: SCHOOL BUS -->
+    <!-- SECTOR 04: SCHOOL BUS (Image Left, Text Right) -->
     <section appScrollReveal id="specialized" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-        <img src="assets/students.jpg" class="rounded-[40px] border border-white/10 shadow-2xl order-2 lg:order-1 grayscale hover:grayscale-0 transition duration-700 h-[450px] w-full object-cover" alt="School Bus">
+        <img src="assets/students.jpg" class="rounded-[40px] border border-white/10 shadow-2xl h-[450px] w-full object-cover order-2 lg:order-1 grayscale hover:grayscale-0 transition duration-700" alt="School Bus">
         <div class="space-y-8 order-1 lg:order-2">
           <div class="text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_04</div>
-          <div [routerLink]="['/school-bus']" class="group flex items-center justify-between p-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 cursor-pointer hover:border-cyber-cyan/50 transition-all">
-            <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight text-purple-900 dark:text-white">School Bus</h2>
-            <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
+          <div [routerLink]="['/school-bus']" class="group flex items-center justify-between p-6 rounded-2xl cursor-pointer hover:border-cyber-cyan/50 transition-all">
+            <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest text-white">{{ 'NAV.SCHOOL_BUS' | translate }}</h2>
+            <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
           </div>
           <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
             Protecting students is our priority. Cloud-integrated logs and student-left checking ensure peace of mind, featuring SOS emergency buttons and instant event uploads.
           </p>
           <div class="flex space-x-3">
-             <div class="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-[11px] font-cyber uppercase tracking-widest">Boarding Sync</div>
-             <div class="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-[11px] font-cyber uppercase tracking-widest">SOS Ready</div>
+             <div class="px-4 py-2 bg-cyber-cyan/10 border border-cyber-cyan/20 rounded-lg text-[10px] font-cyber uppercase tracking-widest text-cyber-cyan">Boarding Sync</div>
+             <div class="px-4 py-2 bg-cyber-cyan/10 border border-cyber-cyan/20 rounded-lg text-[10px] font-cyber uppercase tracking-widest text-cyber-cyan">SOS Module</div>
           </div>
         </div>
     </section>
 
-    <!-- SECTOR 05: PUBLIC BUS -->
+    <!-- SECTOR 05: PUBLIC BUS (Text Left, Image Right) -->
     <section appScrollReveal id="public-transport" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="space-y-8">
-        <div class="text-purple-600 dark:text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_05</div>
-        <div [routerLink]="['/public-bus']" class="group flex items-center justify-between p-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 cursor-pointer hover:border-cyber-cyan/50 transition-all">
-          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest leading-tight text-purple-900 dark:text-white">Public Bus <br>Transit</h2>
-          <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
+        <div class="text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_05</div>
+        <div [routerLink]="['/public-bus']" class="group flex items-center justify-between p-6 rounded-2xl cursor-pointer hover:border-cyber-cyan/50 transition-all">
+          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest text-white">{{ 'NAV.PUBLIC_BUS' | translate }}</h2>
+          <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
         </div>
         <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
           Our solution features multi-channel live-streaming, allowing dispatchers to view cabin and road conditions in real-time, ensuring urban passenger safety 24/7.
         </p>
-        <button [routerLink]="['/contact']" class="px-8 py-3 bg-cyber-cyan text-black font-cyber font-black text-[10px] uppercase tracking-widest rounded-xl hover:scale-105 transition-all">
-          Deploy Fleet System
-        </button>
+        <div class="p-6 bg-white/[0.02] border border-white/10 rounded-2xl flex items-center space-x-4">
+            <span class="relative flex h-3 w-3">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyber-cyan opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-cyber-cyan"></span>
+            </span>
+            <span class="text-[10px] font-cyber uppercase tracking-widest font-bold">24/7 Remote Monitoring Active</span>
+        </div>
       </div>
       <img src="assets/solutions2.jpg" class="rounded-[40px] border border-white/10 shadow-2xl h-[450px] w-full object-cover grayscale hover:grayscale-0 transition duration-700" alt="Public Bus">
     </section>
 
+    <!-- SECTOR 06: RENT CAR (Image Left, Text Right) -->
+    <section appScrollReveal id="rent-car" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div class="relative group order-2 lg:order-1 h-[450px]">
+            <img src="assets/rent-car1.jpg" class="rounded-[40px] border border-white/10 shadow-2xl h-full w-full object-cover grayscale hover:grayscale-0 transition duration-700" alt="Rent Car">
+        </div>
+        <div class="space-y-8 order-1 lg:order-2">
+          <div class="text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_06</div>
+          <div [routerLink]="['/car-rental']" class="group flex items-center justify-between p-6 rounded-2xl cursor-pointer hover:border-cyber-cyan/50 transition-all">
+            <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-widest text-white">{{ 'NAV.RENT_CAR' | translate }}</h2>
+            <svg class="w-6 h-6 text-cyber-cyan group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+          <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
+            Protect your rental fleet assets. Our AI solution bridges the gap between driver freedom and vehicle security, providing FHD condition reports and real-time geofencing.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-6 rounded-2xl bg-white/[0.03] border border-white/5 text-center">
+               <div class="text-white font-cyber font-bold text-lg mb-1 tracking-tighter">ROI</div>
+               <div class="text-[9px] text-nav-grey uppercase tracking-widest">6 Months Average</div>
+            </div>
+            <div class="p-6 rounded-2xl bg-white/[0.03] border border-white/5 text-center">
+               <div class="text-white font-cyber font-bold text-lg mb-1 tracking-tighter">G-SENSE</div>
+               <div class="text-[9px] text-nav-grey uppercase tracking-widest">Theft Detection</div>
+            </div>
+         </div>
+        </div>
+    </section>
+
   </div>
-</div>
 </div>
