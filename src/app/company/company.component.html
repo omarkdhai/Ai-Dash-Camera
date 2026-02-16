@@ -2,7 +2,7 @@
 
   <!-- 1. HERO SECTION -->
   <header appScrollReveal class="relative pt-48 pb-32 px-6 overflow-hidden">
-    <div class="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-cyber-cyan/10 blur-[200px] rounded-full"></div>
+    <div class="absolute top-[-20%] right-[-10%] w-[800px] h-[800px] bg-cyber-cyan/10 blur-[200px] rounded-full"></div>
     <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/5 blur-[150px] rounded-full"></div>
     
     <div class="max-w-7xl mx-auto relative z-10 text-center">
@@ -22,7 +22,7 @@
       <div class="mt-16">
         <button [routerLink]="['/contact']" fragment="contact-form" 
                 class="px-10 py-5 bg-cyber-cyan text-black font-cyber font-bold uppercase tracking-[0.2em] rounded-2xl shadow-[0_0_40px_rgba(0,255,194,0.4)] hover:scale-105 transition-all">
-          Enquire for Fleet
+          {{ 'COMPANY.HERO_BTN' | translate }}
         </button>
       </div>
     </div>
@@ -78,12 +78,12 @@
   <section appScrollReveal class="py-40 px-6 lg:px-20 bg-white dark:bg-white/[0.01] border-y border-slate-200 dark:border-white/5 relative">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="space-y-8">
-        <div class="text-cyber-cyan font-cyber font-black text-[10px] tracking-[0.5em] uppercase italic">Financial Efficiency</div>
-        <h2 class="text-3xl md:text-6xl font-cyber font-bold uppercase tracking-tight text-slate-900 dark:text-white leading-none">
-          Total Cost of <br><span class="text-cyber-cyan">Ownership</span>
+        <div class="text-cyber-cyan font-cyber font-black text-[10px] tracking-[0.5em] uppercase italic">{{ 'COMPANY.TCO_TAG' | translate }}</div>
+        <h2 class="text-3xl md:text-6xl font-cyber font-bold uppercase tracking-tight text-slate-900 dark:text-white leading-none text-left">
+          {{ 'COMPANY.TCO_TITLE' | translate }} <br><span class="text-cyber-cyan">{{ 'COMPANY.TCO_HIGHLIGHT' | translate }}</span>
         </h2>
-        <p class="text-slate-600 dark:text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-md font-light">
-          {{ 'COMPANY.BENEFIT_4_DESC' | translate }} Our dashcam technology reduces operational waste, prevents vehicle downtime, and extends your asset lifecycle.
+        <p class="text-slate-600 dark:text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-md font-light text-left">
+          {{ 'COMPANY.TCO_DESC' | translate }}
         </p>
       </div>
 
@@ -92,9 +92,9 @@
         <div class="relative p-12 rounded-[40px] border border-slate-200 dark:border-white/10 bg-[#251c2b]/60 shadow-2xl">
           <div class="space-y-10">
             <div class="flex justify-between items-end">
-                <div>
-                    <div class="text-[9px] font-cyber text-nav-grey uppercase tracking-[0.3em] mb-2">Fleet Management Status</div>
-                    <div class="text-3xl font-cyber font-black text-white">TCO REDUCED</div>
+                <div class="text-left">
+                    <div class="text-[9px] font-cyber text-nav-grey uppercase tracking-[0.3em] mb-2">{{ 'COMPANY.TCO_CARD_SUB' | translate }}</div>
+                    <div class="text-3xl font-cyber font-black text-white uppercase">{{ 'COMPANY.TCO_CARD_TITLE' | translate }}</div>
                 </div>
                 <div class="text-cyber-cyan animate-pulse font-black text-xl">↓</div>
             </div>
@@ -104,13 +104,13 @@
             </div>
 
             <div class="grid grid-cols-2 gap-4">
-                <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
-                    <div class="text-cyber-cyan font-bold text-lg mb-1">ACCIDENT FREE</div>
-                    <p class="text-[8px] uppercase tracking-widest text-nav-grey">Proactive Target</p>
+                <div class="p-4 bg-white/5 rounded-2xl border border-white/5 text-center">
+                    <div class="text-cyber-cyan font-bold text-lg mb-1 uppercase">{{ 'COMPANY.TCO_CARD_TARGET' | translate }}</div>
+                    <p class="text-[8px] uppercase tracking-widest text-nav-grey">{{ 'COMPANY.TCO_CARD_TARGET_DESC' | translate }}</p>
                 </div>
-                <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
-                    <div class="text-white font-bold text-lg mb-1">ROI: 6 MO</div>
-                    <p class="text-[8px] uppercase tracking-widest text-nav-grey">Investment Recovery</p>
+                <div class="p-4 bg-white/5 rounded-2xl border border-white/5 text-center">
+                    <div class="text-white font-bold text-lg mb-1 uppercase">{{ 'COMPANY.TCO_CARD_RECOVERY' | translate }}</div>
+                    <p class="text-[8px] uppercase tracking-widest text-nav-grey">{{ 'COMPANY.TCO_CARD_RECOVERY_DESC' | translate }}</p>
                 </div>
             </div>
           </div>
@@ -119,28 +119,27 @@
     </div>
   </section>
 
-  <!-- 4. INSURANCE REBATES (Final Section) -->
+  <!-- 4. INSURANCE REBATES -->
   <section appScrollReveal class="py-40 px-6 lg:px-20">
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
         <div class="lg:w-1/2 relative order-2 lg:order-1">
             <div class="absolute -inset-10 bg-cyber-cyan/5 blur-[100px] rounded-full"></div>
             <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1000" 
-                 class="rounded-3xl border border-white/10 shadow-2xl h-[400px] w-full object-cover order-2 lg:order-1 grayscale hover:grayscale-0 transition duration-700" alt="Insurance Compliance">
+                 class="rounded-3xl border border-white/10 shadow-2xl h-[500px] w-full object-cover order-2 lg:order-1 grayscale hover:grayscale-0 transition duration-700" alt="Insurance">
         </div>
 
-        <div class="lg:w-1/2 space-y-10 order-1 lg:order-2">
+        <div class="lg:w-1/2 space-y-10 order-1 lg:order-2 text-left">
             <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-tight text-slate-900 dark:text-white">
-                Insurance <span class="text-cyber-cyan italic">Rebates</span>
+                {{ 'COMPANY.INSURANCE_TITLE' | translate }} <span class="text-cyber-cyan italic">{{ 'COMPANY.INSURANCE_HIGHLIGHT' | translate }}</span>
             </h2>
-            <p class="text-slate-600 dark:text-nav-grey text-md leading-relaxed">
-                By providing provable safety data, our final clients often unlock substantial discounts on fleet insurance premiums. 
-                Our platform generates compliance-ready logs for seamless broker interaction.
+            <p class="text-slate-600 dark:text-nav-grey text-md leading-relaxed font-light">
+                {{ 'COMPANY.INSURANCE_DESC' | translate }}
             </p>
             <div class="flex items-center space-x-4">
                 <div class="w-12 h-12 rounded-xl bg-cyber-cyan/10 border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
-                <span class="text-xs font-cyber font-bold uppercase tracking-[0.2em]">Compliance Document Generation</span>
+                <span class="text-xs font-cyber font-bold uppercase tracking-[0.2em]">{{ 'COMPANY.COMPLIANCE_LABEL' | translate }}</span>
             </div>
         </div>
     </div>
