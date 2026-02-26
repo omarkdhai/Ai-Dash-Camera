@@ -40,7 +40,11 @@
     <!-- Right Content: Minimalistic Carousel -->
     <div class="relative hidden lg:block">
       <!-- Image Wrapper -->
-      <div class="relative rounded-3xl border border-slate-200 dark:border-white/10 overflow-hidden shadow-2xl">
+      <div
+        class="relative rounded-3xl border border-slate-200 dark:border-white/10 overflow-hidden shadow-2xl"
+        (mouseenter)="pauseCarousel()"
+        (mouseleave)="resumeCarousel()"
+      >
         <div class="flex transition-transform duration-700 ease-in-out h-[400px]" 
              [style.transform]="'translateX(-' + (currentImageIndex * 100) + '%)'">
           <div class="min-w-full h-full" *ngFor="let image of carouselImages">
@@ -273,6 +277,184 @@
           <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+15</div>
           <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
             {{ 'HOME.COUNTRIES_TOUCHED' | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROAD RISK → STRATEGIC ADVANTAGE -->
+  <section appScrollReveal class="py-32 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] border-y border-slate-200 dark:border-white/5 transition-colors">
+    <div class="max-w-7xl mx-auto space-y-14">
+
+      <!-- Title & subtitle -->
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <h2 class="text-3xl md:text-4xl font-cyber font-extrabold uppercase tracking-tight text-purple-900 dark:text-white">
+          {{ 'INSURER.RISK_STRATEGIC_TITLE' | translate }}
+        </h2>
+        <p class="text-slate-600 dark:text-nav-grey text-sm md:text-base leading-relaxed">
+          {{ 'INSURER.HERO_SUBTITLE' | translate }}
+        </p>
+      </div>
+
+      <!-- Visual indicators -->
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="flex items-center space-x-3 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 px-4 py-2 rounded-xl">
+          <span class="text-cyber-cyan text-lg">↓</span>
+          <span class="text-[11px] md:text-[12px] font-cyber uppercase tracking-[0.25em]">
+            {{ 'INSURER.METRIC_SINISTRALITE' | translate }}
+          </span>
+        </div>
+        <div class="flex items-center space-x-3 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 px-4 py-2 rounded-xl">
+          <span class="text-cyber-cyan text-lg">↓</span>
+          <span class="text-[11px] md:text-[12px] font-cyber uppercase tracking-[0.25em]">
+            {{ 'INSURER.METRIC_COUT' | translate }}
+          </span>
+        </div>
+        <div class="flex items-center space-x-3 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 px-4 py-2 rounded-xl">
+          <span class="text-cyber-cyan text-lg">↑</span>
+          <span class="text-[11px] md:text-[12px] font-cyber uppercase tracking-[0.25em]">
+            {{ 'INSURER.METRIC_DRIVER_SAFETY' | translate }}
+          </span>
+        </div>
+        <div class="flex items-center space-x-3 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 px-4 py-2 rounded-xl">
+          <span class="text-cyber-cyan text-lg">↑</span>
+          <span class="text-[11px] md:text-[12px] font-cyber uppercase tracking-[0.25em]">
+            {{ 'INSURER.METRIC_MAITRISE' | translate }}
+          </span>
+        </div>
+      </div>
+
+      <!-- 3-column governance / compliance / ESG -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Gouvernance du risque -->
+        <div class="p-8 rounded-[32px] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
+          <h3 class="text-sm font-cyber text-cyber-cyan uppercase tracking-[0.3em] mb-4">
+            {{ 'INSURER.RISK_GOVERNANCE_TITLE' | translate }}
+          </h3>
+          <ul class="space-y-2 text-sm text-slate-600 dark:text-nav-grey leading-relaxed">
+            <li>{{ 'INSURER.RISK_GOVERNANCE_L1' | translate }}</li>
+            <li>{{ 'INSURER.RISK_GOVERNANCE_L2' | translate }}</li>
+            <li>{{ 'INSURER.RISK_GOVERNANCE_L3' | translate }}</li>
+          </ul>
+        </div>
+
+        <!-- Conformité européenne intégrée -->
+        <div class="p-8 rounded-[32px] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
+          <h3 class="text-sm font-cyber text-cyber-cyan uppercase tracking-[0.3em] mb-4">
+            {{ 'INSURER.EU_COMPLIANCE_TITLE' | translate }}
+          </h3>
+          <ul class="space-y-2 text-sm text-slate-600 dark:text-nav-grey leading-relaxed">
+            <li>{{ 'INSURER.EU_COMPLIANCE_L1' | translate }}</li>
+            <li>{{ 'INSURER.EU_COMPLIANCE_L2' | translate }}</li>
+            <li>{{ 'INSURER.EU_COMPLIANCE_L3' | translate }}</li>
+          </ul>
+        </div>
+
+        <!-- Impact ESG -->
+        <div class="p-8 rounded-[32px] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
+          <h3 class="text-sm font-cyber text-cyber-cyan uppercase tracking-[0.3em] mb-4">
+            {{ 'INSURER.ESG_IMPACT_TITLE' | translate }}
+          </h3>
+          <ul class="space-y-2 text-sm text-slate-600 dark:text-nav-grey leading-relaxed">
+            <li>{{ 'INSURER.ESG_IMPACT_L1' | translate }}</li>
+            <li>{{ 'INSURER.ESG_IMPACT_L2' | translate }}</li>
+            <li>{{ 'INSURER.ESG_IMPACT_L3' | translate }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTUARIAL VALUE → OUTCOMES -->
+  <section appScrollReveal class="py-24 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] transition-colors">
+    <div class="max-w-5xl mx-auto space-y-10">
+      <h3 class="text-3xl md:text-4xl font-cyber font-extrabold uppercase tracking-tight text-purple-900 dark:text-white text-center">
+        {{ 'INSURER.ACTUARIAL_STATEMENT' | translate }}
+      </h3>
+
+      <div class="overflow-hidden rounded-3xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/[0.03]">
+        <div class="grid grid-cols-2 text-xs md:text-sm font-cyber uppercase tracking-[0.25em] text-purple-900 dark:text-white bg-slate-100 dark:bg-white/[0.04]">
+          <div class="px-6 py-4 border-r border-slate-200 dark:border-white/10">
+            {{ 'INSURER.ACTUARIAL_LABEL' | translate }}
+          </div>
+          <div class="px-6 py-4">
+            {{ 'INSURER.ACTUARIAL_RESULT_LABEL' | translate }}
+          </div>
+        </div>
+        <div class="divide-y divide-slate-200 dark:divide-white/10 text-sm">
+          <div class="grid grid-cols-2">
+            <div class="px-6 py-4 text-slate-700 dark:text-nav-grey">
+              {{ 'INSURER.ACTUARIAL_ROW1_LEFT' | translate }}
+            </div>
+            <div class="px-6 py-4 text-slate-900 dark:text-white font-medium">
+              {{ 'INSURER.ACTUARIAL_ROW1_RIGHT' | translate }}
+            </div>
+          </div>
+          <div class="grid grid-cols-2 bg-slate-50/80 dark:bg-white/[0.02]">
+            <div class="px-6 py-4 text-slate-700 dark:text-nav-grey">
+              {{ 'INSURER.ACTUARIAL_ROW2_LEFT' | translate }}
+            </div>
+            <div class="px-6 py-4 text-slate-900 dark:text-white font-medium">
+              {{ 'INSURER.ACTUARIAL_ROW2_RIGHT' | translate }}
+            </div>
+          </div>
+          <div class="grid grid-cols-2">
+            <div class="px-6 py-4 text-slate-700 dark:text-nav-grey">
+              {{ 'INSURER.ACTUARIAL_ROW3_LEFT' | translate }}
+            </div>
+            <div class="px-6 py-4 text-slate-900 dark:text-white font-medium">
+              {{ 'INSURER.ACTUARIAL_ROW3_RIGHT' | translate }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERFORMANCE ANALYTICS: SAFETY EVOLUTION -->
+  <section appScrollReveal class="py-32 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] transition-colors">
+    <div class="max-w-7xl mx-auto space-y-14">
+
+      <!-- Header -->
+      <div class="space-y-4 text-center lg:text-left max-w-3xl">
+        <span class="text-[10px] font-cyber text-cyber-cyan uppercase tracking-[0.5em]">
+          {{ 'PRODUCTS.PERF_ANALYTICS_BADGE' | translate }}
+        </span>
+        <h2 class="text-3xl md:text-4xl font-cyber font-extrabold uppercase tracking-tight text-purple-900 dark:text-white">
+          {{ 'PRODUCTS.PERF_ANALYTICS_TITLE' | translate }}
+        </h2>
+        <p class="text-slate-600 dark:text-nav-grey text-sm md:text-base leading-relaxed">
+          {{ 'PRODUCTS.PERF_ANALYTICS_TEXT' | translate }}
+        </p>
+      </div>
+
+      <!-- Phases grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-[32px] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
+          <h3 class="text-sm font-cyber text-cyber-cyan uppercase tracking-[0.3em] mb-3">
+            {{ 'PRODUCTS.PERF_PHASE1_TITLE' | translate }}
+          </h3>
+          <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
+            {{ 'PRODUCTS.PERF_PHASE1_TEXT' | translate }}
+          </p>
+        </div>
+
+        <div class="p-8 rounded-[32px] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
+          <h3 class="text-sm font-cyber text-cyber-cyan uppercase tracking-[0.3em] mb-3">
+            {{ 'PRODUCTS.PERF_PHASE2_TITLE' | translate }}
+          </h3>
+          <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
+            {{ 'PRODUCTS.PERF_PHASE2_TEXT' | translate }}
+          </p>
+        </div>
+
+        <div class="p-8 rounded-[32px] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
+          <h3 class="text-sm font-cyber text-cyber-cyan uppercase tracking-[0.3em] mb-3">
+            {{ 'PRODUCTS.PERF_PHASE3_TITLE' | translate }}
+          </h3>
+          <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
+            {{ 'PRODUCTS.PERF_PHASE3_TEXT' | translate }}
           </p>
         </div>
       </div>

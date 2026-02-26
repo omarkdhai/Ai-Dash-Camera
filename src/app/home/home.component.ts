@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class HomeComponent implements OnInit, OnDestroy {
   currentImageIndex = 0;
   private intervalId: any;
+  private isCarouselPaused = false;
 
   displayCount: number = 0;
   private targetCount: number = 1;
@@ -55,11 +56,25 @@ export class HomeComponent implements OnInit, OnDestroy {
       }
     });
 
-    this.intervalId = setInterval(() => {
-      this.currentImageIndex = (this.currentImageIndex + 1) % this.carouselImages.length;
-    }, 3000);
+    this.startCarousel();
 
     this.startRollingNumbers();
+  }
+
+  private startCarousel() {
+    this.intervalId = setInterval(() => {
+      if (!this.isCarouselPaused) {
+        this.currentImageIndex = (this.currentImageIndex + 1) % this.carouselImages.length;
+      }
+    }, 3000);
+  }
+
+  pauseCarousel() {
+    this.isCarouselPaused = true;
+  }
+
+  resumeCarousel() {
+    this.isCarouselPaused = false;
   }
 
   startRollingNumbers() {
@@ -84,6 +99,10 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.infiniteInterval = setInterval(() => {
       this.displayCount++;
     }, 80); // Adjust speed here
+  }
+
+  nextSlide() {
+    this.currentImageIndex = (this.currentImageIndex + 1) % this.carouselImages.length;
   }
 
   ngOnDestroy() {
