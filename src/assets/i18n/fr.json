@@ -66,7 +66,7 @@
     "SECTOR_APPLICATIONS": "Applications",
     "SECTOR_TITLE": "Secteur",
     "SECTOR_SUBTITLE": "Un seul système AI Dashcam, conçu pour les exigences uniques de chaque secteur du transport.",
-    "LOGISTICS": "Camions – Transport & Livraison",
+    "LOGISTICS": "Camions – TRANSPORT DE MARCHANDISES",
     "LOGISTICS_DESC": "Moins d’accidents (fatigue/distraction), preuve en litige, protection conducteur. Réduction fréquence & gravité des sinistres, meilleure analyse flotte.",
     "OIL_GAS": "Transport de Produits Dangereux (ADR)",
     "OIL_GAS_DESC": "Surveillance renforcée, alertes temps réel, traçabilité complète. Réduction risque majeur, accès contrats spécialisés.",
@@ -562,7 +562,7 @@
   },
   "LOGISTICS": {
     "HERO_BADGE": "Solutions Dashcam IA",
-    "HERO_TITLE": "Transport & Livraison",
+    "HERO_TITLE": "TRANSPORT DE MARCHANDISES",
     "HERO_SUBTITLE": "Solution",
     "CARD_1_TITLE": "Trajets Long Courriers Plus Sûrs",
     "CARD_1_DESC": "Le DMS et l'ADAS réduisent les risques de collision sur les trajets prolongés.",
