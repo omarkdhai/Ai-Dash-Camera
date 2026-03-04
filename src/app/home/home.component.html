@@ -94,151 +94,74 @@
         
         <!-- 1. Logistics (Truck) -->
         <div [routerLink]="['/logistics']" fragment="logistics" class="group flex flex-col items-center text-center cursor-pointer transition-all duration-500">
-          <div class="w-24 h-24 rounded-full border-2 border-yellow-400 flex items-center justify-center relative transition-all duration-500 group-hover:bg-yellow-400 bg-yellow-400/5 shadow-[0_0_20px_rgba(250,204,21,0.1)] group-hover:shadow-[0_0_35px_rgba(250,204,21,0.4)]">
-            <svg class="w-12 h-12 text-yellow-400 group-hover:text-purple-900 transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <div class="w-24 h-24 rounded-full border-2 border-cyber-cyan flex items-center justify-center relative transition-all duration-500 group-hover:bg-cyber-cyan bg-cyber-cyan/5 shadow-[0_0_20px_rgba(0,255,194,0.15)] group-hover:shadow-[0_0_35px_rgba(0,255,194,0.5)]">
+            <svg class="w-12 h-12 text-cyber-cyan transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                 <path fill="currentColor" d="M64 80c-8.8 0-16 7.2-16 16v288c0 8.8 7.2 16 16 16h3.3c10.4-36.9 44.4-64 84.7-64s74.2 27.1 84.7 64h102.6c4.9-17.4 15.1-32.7 28.7-43.9V96c0-8.8-7.2-16-16-16zm3.3 368H64c-35.3 0-64-28.7-64-64V96c0-35.3 28.7-64 64-64h288c35.3 0 64 28.7 64 64v32h55.4c17 0 33.3 6.7 45.3 18.7l40.6 40.6c12 12 18.7 28.3 18.7 45.3V384c0 35.3-28.7 64-64 64h-3.3c-10.4 36.9-44.4 64-84.7 64s-74.2-27.1-84.7-64H236.7c-10.4 36.9-44.4 64-84.7 64s-74.2-27.1-84.7-64M416 256h112v-23.4c0-4.2-1.7-8.3-4.7-11.3l-40.6-40.6c-3-3-7.1-4.7-11.3-4.7H416zm0 48v32.4c2.6-.2 5.3-.4 8-.4c40.3 0 74.2 27.1 84.7 64h3.3c8.8 0 16-7.2 16-16v-80zM152 464a40 40 0 1 0 0-80a40 40 0 1 0 0 80m272 0a40 40 0 1 0 0-80a40 40 0 1 0 0 80"/>
             </svg>
           </div>
-          <span class="mt-6 text-[11px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-yellow-400 transition-colors">{{ 'HOME.LOGISTICS' | translate }}</span>
+          <span class="mt-6 text-[11px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-cyber-cyan transition-colors">{{ 'HOME.LOGISTICS' | translate }}</span>
         </div>
 
         <!-- 2. Oil & Gas (Hazardous) -->
         <div [routerLink]="['/oil-gas']" fragment="hazardous" class="group flex flex-col items-center text-center cursor-pointer transition-all duration-500">
-          <div class="w-24 h-24 rounded-full border-2 border-yellow-400 flex items-center justify-center relative transition-all duration-500 group-hover:bg-yellow-400 bg-yellow-400/5 shadow-[0_0_20px_rgba(250,204,21,0.1)] group-hover:shadow-[0_0_35px_rgba(250,204,21,0.4)]">
-            <svg class="w-12 h-12 text-yellow-400 group-hover:text-purple-900 transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+          <div class="w-24 h-24 rounded-full border-2 border-cyber-cyan flex items-center justify-center relative transition-all duration-500 group-hover:bg-cyber-cyan bg-cyber-cyan/5 shadow-[0_0_20px_rgba(0,255,194,0.15)] group-hover:shadow-[0_0_35px_rgba(0,255,194,0.5)]">
+            <svg class="w-12 h-12 text-cyber-cyan transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M6 4.83L3.75.94A6.49 6.49 0 0 0 .5 6.56H5a2 2 0 0 1 1-1.73Zm3 1.73h4.5A6.49 6.49 0 0 0 10.25.94L8 4.83a2 2 0 0 1 1 1.73Zm-2 2a2 2 0 0 1-1-.26l-2.25 3.89a6.51 6.51 0 0 0 6.5 0L8 8.3a2 2 0 0 1-1 .26Z"/>
             </svg>
           </div>
-          <span class="mt-6 text-[11px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-yellow-400 transition-colors">{{ 'HOME.OIL_GAS' | translate }}</span>
+          <span class="mt-6 text-[11px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-cyber-cyan transition-colors">{{ 'HOME.OIL_GAS' | translate }}</span>
         </div>
 
         <!-- 3. Taxi -->
         <div [routerLink]="['/taxi']" fragment="private-hire" class="group flex flex-col items-center text-center cursor-pointer transition-all duration-500">
-          <div class="w-24 h-24 rounded-full border-2 border-yellow-400 flex items-center justify-center relative transition-all duration-500 group-hover:bg-yellow-400 bg-yellow-400/5 shadow-[0_0_20px_rgba(250,204,21,0.1)] group-hover:shadow-[0_0_35px_rgba(250,204,21,0.4)]">
-            <svg class="w-12 h-12 text-yellow-400 group-hover:text-purple-900 transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+          <div class="w-24 h-24 rounded-full border-2 border-cyber-cyan flex items-center justify-center relative transition-all duration-500 group-hover:bg-cyber-cyan bg-cyber-cyan/5 shadow-[0_0_20px_rgba(0,255,194,0.15)] group-hover:shadow-[0_0_35px_rgba(0,255,194,0.5)]">
+            <svg class="w-12 h-12 text-cyber-cyan transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                 <path fill="currentColor" d="M240 112h-11.36l-27.39-47.94A16 16 0 0 0 187.36 56h-21.94l-12-29.94A15.93 15.93 0 0 0 138.58 16h-21.16a15.93 15.93 0 0 0-14.86 10.06L90.58 56H68.64a16 16 0 0 0-13.89 8.06L27.36 112H16a8 8 0 0 0 0 16h8v80a16 16 0 0 0 16 16h24a16 16 0 0 0 16-16v-16h96v16a16 16 0 0 0 16 16h24a16 16 0 0 0 16-16v-80h8a8 8 0 0 0 0-16ZM117.42 32h21.16l9.6 24h-40.36ZM68.64 72h118.72l22.85 40H45.79ZM64 208H40v-16h24Zm128 0v-16h24v16Zm24-32H40v-48h176ZM56 152a8 8 0 0 1 8-8h16a8 8 0 0 1 0 16H64a8 8 0 0 1-8-8Zm112 0a8 8 0 0 1 8-8h16a8 8 0 0 1 0 16h-16a8 8 0 0 1-8-8Z"/>
             </svg>
           </div>
-          <span class="mt-6 text-[11px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-yellow-400 transition-colors">{{ 'HOME.TAXI' | translate }}</span>
+          <span class="mt-6 text-[11px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-cyber-cyan transition-colors">{{ 'HOME.TAXI' | translate }}</span>
         </div>
 
         <!-- 4. School Bus -->
         <div [routerLink]="['/school-bus']" fragment="specialized" class="group flex flex-col items-center text-center cursor-pointer transition-all duration-500">
-          <div class="w-24 h-24 rounded-full border-2 border-yellow-400 flex items-center justify-center relative transition-all duration-500 group-hover:bg-yellow-400 bg-yellow-400/5 shadow-[0_0_20px_rgba(250,204,21,0.1)] group-hover:shadow-[0_0_35px_rgba(250,204,21,0.4)]">
-            <svg class="w-12 h-12 text-yellow-400 group-hover:text-purple-900 transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+          <div class="w-24 h-24 rounded-full border-2 border-cyber-cyan flex items-center justify-center relative transition-all duration-500 group-hover:bg-cyber-cyan bg-cyber-cyan/5 shadow-[0_0_20px_rgba(0,255,194,0.15)] group-hover:shadow-[0_0_35px_rgba(0,255,194,0.5)]">
+            <svg class="w-12 h-12 text-cyber-cyan transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M11.625 11.492h.802a1 1 0 0 0 1-1V7.957a1 1 0 0 0-1-1h-.552V3.375a1 1 0 0 0-1-1h-9.19a1 1 0 0 0-1 1v7.26c0 .473.384.857.857.857H2m9.875-7.284H.685m11.19 2.749H.685m3.779-2.749v2.745m3.567-2.745v2.745"/>
                     <path d="M1.994 11.478a1.396 1.396 0 1 0 2.792 0a1.396 1.396 0 1 0-2.792 0m6.84 0a1.396 1.396 0 1 0 2.792 0a1.396 1.396 0 1 0-2.792 0m-4.048 0h4.048"/>
                 </g>
             </svg>
           </div>
-          <span class="mt-6 text-[11px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-yellow-400 transition-colors">{{ 'HOME.SCHOOL_BUS' | translate }}</span>
+          <span class="mt-6 text-[11px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-cyber-cyan transition-colors">{{ 'HOME.SCHOOL_BUS' | translate }}</span>
         </div>
 
         <!-- 5. Public Transport (Bus) -->
         <div [routerLink]="['/public-bus']" fragment="public-transport" class="group flex flex-col items-center text-center cursor-pointer transition-all duration-500">
-          <div class="w-24 h-24 rounded-full border-2 border-yellow-400 flex items-center justify-center relative transition-all duration-500 group-hover:bg-yellow-400 bg-yellow-400/5 shadow-[0_0_20px_rgba(250,204,21,0.1)] group-hover:shadow-[0_0_35px_rgba(250,204,21,0.4)]">
-            <svg class="w-12 h-12 text-yellow-400 group-hover:text-purple-900 transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <div class="w-24 h-24 rounded-full border-2 border-cyber-cyan flex items-center justify-center relative transition-all duration-500 group-hover:bg-cyber-cyan bg-cyber-cyan/5 shadow-[0_0_20px_rgba(0,255,194,0.15)] group-hover:shadow-[0_0_35px_rgba(0,255,194,0.5)]">
+            <svg class="w-12 h-12 text-cyber-cyan transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M8.71 14.29a1.002 1.002 0 0 0-1.09-.21a.9.9 0 0 0-.54.54a1 1 0 1 0 1.84 0a1.147 1.147 0 0 0-.21-.33Zm8 0a1.047 1.047 0 0 0-1.42 0a1.147 1.147 0 0 0-.21.33a.99.99 0 0 0 .21 1.09a1.147 1.147 0 0 0 .33.21a.941.941 0 0 0 .76 0a1.16 1.16 0 0 0 .33-.21a.99.99 0 0 0 .21-1.09a1.147 1.147 0 0 0-.21-.33Zm2.6 4.605a4.97 4.97 0 0 0 1.784-4.817l-1.5-8A5 5 0 0 0 14.68 2H9.319a5 5 0 0 0-4.913 4.078l-1.5 8a4.97 4.97 0 0 0 1.785 4.817l-1.398 1.398a1 1 0 1 0 1.414 1.414l1.87-1.87A5.006 5.006 0 0 0 7.818 20h8.362a5.006 5.006 0 0 0 1.243-.162l1.869 1.869a1 1 0 0 0 1.414-1.414ZM6.37 6.447A3.002 3.002 0 0 1 9.32 4h5.362a3.002 3.002 0 0 1 2.948 2.447l.347 1.85a7.955 7.955 0 0 1-11.952 0Zm12.117 10.469A2.99 2.99 0 0 1 16.181 18H7.819a3 3 0 0 1-2.948-3.553l.711-3.792a9.954 9.954 0 0 0 12.836 0l.71 3.792a2.99 2.99 0 0 1-.64 2.469Z"/>
             </svg>
           </div>
-          <span class="mt-6 text-[11px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-yellow-400 transition-colors">{{ 'HOME.PUBLIC_BUS' | translate }}</span>
+          <span class="mt-6 text-[11px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-cyber-cyan transition-colors">{{ 'HOME.PUBLIC_BUS' | translate }}</span>
         </div>
 
         <!-- 6. Rent Car -->
         <div [routerLink]="['/car-rental']" fragment="rent-car" class="group flex flex-col items-center text-center cursor-pointer transition-all duration-500">
-          <div class="w-24 h-24 rounded-full border-2 border-yellow-400 flex items-center justify-center relative transition-all duration-500 group-hover:bg-yellow-400 bg-yellow-400/5 shadow-[0_0_20px_rgba(250,204,21,0.1)] group-hover:shadow-[0_0_35px_rgba(250,204,21,0.4)]">
-            <svg class="w-12 h-12 text-yellow-400 group-hover:text-purple-900 transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <div class="w-24 h-24 rounded-full border-2 border-cyber-cyan flex items-center justify-center relative transition-all duration-500 group-hover:bg-cyber-cyan bg-cyber-cyan/5 shadow-[0_0_20px_rgba(0,255,194,0.15)] group-hover:shadow-[0_0_35px_rgba(0,255,194,0.5)]">
+            <svg class="w-12 h-12 text-cyber-cyan transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path fill="currentColor" d="m19.78 9.44l-1.84-5a1.75 1.75 0 0 0-1.64-1.19H7.7A1.75 1.75 0 0 0 6.06 4.4l-1.84 5a1.76 1.76 0 0 0-1 1.56v4.5A1.73 1.73 0 0 0 4 16.94S4 17 4 17v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1.75h10V19a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2.06a1.73 1.73 0 0 0 .76-1.44V11a1.76 1.76 0 0 0-.98-1.56Zm-.53 6.06a.25.25 0 0 1-.25.25H5a.25.25 0 0 1-.25-.25V11a.25.25 0 0 1 .25-.25h14a.25.25 0 0 1 .25.25ZM7.47 4.91a.25.25 0 0 1 .23-.16h8.6a.25.25 0 0 1 .23.16l1.4 3.84H6.07Z"/>
                 <circle cx="8" cy="13.25" r="1.5" fill="currentColor"/>
                 <circle cx="16" cy="13.25" r="1.5" fill="currentColor"/>
             </svg>
           </div>
-          <span class="mt-6 text-[11px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-yellow-400 transition-colors">{{ 'HOME.RENT_CAR' | translate }}</span>
+          <span class="mt-6 text-[11px] font-cyber font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-nav-grey group-hover:text-cyber-cyan transition-colors">{{ 'HOME.RENT_CAR' | translate }}</span>
         </div>
 
       </div>
     </div>
 </section>
 
-  <!-- CONNECTED DEVICES PROFICIENCY -->
-<section appScrollReveal class="py-40 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] relative overflow-hidden transition-colors">
-  
-  <!-- Network Pattern Background -->
-  <div class="absolute inset-0 opacity-[0.05] pointer-events-none"></div>
-
-  <div class="max-w-7xl mx-auto relative z-10">
-    
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-      
-      <!-- Left Side: Narrative & Scale -->
-      <div class="space-y-10">
-        <div class="flex items-center space-x-4 mb-4">
-          <div class="h-[1px] w-12 bg-cyber-cyan"></div>
-          <span class="text-[10px] font-cyber text-purple-600 dark:text-cyber-cyan uppercase tracking-[0.6em] font-bold">{{ 'HOME.ECOSYSTEM_AUTHORITY' | translate }}</span>
-        </div>
-        
-        <h2 class="text-5xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none text-purple-900 dark:text-white">
-          Edge <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B] italic">{{ 'HOME.EDGE_ECOSYSTEM' | translate }}</span> <br>{{ 'HOME.ECOSYSTEM_PROFICIENCY' | translate }}
-        </h2>
-
-        <p class="text-slate-600 dark:text-nav-grey text-lg leading-relaxed font-light max-w-xl">
-          {{ 'HOME.ECOSYSTEM_PARAGRAPH' | translate }}
-        </p>
-
-        <!-- The "Power in Numbers" Metric -->
-        <div class="p-8 rounded-[32px] bg-slate-100 dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 relative group overflow-hidden transition-colors">
-            <div class="relative z-10">
-                <div class="text-6xl font-cyber font-black text-cyber-cyan mb-2">40K+</div>
-                <div class="text-[10px] font-cyber text-slate-500 dark:text-nav-grey uppercase tracking-[0.5em]">{{ 'HOME.LIVE_NODES' | translate }}</div>
-            </div>
-        </div>
-      </div>
-
-      <!-- Right Side: Technical proficiency grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        
-        <!-- Pillar 1: Integration -->
-        <div class="p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-white dark:bg-black/10 hover:bg-slate-100 dark:hover:bg-black/20 transition-all group">
-          <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/></svg>
-          </div>
-          <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">{{ 'HOME.HARDWARE_MASTERY' | translate }}</h4>
-          <p class="text-slate-600 dark:text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">{{ 'HOME.HARDWARE_MASTERY_DESC' | translate }}</p>
-        </div>
-
-        <!-- Pillar 2: Connectivity -->
-        <div class="p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-white dark:bg-black/10 hover:bg-slate-100 dark:hover:bg-black/20 transition-all group">
-            <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
-            </div>
-            <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">{{ 'HOME.LTE_V2X' | translate }}</h4>
-            <p class="text-slate-600 dark:text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">{{ 'HOME.LTE_V2X_DESC' | translate }}</p>
-        </div>
-
-        <!-- Pillar 3: Cloud Command -->
-        <div class="p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-white dark:bg-black/10 hover:bg-slate-100 dark:hover:bg-black/20 transition-all group">
-            <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
-            </div>
-            <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">{{ 'HOME.CLOUD_ORCHESTRATION' | translate }}</h4>
-            <p class="text-slate-600 dark:text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">{{ 'HOME.CLOUD_ORCHESTRATION_DESC' | translate }}</p>
-        </div>
-
-        <!-- Pillar 4: Precision -->
-        <div class="p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-white dark:bg-black/10 hover:bg-slate-100 dark:hover:bg-black/20 transition-all group">
-            <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            </div>
-            <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">{{ 'HOME.RELIABILITY_ZERO' | translate }}</h4>
-            <p class="text-slate-600 dark:text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">{{ 'HOME.RELIABILITY_ZERO_DESC' | translate }}</p>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
+  <!-- CONNECTED DEVICES PROFICIENCY (moved to About Us) -->
 
 <!-- METRICS SECTION (moved from Home) -->
   <section appScrollReveal class="py-24 px-6 relative border-y border-slate-200 dark:border-white/5 bg-slate-100/50 dark:bg-white/[0.01] transition-colors">
@@ -488,6 +411,134 @@
     </div>
   </section>
 
+  <!-- PERFORMANCE ANALYTICS: SAFETY EVOLUTION -->
+  <section appScrollReveal class="py-40 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] relative overflow-hidden transition-colors">
+    <!-- Subtle Grid Background -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10 space-y-16">
+
+      <!-- Header -->
+      <div class="text-center mb-8 space-y-4 max-w-3xl mx-auto">
+        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.6em] font-black">
+          {{ 'PRODUCTS.PERF_ANALYTICS_BADGE' | translate }}
+        </h2>
+        <h3 class="text-3xl md:text-4xl font-cyber font-extrabold uppercase tracking-tight text-purple-900 dark:text-white">
+          {{ 'PRODUCTS.PERF_ANALYTICS_TITLE' | translate }}
+        </h3>
+        <p class="text-slate-600 dark:text-nav-grey text-sm md:text-base max-w-2xl mx-auto font-light">
+          {{ 'PRODUCTS.PERF_ANALYTICS_TEXT' | translate }}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left side: Narrative Stages -->
+        <div class="lg:col-span-4 space-y-10 order-2 lg:order-1">
+
+          <!-- Stage 1 -->
+          <div class="group pl-8 border-l border-slate-300 dark:border-white/10 hover:border-red-500 transition-colors">
+            <h4 class="text-red-500 font-cyber font-bold uppercase text-sm mb-2 tracking-widest">
+              {{ 'PRODUCTS.PERF_PHASE1_TITLE' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
+              {{ 'PRODUCTS.PERF_PHASE1_TEXT' | translate }}
+            </p>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="group pl-8 border-l border-slate-300 dark:border-white/10 hover:border-cyber-cyan transition-colors">
+            <h4 class="text-cyber-cyan font-cyber font-bold uppercase text-sm mb-2 tracking-widest">
+              {{ 'PRODUCTS.PERF_PHASE2_TITLE' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
+              {{ 'PRODUCTS.PERF_PHASE2_TEXT' | translate }}
+            </p>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="group pl-8 border-l border-slate-300 dark:border-white/10 hover:border-green-300 transition-colors">
+            <h4 class="text-green-300 font-cyber font-bold uppercase text-sm mb-2 tracking-widest italic">
+              {{ 'PRODUCTS.PERF_PHASE3_TITLE' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
+              {{ 'PRODUCTS.PERF_PHASE3_TEXT' | translate }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Right side: simplified chart / badges -->
+        <div class="lg:col-span-8 relative order-1 lg:order-2">
+          <div class="relative bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 p-8 md:p-12 rounded-[40px] overflow-hidden transition-colors">
+            <div class="absolute inset-0 opacity-[0.08] pointer-events-none"
+                 style="background-image: radial-gradient(#00FFC2 0.7px, transparent 0.7px); background-size: 26px 26px;"></div>
+
+            <div class="relative z-10 space-y-8">
+              <div class="flex flex-wrap gap-3 text-[10px] font-cyber uppercase tracking-[0.3em] text-nav-grey">
+                <span class="px-3 py-1 rounded-full bg-red-500/10 text-red-400 border border-red-500/40">
+                  {{ 'PRODUCTS.PERF_BADGE_HIGH_RISK' | translate }}
+                </span>
+                <span class="px-3 py-1 rounded-full bg-cyber-cyan/10 text-cyber-cyan border border-cyber-cyan/40">
+                  {{ 'PRODUCTS.PERF_BADGE_ADAS_SYNC' | translate }}
+                </span>
+                <span class="px-3 py-1 rounded-full bg-green-400/10 text-green-300 border border-green-300/40">
+                  {{ 'PRODUCTS.PERF_BADGE_MAX_SAFETY' | translate }}
+                </span>
+              </div>
+
+              <div class="space-y-6">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                  <div>
+                    <h4 class="text-xs font-cyber uppercase tracking-[0.3em] text-slate-500 dark:text-nav-grey">
+                      Safety_Performance_Index
+                    </h4>
+                    <h5 class="text-base md:text-lg font-cyber text-purple-900 dark:text-white">
+                      {{ 'PRODUCTS.PERF_ANALYTICS_TITLE' | translate }}
+                    </h5>
+                  </div>
+                  <div class="text-xs font-cyber uppercase tracking-[0.3em] text-slate-500 dark:text-nav-grey">
+                    Technology_Adoption_Timeline
+                  </div>
+                </div>
+
+                <!-- Simple bar/curve representation -->
+                <div class="space-y-4">
+                  <div class="h-2 rounded-full bg-red-500/20">
+                    <div class="h-2 w-1/3 rounded-full bg-red-500 shadow-[0_0_12px_rgba(248,113,113,0.7)]"></div>
+                  </div>
+                  <div class="h-2 rounded-full bg-cyan-400/20">
+                    <div class="h-2 w-2/3 rounded-full bg-cyan-400 shadow-[0_0_14px_rgba(34,211,238,0.8)]"></div>
+                  </div>
+                  <div class="h-2 rounded-full bg-emerald-400/20">
+                    <div class="h-2 w-[92%] rounded-full bg-emerald-400 shadow-[0_0_16px_rgba(52,211,153,0.9)]"></div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                  <div class="space-y-2">
+                    <h4 class="font-cyber uppercase tracking-[0.2em] text-slate-700 dark:text-white">
+                      {{ 'PRODUCTS.PERF_SUMMARY_PASSENGER_TITLE' | translate }}
+                    </h4>
+                    <p class="text-slate-600 dark:text-nav-grey text-xs md:text-sm">
+                      {{ 'PRODUCTS.PERF_SUMMARY_PASSENGER_TEXT' | translate }}
+                    </p>
+                  </div>
+                  <div class="space-y-2">
+                    <h4 class="font-cyber uppercase tracking-[0.2em] text-slate-700 dark:text-white">
+                      {{ 'PRODUCTS.PERF_SUMMARY_DRIVER_TITLE' | translate }}
+                    </h4>
+                    <p class="text-slate-600 dark:text-nav-grey text-xs md:text-sm">
+                      {{ 'PRODUCTS.PERF_SUMMARY_DRIVER_TEXT' | translate }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ACTUARIAL VALUE → OUTCOMES -->
   <section appScrollReveal class="py-24 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] transition-colors">
     <div class="max-w-5xl mx-auto space-y-10">
@@ -529,55 +580,6 @@
               {{ 'INSURER.ACTUARIAL_ROW3_RIGHT' | translate }}
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PERFORMANCE ANALYTICS: SAFETY EVOLUTION -->
-  <section appScrollReveal class="py-32 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] transition-colors">
-    <div class="max-w-7xl mx-auto space-y-14">
-
-      <!-- Header -->
-      <div class="space-y-4 text-center lg:text-left max-w-3xl">
-        <span class="text-[10px] font-cyber text-cyber-cyan uppercase tracking-[0.5em]">
-          {{ 'PRODUCTS.PERF_ANALYTICS_BADGE' | translate }}
-        </span>
-        <h2 class="text-3xl md:text-4xl font-cyber font-extrabold uppercase tracking-tight text-purple-900 dark:text-white">
-          {{ 'PRODUCTS.PERF_ANALYTICS_TITLE' | translate }}
-        </h2>
-        <p class="text-slate-600 dark:text-nav-grey text-sm md:text-base leading-relaxed">
-          {{ 'PRODUCTS.PERF_ANALYTICS_TEXT' | translate }}
-        </p>
-      </div>
-
-      <!-- Phases grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="p-8 rounded-[32px] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
-          <h3 class="text-sm font-cyber text-cyber-cyan uppercase tracking-[0.3em] mb-3">
-            {{ 'PRODUCTS.PERF_PHASE1_TITLE' | translate }}
-          </h3>
-          <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
-            {{ 'PRODUCTS.PERF_PHASE1_TEXT' | translate }}
-          </p>
-        </div>
-
-        <div class="p-8 rounded-[32px] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
-          <h3 class="text-sm font-cyber text-cyber-cyan uppercase tracking-[0.3em] mb-3">
-            {{ 'PRODUCTS.PERF_PHASE2_TITLE' | translate }}
-          </h3>
-          <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
-            {{ 'PRODUCTS.PERF_PHASE2_TEXT' | translate }}
-          </p>
-        </div>
-
-        <div class="p-8 rounded-[32px] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
-          <h3 class="text-sm font-cyber text-cyber-cyan uppercase tracking-[0.3em] mb-3">
-            {{ 'PRODUCTS.PERF_PHASE3_TITLE' | translate }}
-          </h3>
-          <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed">
-            {{ 'PRODUCTS.PERF_PHASE3_TEXT' | translate }}
-          </p>
         </div>
       </div>
     </div>
