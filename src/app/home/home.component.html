@@ -20,7 +20,7 @@
       
       <ng-container *ngFor="let image of carouselImages; let i = index">
         <div *ngIf="i === currentImageIndex" class="space-y-4">
-          <h4 class="text-4xl md:text-5xl font-cyber font-extrabold leading-[1.1] tracking-tight text-purple-900 dark:text-white slide-text-title">
+          <h4 class="text-4xl md:text-5xl font-cyber font-extrabold leading-[1.1] tracking-tight text-purple-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-white dark:to-[#D9E33F] slide-text-title">
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">
               {{ image.titleKey | translate }}
             </span>
@@ -80,7 +80,7 @@
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-6">
         <div class="space-y-4">
-          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-tighter leading-tight text-purple-900 dark:text-white">
+          <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-tighter leading-tight text-purple-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-white dark:to-[#D9E33F]">
             {{ 'HOME.SECTOR_TITLE' | translate }} <br><span class="text-cyber-cyan">{{ 'HOME.SECTOR_APPLICATIONS' | translate }}</span>
           </h2>
         </div>
@@ -161,51 +161,6 @@
     </div>
 </section>
 
-  <!-- CONNECTED DEVICES PROFICIENCY (moved to About Us) -->
-
-<!-- METRICS SECTION (moved from Home) -->
-  <section appScrollReveal class="py-24 px-6 relative border-y border-slate-200 dark:border-white/5 bg-slate-100/50 dark:bg-white/[0.01] transition-colors">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16 space-y-2">
-        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.5em]">
-          {{ 'HOME.METRICS_INTRO' | translate }}
-        </h2>
-        <p class="text-4xl font-cyber font-bold uppercase tracking-widest text-slate-900 dark:text-white">
-          {{ 'HOME.SPEAK_VOLUMES' | translate }}
-        </p>
-      </div>
-
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
-          <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+60</div>
-          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
-            {{ 'HOME.SUPERVISED_IOT' | translate }}
-          </p>
-        </div>
-        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
-          <div class="text-5xl font-cyber font-black text-slate-900 dark:text-white mb-2">+35</div>
-          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
-            {{ 'HOME.SOLUTIONS_IOT' | translate }}
-          </p>
-        </div>
-        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none group">
-            <div class="text-5xl font-cyber font-black text-slate-900 dark:text-white mb-2 tabular-nums">
-                +{{ displayCount }}
-            </div>
-            <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
-                {{ 'HOME.CONNECTED_DEVICES' | translate }}
-            </p>
-        </div>
-        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
-          <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+15</div>
-          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
-            {{ 'HOME.COUNTRIES_TOUCHED' | translate }}
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- INNOVATION SECTION -->
   <section appScrollReveal class="py-40 px-6 lg:px-20 bg-white dark:bg-[#251c2b] relative overflow-hidden transition-colors">
     
@@ -281,11 +236,11 @@
           <div class="absolute -inset-10 bg-cyber-cyan/10 blur-[100px] rounded-full animate-pulse"></div>
           
           <!-- Blueprint Card -->
-          <div class="relative p-1 bg-slate-200/80 dark:bg-black/30 rounded-[40px] border border-slate-200 dark:border-white/10 overflow-hidden group transition-colors">
+          <div class="relative p-3 bg-slate-200/80 dark:bg-black/30 rounded-[40px] border border-slate-200 dark:border-white/10 overflow-hidden group transition-colors">
             <!-- Glass Overlay -->
             <div class="absolute inset-0 bg-gradient-to-br from-cyber-cyan/5 to-transparent"></div>
             
-            <div class="relative p-8 md:p-12 space-y-10">
+            <div class="relative p-10 md:p-14 space-y-10">
               <div class="flex justify-between items-start">
                 <div class="w-16 h-16 rounded-2xl bg-cyber-cyan/10 border border-cyber-cyan/20 flex items-center justify-center text-cyber-cyan">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
@@ -312,11 +267,11 @@
 
               <div class="pt-6 grid grid-cols-2 gap-4">
                   <div class="p-4 rounded-2xl bg-slate-100 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 text-center transition-colors">
-                      <div class="text-lg font-cyber font-bold text-purple-900 dark:text-white tracking-widest">FHD</div>
+                      <div class="text-lg font-cyber font-bold text-purple-900 dark:text-white tracking-widest">Improving driving quality</div>
                       <div class="text-[8px] text-slate-500 dark:text-nav-grey uppercase">{{ 'HOME.RESOLUTION' | translate }}</div>
                   </div>
                   <div class="p-4 rounded-2xl bg-slate-100 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 text-center transition-colors">
-                      <div class="text-lg font-cyber font-bold text-purple-900 dark:text-white tracking-widest">5G</div>
+                      <div class="text-lg font-cyber font-bold text-purple-900 dark:text-white tracking-widest">Safety Scoring + Coaching Insights</div>
                       <div class="text-[8px] text-slate-500 dark:text-nav-grey uppercase">{{ 'HOME.CONNECTIVITY' | translate }}</div>
                   </div>
               </div>
@@ -595,11 +550,45 @@
         <p class="text-slate-600 dark:text-nav-grey text-2xl font-cyber">{{ 'HOME.GET_IN_TOUCH' | translate }}</p>
         
         <div class="mt-12 space-y-6">
+          <!-- Address -->
           <div class="flex items-center space-x-4">
             <div class="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-cyber-cyan">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 11c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M5 10a7 7 0 1114 0c0 4.418-4.03 8.262-6.053 9.798a1 1 0 01-1.894 0C9.03 18.262 5 14.418 5 10z"/>
+              </svg>
             </div>
-            <span class="text-slate-900 dark:text-white">contact@accent.tn</span>
+            <span class="text-slate-900 dark:text-white text-sm">
+              21, rue Paul Doumer, 94170 Le Perreux-sur-Marne, France
+            </span>
+          </div>
+
+          <!-- Email -->
+          <div class="flex items-center space-x-4">
+            <div class="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-cyber-cyan">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <span class="text-slate-900 dark:text-white">
+              contact@accentfrance.com
+            </span>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-center space-x-4">
+            <div class="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-cyber-cyan">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 5a2 2 0 012-2h1.28a1 1 0 01.95.684l1.2 3.593a1 1 0 01-.27 1.023l-1.2 1.2a14.5 14.5 0 007.07 7.07l1.2-1.2a1 1 0 011.023-.27l3.593 1.2A1 1 0 0121 18.72V20a2 2 0 01-2 2h-1C9.82 22 3 15.18 3 7V5z"/>
+              </svg>
+            </div>
+            <span class="text-slate-900 dark:text-white">
+              +216 70 526 350
+            </span>
           </div>
         </div>
       </div>

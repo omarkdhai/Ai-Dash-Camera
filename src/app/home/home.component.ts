@@ -11,10 +11,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   private intervalId: any;
   private isCarouselPaused = false;
 
-  displayCount: number = 0;
-  private targetCount: number = 1;
-  private counterInterval: any;
-  private infiniteInterval: any;
+  displayCount: number = 40000;
 
   carouselImages = [
     {
@@ -57,8 +54,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     });
 
     this.startCarousel();
-
-    this.startRollingNumbers();
   }
 
   private startCarousel() {
@@ -77,30 +72,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.isCarouselPaused = false;
   }
 
-  startRollingNumbers() {
-    const duration = 2000;
-    const steps = 60; 
-    const increment = this.targetCount / steps;
-    let current = 0;
-
-    this.counterInterval = setInterval(() => {
-      current += increment;
-      if (current >= this.targetCount) {
-        this.displayCount = this.targetCount;
-        clearInterval(this.counterInterval);
-        this.startInfiniteGrowth();
-      } else {
-        this.displayCount = Math.floor(current);
-      }
-    }, duration / steps);
-  }
-
-  startInfiniteGrowth() {
-    this.infiniteInterval = setInterval(() => {
-      this.displayCount++;
-    }, 80); // Adjust speed here
-  }
-
   nextSlide() {
     this.currentImageIndex = (this.currentImageIndex + 1) % this.carouselImages.length;
   }
@@ -109,7 +80,5 @@ export class HomeComponent implements OnInit, OnDestroy {
     if (this.intervalId) {
       clearInterval(this.intervalId);
     }
-    if (this.counterInterval) clearInterval(this.counterInterval);
-    if (this.infiniteInterval) clearInterval(this.infiniteInterval);
   }
 }

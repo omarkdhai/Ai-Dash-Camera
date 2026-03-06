@@ -12,7 +12,7 @@
             {{ 'TAXI.HERO_BADGE' | translate }}
           </div>
           
-          <h1 class="text-4xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none mb-4 text-purple-900 dark:text-white">
+          <h1 class="text-4xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none mb-4 text-purple-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-white dark:to-[#D9E33F]">
             {{ 'NAV.TAXI' | translate }} <br>
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">{{ 'TAXI.HERO_SUBTITLE' | translate }}</span>
           </h1>
@@ -170,52 +170,7 @@
     </div>
   </section>
 
-  <!-- 5. SOLUTION ADVANTAGES -->
-  <section appScrollReveal class="py-32 px-6 lg:px-20 bg-white/[0.01] border-y border-white/5">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-center text-4xl font-cyber font-bold uppercase tracking-widest mb-24 text-purple-900 dark:text-white">
-          {{ 'TAXI.ADV_TITLE' | translate }} <span class="text-cyber-cyan">{{ 'TAXI.ADV_SUBTITLE' | translate }}</span>
-      </h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
-        <div class="text-center space-y-8 group">
-          <div class="w-16 h-16 mx-auto rounded-2xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan border border-cyber-cyan/20 group-hover:bg-cyber-cyan group-hover:text-black transition-all">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-          </div>
-          <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase tracking-widest">{{ 'TAXI.ADV_1_TITLE' | translate }}</h4>
-          <ul class="text-[10px] text-nav-grey uppercase tracking-[0.2em] space-y-4">
-            <li>• {{ 'TAXI.ADV_1_L1' | translate }}</li>
-            <li>• {{ 'TAXI.ADV_1_L2' | translate }}</li>
-            <li>• {{ 'TAXI.ADV_1_L3' | translate }}</li>
-          </ul>
-        </div>
-        <div class="text-center space-y-8 group">
-            <div class="w-16 h-16 mx-auto rounded-2xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan border border-cyber-cyan/20 group-hover:bg-cyber-cyan group-hover:text-black transition-all">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
-            </div>
-            <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase tracking-widest">{{ 'TAXI.ADV_2_TITLE' | translate }}</h4>
-            <ul class="text-[10px] text-nav-grey uppercase tracking-[0.2em] space-y-4">
-              <li>• {{ 'TAXI.ADV_2_L1' | translate }}</li>
-              <li>• {{ 'TAXI.ADV_2_L2' | translate }}</li>
-              <li>• {{ 'TAXI.ADV_2_L3' | translate }}</li>
-            </ul>
-        </div>
-        <div class="text-center space-y-8 group">
-            <div class="w-16 h-16 mx-auto rounded-2xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan border border-cyber-cyan/20 group-hover:bg-cyber-cyan group-hover:text-black transition-all">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
-            </div>
-            <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase tracking-widest">{{ 'TAXI.ADV_3_TITLE' | translate }}</h4>
-            <ul class="text-[10px] text-nav-grey uppercase tracking-[0.2em] space-y-4">
-              <li>• {{ 'TAXI.ADV_3_L1' | translate }}</li>
-              <li>• {{ 'TAXI.ADV_3_L2' | translate }}</li>
-              <li>• {{ 'TAXI.ADV_3_L3' | translate }}</li>
-            </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. BENEFITS GRID -->
+  <!-- 5. BENEFITS GRID -->
   <section appScrollReveal class="py-40 px-6 lg:px-20">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <img src="assets/taxi1.jpg"
