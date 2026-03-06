@@ -49,7 +49,7 @@
     "PUBLIC_BUS": "Public Transport",
     "RENT_CAR": "Car Rental",
     "ACCENTIFY_PLATFORM": "Accentify Platform",
-    "ADDRESS": "Technopole bloc 1, Manouba, 2010 Tunisia",
+    "ADDRESS": "21, rue Paul Doumer, 94170 Le Perreux-sur-Marne, France",
     "PRIVACY_POLICY": "Privacy Policy",
     "TERMS_OF_SERVICE": "Terms of Service",
     "ALL_RIGHTS_RESERVED": "All Rights Reserved."
@@ -563,7 +563,7 @@
   },
 
   "LOGISTICS": {
-    "HERO_BADGE": "AI Dashcam solutions",
+    "HERO_BADGE": "MF2 AI DASH CAM",
     "HERO_TITLE": "Freight & Delivery",
     "HERO_SUBTITLE": "Solution",
     "CARD_1_TITLE": "Safer Long-Haul Trips",
@@ -622,7 +622,7 @@
     "BENEFIT_4": "3rd Party Support fleet manage software platform"
   },
   "OIL_GAS": {
-    "HERO_BADGE": "AI Dashcam solutions",
+    "HERO_BADGE": "MF2 AI DASH CAM",
     "HERO_TITLE": "Hazardous Materials",
     "HERO_SUBTITLE": "Solution",
     "CARD_1_TITLE": "Explosion-Proof Evidence",
@@ -681,7 +681,7 @@
     "IMPACT_5": "Well integrated with customers’ FMS, merging it all."
   },
   "TAXI": {
-    "HERO_BADGE": "AI Dashcam solutions",
+    "HERO_BADGE": "MF2 AI DASH CAM",
     "HERO_SUBTITLE": "Solution",
     "MARKET_TITLE": "Market Demand &",
     "MARKET_CHALLENGE": "Challenge",
@@ -743,7 +743,7 @@
     "BEN_4": "Raise ROI by introducing advertising services"
   },
   "SCHOOL_BUS": {
-    "HERO_BADGE": "AI Dashcam solutions",
+    "HERO_BADGE": "MF2 AI DASH CAM",
     "HERO_SUBTITLE": "Solution",
     "CARD_1_TITLE": "Student Safety",
     "CARD_1_DESC": "Cabin and road views document every school trip.",
@@ -783,7 +783,7 @@
     "ADV_2_DESC": "Most reliable solution for student-left checking and seamless 3rd party integration."
   },
   "PUBLIC_BUS": {
-    "HERO_BADGE": "AI Dashcam solutions",
+    "HERO_BADGE": "MF2 AI DASH CAM",
     "HERO_SUBTITLE": "Solution",
     "CARD_1_TITLE": "Live Cabin Visibility",
     "CARD_1_DESC": "Dispatch sees cabin and road context in real time.",
@@ -812,7 +812,7 @@
     "FEAT_3_DESC": "High-bandwidth IP camera support for high-definition cabin and road surveillance."
   },
   "CAR_RENTAL": {
-    "HERO_BADGE": "AI Dashcam solutions",
+    "HERO_BADGE": "MF2 AI DASH CAM",
     "HERO_SUBTITLE": "Solution",
     "HERO_DESC": "Protect your assets and streamline liability with AI-powered vision and real-time tracking.",
     "CARD_1_TITLE": "Theft & Misuse Protection",

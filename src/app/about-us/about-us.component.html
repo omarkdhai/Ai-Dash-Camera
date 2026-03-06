@@ -91,7 +91,7 @@
   <section appScrollReveal class="py-32 px-6 bg-slate-50 dark:bg-[#251c2b] transition-colors">
     <div class="max-w-7xl mx-auto">
       <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
-        <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-tighter text-purple-900 dark:text-white">{{ 'HOME.SERVICES_TITLE' | translate }} <br><span class="text-cyber-cyan">{{ 'HOME.SERVICES_PROVIDE' | translate }}</span></h2>
+        <h2 class="text-4xl md:text-5xl font-cyber font-bold uppercase tracking-tighter text-purple-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-white dark:to-[#D9E33F]">{{ 'HOME.SERVICES_TITLE' | translate }} <br><span class="text-cyber-cyan">{{ 'HOME.SERVICES_PROVIDE' | translate }}</span></h2>
         <div class="h-[1px] flex-grow mx-8 bg-slate-200 dark:bg-white/10 hidden md:block"></div>
         <p class="text-slate-600 dark:text-nav-grey text-sm max-w-xs text-right">{{ 'HOME.SERVICES_SUBTITLE' | translate }}</p>
       </div>
@@ -140,6 +140,153 @@
           <a routerLink="/services" class="text-xs font-bold text-cyber-cyan uppercase tracking-widest hover:underline decoration-2">{{ 'HOME.READ_MORE' | translate }}</a>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSYSTÈME EDGE / MAÎTRISE HARDWARE & CLOUD -->
+  <section appScrollReveal class="py-40 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] relative overflow-hidden transition-colors">
+    <div class="absolute inset-0 opacity-[0.05] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+
+        <!-- Left: narrative & scale -->
+        <div class="space-y-10">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="h-[1px] w-12 bg-cyber-cyan"></div>
+            <span class="text-[10px] font-cyber text-purple-600 dark:text-cyber-cyan uppercase tracking-[0.6em] font-bold">
+              {{ 'HOME.ECOSYSTEM_AUTHORITY' | translate }}
+            </span>
+          </div>
+
+          <h2 class="text-5xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none text-purple-900 dark:text-white">
+            Edge <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B] italic">
+              {{ 'HOME.EDGE_ECOSYSTEM' | translate }}
+            </span> <br>
+            {{ 'HOME.ECOSYSTEM_PROFICIENCY' | translate }}
+          </h2>
+
+          <p class="text-slate-600 dark:text-nav-grey text-lg leading-relaxed font-light max-w-xl">
+            {{ 'HOME.ECOSYSTEM_PARAGRAPH' | translate }}
+          </p>
+
+          <div class="p-8 rounded-[32px] bg-slate-100 dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 relative group overflow-hidden transition-colors">
+            <div class="relative z-10">
+              <div class="text-6xl font-cyber font-black text-cyber-cyan mb-2">40K+</div>
+              <div class="text-[10px] font-cyber text-slate-500 dark:text-nav-grey uppercase tracking-[0.5em]">
+                {{ 'HOME.LIVE_NODES' | translate }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: technical pillars -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-white dark:bg-black/10 hover:bg-slate-100 dark:hover:bg-black/20 transition-all group">
+            <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
+              </svg>
+            </div>
+            <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">
+              {{ 'HOME.HARDWARE_MASTERY' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">
+              {{ 'HOME.HARDWARE_MASTERY_DESC' | translate }}
+            </p>
+          </div>
+
+          <div class="p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-white dark:bg-black/10 hover:bg-slate-100 dark:hover:bg-black/20 transition-all group">
+            <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+              </svg>
+            </div>
+            <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">
+              {{ 'HOME.LTE_V2X' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">
+              {{ 'HOME.LTE_V2X_DESC' | translate }}
+            </p>
+          </div>
+
+          <div class="p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-white dark:bg-black/10 hover:bg-slate-100 dark:hover:bg-black/20 transition-all group">
+            <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+              </svg>
+            </div>
+            <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">
+              {{ 'HOME.CLOUD_ORCHESTRATION' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">
+              {{ 'HOME.CLOUD_ORCHESTRATION_DESC' | translate }}
+            </p>
+          </div>
+
+          <div class="p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-white dark:bg-black/10 hover:bg-slate-100 dark:hover:bg-black/20 transition-all group">
+            <div class="w-10 h-10 rounded-lg bg-cyber-cyan flex items-center justify-center text-black mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <h4 class="text-purple-900 dark:text-white font-cyber font-bold uppercase text-sm tracking-widest mb-4 italic">
+              {{ 'HOME.RELIABILITY_ZERO' | translate }}
+            </h4>
+            <p class="text-slate-600 dark:text-nav-grey text-[11px] leading-relaxed uppercase tracking-wider">
+              {{ 'HOME.RELIABILITY_ZERO_DESC' | translate }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LET OUR METRICS SPEAK VOLUMES -->
+  <section appScrollReveal class="py-24 px-6 bg-slate-50 dark:bg-[#251c2b] border-y border-slate-200 dark:border-white/5 transition-colors">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 space-y-2">
+        <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.5em]">
+          {{ 'HOME.METRICS_INTRO' | translate }}
+        </h2>
+        <p class="text-4xl font-cyber font-bold uppercase tracking-widest text-slate-900 dark:text-white">
+          {{ 'HOME.SPEAK_VOLUMES' | translate }}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
+          <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+60</div>
+          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
+            {{ 'HOME.SUPERVISED_IOT' | translate }}
+          </p>
+        </div>
+        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
+          <div class="text-5xl font-cyber font-black text-slate-900 dark:text-white mb-2">+35</div>
+          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
+            {{ 'HOME.SOLUTIONS_IOT' | translate }}
+          </p>
+        </div>
+        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none group">
+          <div class="text-5xl font-cyber font-black text-slate-900 dark:text-white mb-2 tabular-nums">
+            +40000
+          </div>
+          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
+            {{ 'HOME.CONNECTED_DEVICES' | translate }}
+          </p>
+        </div>
+        <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
+          <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+15</div>
+          <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
+            {{ 'HOME.COUNTRIES_TOUCHED' | translate }}
+          </p>
+        </div>
       </div>
     </div>
   </section>
