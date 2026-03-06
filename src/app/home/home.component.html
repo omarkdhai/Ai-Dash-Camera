@@ -41,9 +41,10 @@
     <div class="relative hidden lg:block">
       <!-- Image Wrapper -->
       <div
-        class="relative rounded-3xl border border-slate-200 dark:border-white/10 overflow-hidden shadow-2xl"
+        class="relative rounded-3xl border border-slate-200 dark:border-white/10 overflow-hidden shadow-2xl cursor-pointer"
         (mouseenter)="pauseCarousel()"
         (mouseleave)="resumeCarousel()"
+        (click)="nextSlide()"
       >
         <div class="flex transition-transform duration-700 ease-in-out h-[400px]" 
              [style.transform]="'translateX(-' + (currentImageIndex * 100) + '%)'">

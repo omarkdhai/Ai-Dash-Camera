@@ -249,7 +249,7 @@
   </section>
 
   <!-- LET OUR METRICS SPEAK VOLUMES -->
-  <section appScrollReveal class="py-24 px-6 bg-slate-50 dark:bg-[#251c2b] border-y border-slate-200 dark:border-white/5 transition-colors">
+  <section #metricsSection appScrollReveal class="py-24 px-6 bg-slate-50 dark:bg-[#251c2b] border-y border-slate-200 dark:border-white/5 transition-colors">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16 space-y-2">
         <h2 class="text-xs font-cyber text-cyber-cyan uppercase tracking-[0.5em]">
@@ -262,27 +262,27 @@
 
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
-          <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+60</div>
+          <div class="text-3xl md:text-4xl font-cyber font-black text-cyber-cyan mb-2">+60</div>
           <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
             {{ 'HOME.SUPERVISED_IOT' | translate }}
           </p>
         </div>
         <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
-          <div class="text-5xl font-cyber font-black text-slate-900 dark:text-white mb-2">+35</div>
+          <div class="text-3xl md:text-4xl font-cyber font-black text-slate-900 dark:text-white mb-2">+35</div>
           <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
             {{ 'HOME.SOLUTIONS_IOT' | translate }}
           </p>
         </div>
         <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none group">
-          <div class="text-5xl font-cyber font-black text-slate-900 dark:text-white mb-2 tabular-nums">
-            +40000
+          <div class="text-3xl md:text-4xl font-cyber font-black text-slate-900 dark:text-white mb-2 tabular-nums">
+            +{{ connectedDevicesDisplay | number:'1.0-0' }}
           </div>
           <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
             {{ 'HOME.CONNECTED_DEVICES' | translate }}
           </p>
         </div>
         <div class="text-center p-8 rounded-2xl bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 hover:border-cyber-cyan/30 transition-all shadow-sm dark:shadow-none">
-          <div class="text-5xl font-cyber font-black text-cyber-cyan mb-2">+15</div>
+          <div class="text-3xl md:text-4xl font-cyber font-black text-cyber-cyan mb-2">+15</div>
           <p class="text-slate-600 dark:text-nav-grey text-xs uppercase tracking-widest leading-relaxed">
             {{ 'HOME.COUNTRIES_TOUCHED' | translate }}
           </p>

@@ -20,19 +20,16 @@
     "COMPLIANCE": "Conformité",
     "CONTACT": "Contact"
   },
-
   "LANG": {
     "FR": "FR",
     "EN": "EN"
   },
-
   "THEME": {
     "LIGHT_MODE": "Mode clair",
     "DARK_MODE": "Mode sombre",
     "SWITCH_TO_LIGHT": "Passer en mode clair",
     "SWITCH_TO_DARK": "Passer en mode sombre"
   },
-
   "FOOTER": {
     "TAGLINE": "Nous vous apportons l'avenir du numérique avec des solutions innovantes en IA et IoT qui orientent l'économie mondiale vers un horizon plus sûr et plus durable.",
     "THINK_SMART": "Pensez malin, Agissez bien",
@@ -44,19 +41,18 @@
     "ABOUT_US": "À propos",
     "RESELLER": "Revendeur",
     "COMPLIANCE": "Conformité",
-      "LOGISTICS": "TRANSPORT DE MARCHANDISES",
-      "OIL_GAS": "Oil & Gas",
-      "TAXI": "TAXIS & VTC",
-      "SCHOOL_BUS": "BUS SCOLAIRES",
-      "PUBLIC_BUS": "BUS & TRANSPORT PUBLIC",
-      "RENT_CAR": "LOCATION & LLD",
+    "LOGISTICS": "TRANSPORT DE MARCHANDISES",
+    "OIL_GAS": "Oil & Gas",
+    "TAXI": "TAXIS & VTC",
+    "SCHOOL_BUS": "BUS SCOLAIRES",
+    "PUBLIC_BUS": "BUS & TRANSPORT PUBLIC",
+    "RENT_CAR": "LOCATION & LLD",
     "ACCENTIFY_PLATFORM": "Plateforme Accentify",
     "ADDRESS": "21, rue Paul Doumer, 94170 Le Perreux-sur-Marne, France",
     "PRIVACY_POLICY": "Politique de confidentialité",
     "TERMS_OF_SERVICE": "Conditions d'utilisation",
     "ALL_RIGHTS_RESERVED": "Tous droits réservés."
   },
-
   "HOME": {
     "HERO_BADGE": "IA DE POINTE POUR UNE MOBILITÉ INTELLIGENTE ET SÛRE",
     "HERO_TITLE": "Sécurité routière",
@@ -99,17 +95,17 @@
     "CORE_INNOVATION": "Innovation",
     "CORE_INNOVATION_PREFIX": "Cœur",
     "TECH_STACK_01": "Tech_Stack_01",
-      "LOCAL_EDGE_PROCESSING": "Protection, évaluation et coaching du conducteur",
-      "LOCAL_EDGE_DESC": "Adoptez de meilleures habitudes de conduite grâce à des notifications vocales claires pour diminuer les infractions et améliorer le scoring. Ce n'est pas seulement un simple outil de surveillance, la caméra embarquée MF2 AI s'adapte aux différentes activités du transport.",
+    "LOCAL_EDGE_PROCESSING": "Protection, évaluation et coaching du conducteur",
+    "LOCAL_EDGE_DESC": "Adoptez de meilleures habitudes de conduite grâce à des notifications vocales claires pour diminuer les infractions et améliorer le scoring. Ce n'est pas seulement un simple outil de surveillance, la caméra embarquée MF2 AI s'adapte aux différentes activités du transport.",
     "TECH_STACK_02": "Tech_Stack_02",
-      "OTA_EVOLUTION": "Alertes de sécurité en temps réel",
-      "OTA_EVOLUTION_DESC": "La caméra embarquée MF2 AI contribue à prévenir les accidents en détectant rapidement les situations à risque et en alertant les conducteurs au moment opportun.",
+    "OTA_EVOLUTION": "Alertes de sécurité en temps réel",
+    "OTA_EVOLUTION_DESC": "La caméra embarquée MF2 AI contribue à prévenir les accidents en détectant rapidement les situations à risque et en alertant les conducteurs au moment opportun.",
     "TECH_STACK_03": "Tech_Stack_03",
     "SENSOR_FUSION": "Intervention plus rapide, temps d'arrêt réduit",
-      "SENSOR_FUSION_DESC": "Une détection plus rapide des incidents et un accès plus rapide aux preuves permettent aux équipes de réagir plus vite, de réduire l'immobilisation des véhicules et de garantir la continuité des opérations.",
-      "TECH_STACK_04": "Tech_Stack_04",
-      "COMPLIANCE_TRUST_ACCOUNTABILITY": "Conformité, confiance et responsabilité",
-      "COMPLIANCE_TRUST_ACCOUNTABILITY_DESC": "Créez une culture de sécurité transparente grâce à des rapports réguliers et des séquences vidéo faciles à auditer, sans complexifier le travail quotidien.",
+    "SENSOR_FUSION_DESC": "Une détection plus rapide des incidents et un accès plus rapide aux preuves permettent aux équipes de réagir plus vite, de réduire l'immobilisation des véhicules et de garantir la continuité des opérations.",
+    "TECH_STACK_04": "Tech_Stack_04",
+    "COMPLIANCE_TRUST_ACCOUNTABILITY": "Conformité, confiance et responsabilité",
+    "COMPLIANCE_TRUST_ACCOUNTABILITY_DESC": "Créez une culture de sécurité transparente grâce à des rapports réguliers et des séquences vidéo faciles à auditer, sans complexifier le travail quotidien.",
     "HARDWARE_ID": "ID Matériel",
     "SYSTEM_RELIABILITY": "Fiabilité système",
     "OPTIMIZED": "90% Optimisé",
@@ -159,7 +155,6 @@
     "SAFETY_SLIDE_4_TEXT": "Protection et gestion des données personnelles conformes au RGPD dès la conception du système, garantissant la confidentialité et la sécurité des utilisateurs.",
     "SUBMIT": "Envoyer"
   },
-
   "CONTACT": {
     "NEED_HELP": "Parlons de votre",
     "HELP": "prochain projet",
@@ -170,7 +165,6 @@
     "MESSAGE": "Votre message",
     "SUBMIT": "Envoyer"
   },
-
   "ABOUT_US": {
     "WHO_WE_ARE": "Qui sommes-nous",
     "KNOW_ABOUT_US": "À propos de nous",
@@ -198,7 +192,6 @@
     "MESSAGE": "Votre message",
     "SUBMIT": "Envoyer"
   },
-
   "SERVICES": {
     "HERO_BADGE": "Nos Solutions",
     "HERO_TITLE": "Nos solutions intégrées pour des",
@@ -226,7 +219,6 @@
     "SEC4_DESC": "Nous sommes spécialisés dans la fourniture de services de surveillance de la chaîne du froid de pointe, adaptés aux besoins des entreprises manipulant des produits sensibles à la température.",
     "SEC4_ICON_TEXT": "Alertes de température intelligentes"
   },
-
   "SOLUTIONS": {
     "AI_POWERED": "Solutions propulsées par l'IA",
     "EXPLORE": "Explorez nos",
@@ -256,7 +248,6 @@
     "TAXI_DESC": "La surveillance double objectif protège conducteurs et passagers. L'analyse cabine haute définition enregistre les interactions, fournissant des preuves cruciales et des normes professionnelles.",
     "DURABILITY_RATING": "Indice de durabilité"
   },
-
   "COMPLIANCE": {
     "HERO_BADGE": "RGPD · CNIL",
     "HERO_TITLE": "Politique de confidentialité",
@@ -264,7 +255,6 @@
     "HERO_SUBTITLE_BODY": "ACCENT FRANCE propose des solutions de dashcams connectées intégrant des fonctionnalités ADAS et DMS à destination exclusive de clients professionnels.",
     "HERO_CARD_BADGE": "Privacy by design",
     "HERO_CARD_TEXT": "Traitements conçus pour la conformité européenne RGPD · CNIL.",
-
     "DEVICE_TITLE": "Fonctionnement des dispositifs embarqués",
     "DEVICE_DESC": "Les dispositifs fonctionnent de manière événementielle. Ils ne captent et ne transmettent des données que lorsqu’un événement de sécurité est détecté.",
     "DEVICE_CARD1_TITLE": "Activation ciblée",
@@ -273,23 +263,19 @@
     "DEVICE_CARD2_TEXT": "Aucune surveillance permanente.",
     "DEVICE_CARD3_TITLE": "Pas de biométrie",
     "DEVICE_CARD3_TEXT": "Aucune reconnaissance faciale.",
-
     "ROLES_TITLE": "Responsabilités de traitement",
     "ROLES_DESC": "Les rôles de chaque partie sont clairement définis afin de garantir une responsabilité juridique transparente.",
     "ROLES_CLIENT_TITLE": "Client",
     "ROLES_CLIENT_TEXT": "Le Client est responsable de traitement pour les données issues des dispositifs embarqués.",
     "ROLES_ACCENT_TITLE": "ACCENT FRANCE",
     "ROLES_ACCENT_TEXT": "ACCENT FRANCE agit exclusivement en qualité de sous-traitant technique.",
-
     "PURPOSE_TITLE": "Finalités des données collectées",
     "PURPOSE_L1": "Sécurité routière",
     "PURPOSE_L2": "Prévention des accidents",
     "PURPOSE_L3": "Analyse agrégée de la qualité de conduite",
     "PURPOSE_L4": "Aucune exploitation commerciale des données individuelles.",
-
     "SCHOOL_BLOCK_TITLE": "Transport scolaire",
     "SCHOOL_BLOCK_TEXT": "Dans le cadre du transport scolaire, les passagers mineurs ne sont jamais filmés.",
-
     "SHARING_TITLE": "Partage des données",
     "SHARING_DESC": "Tout partage de données est strictement encadré et ne peut intervenir qu’avec l’accord explicite du Client.",
     "SHARING_BLOCK_TITLE": "Encadrement du partage",
@@ -297,7 +283,6 @@
     "SHARING_L2": "Autorisation écrite requise",
     "SHARING_L3": "Limité à des indicateurs agrégés",
     "SHARING_L4": "Aucune transmission de vidéos brutes",
-
     "RIGHTS_TITLE": "Droits des personnes concernées",
     "RIGHTS_DESC": "Les personnes concernées disposent de l’ensemble de leurs droits conformément au RGPD :",
     "RIGHTS_CARD1_L1": "Droit d’accès",
@@ -307,14 +292,12 @@
     "RIGHTS_CARD2_L2": "Droit à la limitation",
     "RIGHTS_CONTACT_TITLE": "Exercer vos droits",
     "RIGHTS_CONTACT_TEXT": "Pour toute demande relative à vos droits, contactez-nous à :",
-
     "FRAME_TITLE": "Cadre réglementaire",
     "FRAME_DESC": "Les traitements opérés s’inscrivent strictement dans le cadre suivant :",
     "FRAME_BADGE1": "Règlement (UE) 2016/679 (« RGPD »)",
     "FRAME_BADGE2": "Loi Informatique et Libertés modifiée",
     "FRAME_BADGE3": "Recommandations et lignes directrices de la CNIL"
   },
-  
   "PRODUCTS": {
     "HERO_DRIVE": "Conduisez",
     "HERO_SMARTER": "Plus intelligemment.",
@@ -322,7 +305,6 @@
     "HERO_SUBTITLE_LINE1": "Vivez une sécurité, une clarté et un contrôle propulsés par l’IA.",
     "HERO_SUBTITLE_LINE2": "Tout-en-un dans un système de dashcam professionnel.",
     "HERO_REQUEST_DEMO": "Demander une démo",
-
     "ORBIT_DUAL_FHD_TITLE": "Vision FHD double",
     "ORBIT_DUAL_FHD_TEXT": "Route et habitacle capturés simultanément en 1080p.",
     "ORBIT_EDGE_AI_TITLE": "Alertes IA embarquées",
@@ -339,11 +321,9 @@
     "ORBIT_TAMPER_TEXT": "Stockage industriel pour sécuriser les preuves.",
     "ORBIT_FLEET_TITLE": "Intégration flotte",
     "ORBIT_FLEET_TEXT": "APIs ouvertes connectées nativement à votre FMS / VSS.",
-
     "CORE_FEATURES_TITLE": "Fonctionnalités",
     "CORE_FEATURES_HIGHLIGHT": "clés",
     "ADVANTAGES_TITLE": "Nos avantages",
-
     "CORE_AI_EVENTS_TITLE": "Événements déclenchés par l’IA",
     "CORE_AI_EVENTS_TEXT": "Identifie en temps réel les infractions ADAS et DMS (freinage brusque, collision, distance de sécurité, distraction, somnolence…) et alimente le scoring qualité de conduite.",
     "CORE_EMERGENCY_TITLE": "Événements bouton d’urgence",
@@ -352,13 +332,12 @@
     "CORE_FEEDBACK_TEXT": "Intégration d’une troisième caméra dans la cabine pour le suivi des opérations logistiques et de la sécurité, complétée par des alertes audio en temps réel au conducteur.",
     "CORE_LIVE_TITLE": "Diffusion en direct",
     "CORE_LIVE_TEXT": "Accédez instantanément à la vidéo en direct des caméras route et cabine pour un contrôle complet de la flotte.",
-    "CORE_GEO_TITLE": "Géolocalisation et suivi",
-    "CORE_GEO_TEXT": "Géolocalisation, vitesse, consommation de carburant, temps de conduite, historique des trajets, arrêts, points d’intérêt et données FMS consolidées pour la gestion de flotte.",
+    "CORE_GEO_TITLE": "Tableau de bord gestion de flotte",
+    "CORE_GEO_TEXT": "Tableau de bord cloud centralisé offrant une visibilité complète sur les opérations, positions des véhicules et activité des conducteurs.",
     "CORE_RECORDING_TITLE": "Enregistrement vidéo",
     "CORE_RECORDING_TEXT": "Enregistrement Full HD continu dès la mise sous tension, avec modes d’économie d’énergie intelligents.",
-    "CORE_SCORING_TITLE": "Scoring qualité de conduite",
-    "CORE_SCORING_TEXT": "Algorithmes IA combinant tous les événements ADAS, DMS et SOS pour produire un score objectif de qualité de conduite par conducteur et par flotte.",
-
+    "CORE_SCORING_TITLE": "Score qualité de conduite",
+    "CORE_SCORING_TEXT": "Les algorithmes IA évaluent le comportement et génèrent des scores de performance sécurité pour chaque conducteur.",
     "ADV_SECURITY_TITLE": "Sécurité",
     "ADV_SECURITY_TEXT": "Surveillance intelligente en temps réel de la route et du conducteur avec alertes proactives pour prévenir les accidents.",
     "ADV_FLEXIBILITY_TITLE": "Flexibilité",
@@ -367,28 +346,24 @@
     "ADV_COMPLIANCE_TEXT": "Respecte les réglementations locales (DVS, PSS) tout en améliorant la sécurité globale des usagers de la route.",
     "ADV_INSURANCE_TITLE": "Assurance",
     "ADV_INSURANCE_TEXT": "Preuves vidéo HD fiables pour prévenir la fraude et accélérer le traitement des réclamations légitimes.",
-
     "SMART_FEATURES_TITLE": "Fonctionnalités intelligentes",
     "SMART_FEATURES_SUBTITLE": "qui protègent votre véhicule",
     "MODULE_01": "Module 01",
     "MODULE_02": "Module 02",
     "MODULE_03": "Module 03",
     "MODULE_04": "Module 04",
-
-    "MODULE1_TITLE": "Alertes en temps réel",
-    "MODULE1_TEXT": "Le système avancé d’aide à la conduite (ADAS) déclenche des alertes en temps réel en cas de freinage brusque, collision ou situation d’accident : distance de sécurité non respectée, sortie de voie, infractions routières, etc.",
-    "MODULE2_TITLE": "Système de surveillance conducteur",
-    "MODULE2_TEXT": "Le DMS (Driver Monitoring System) détecte les signes de fatigue, distraction, somnolence et tabagisme excessif pour réduire les risques liés au comportement du conducteur.",
+    "MODULE1_TITLE": "ADAS – Advanced Driver Assistance System",
+    "MODULE1_TEXT": "Surveillance routière par IA qui détecte les situations de conduite dangereuses et les infractions en temps réel pour prévenir les accidents.",
+    "MODULE2_TITLE": "DMS – Driver Monitoring System",
+    "MODULE2_TEXT": "Système de surveillance cabine par IA qui analyse le comportement du conducteur et détecte fatigue, distraction et actions à risque en temps réel.",
     "MODULE3_TITLE": "Détection de personnes",
     "MODULE3_TEXT": "L’IA avancée détecte piétons et usagers de la route en temps réel, même dans des conditions difficiles, réduisant le risque de collision en zone urbaine.",
     "MODULE4_TITLE": "Suivi GPS & historique de trajet",
     "MODULE4_TEXT": "Revoyez chaque trajet sur une carte avec horodatage précis et données de vitesse. Essentiel pour les gestionnaires de flotte souhaitant une traçabilité complète.",
-
-    "EXTRA_NIGHT_TITLE": "Vision nocturne",
-    "EXTRA_NIGHT_TEXT": "La technologie Sony WDR capture une vidéo nette même dans l’obscurité totale ou face aux phares.",
-    "EXTRA_MOBILE_TITLE": "Intégration application mobile",
-    "EXTRA_MOBILE_TEXT": "Contrôlez votre dashcam et suivez les événements critiques en direct depuis votre smartphone.",
-
+    "EXTRA_NIGHT_TITLE": "Événements sécurité IA",
+    "EXTRA_NIGHT_TEXT": "Le système détecte automatiquement les violations de sécurité et génère des alertes instantanées pour conducteurs et gestionnaires de flotte.",
+    "EXTRA_MOBILE_TITLE": "Bouton SOS Urgence",
+    "EXTRA_MOBILE_TEXT": "Les conducteurs peuvent déclencher une alerte d'urgence qui envoie instantanément la vidéo live et la position GPS au gestionnaire.",
     "TECH_SPEC_TITLE": "Spécifications",
     "TECH_SPEC_HIGHLIGHT": "techniques",
     "TECH_STORAGE": "Stockage",
@@ -409,7 +384,6 @@
     "TECH_TEMPERATURE_TEXT": "Fonctionnement : -20 °C à +70 °C",
     "TECH_PACKAGE_TITLE": "Contenu du pack",
     "TECH_PACKAGE_TEXT": "Dashcam (ADAS+DMS), support de fixation, carte microSD professionnelle 256 Go, kit d’installation (kit de câblage, kit d’ajout de fusible, capuchon de fusible), bouton d’alerte, manuel d’utilisation.",
-
     "PERF_ANALYTICS_BADGE": "Analytique de performance",
     "PERF_ANALYTICS_TITLE": "L’évolution de la sécurité",
     "PERF_ANALYTICS_TEXT": "Visualiser la transition d’une conduite réactive vers une protection proactive propulsée par l’IA pour les conducteurs et les passagers.",
@@ -426,10 +400,44 @@
     "PERF_SUMMARY_PASSENGER_TEXT": "Amélioré par la stabilité IA",
     "PERF_SUMMARY_DRIVER_TITLE": "Confiance conducteur",
     "PERF_SUMMARY_DRIVER_TEXT": "Risque de fatigue neutralisé",
-
     "ROI_TITLE_LINE1": "Retour sur investissement en",
     "ROI_TITLE_LINE2": "six à neuf mois",
-    "ROI_TEXT": "Souhaitez-vous une visibilité complète sur les événements critiques, une sécurité renforcée pour vos conducteurs et votre flotte, tout en réduisant le coût et la fréquence des sinistres d’assurance ? Découvrez comment la dashcam IA MF2 protège efficacement vos véhicules et optimise la gestion des risques."
+    "ROI_TEXT": "Souhaitez-vous une visibilité complète sur les événements critiques, une sécurité renforcée pour vos conducteurs et votre flotte, tout en réduisant le coût et la fréquence des sinistres d’assurance ? Découvrez comment la dashcam IA MF2 protège efficacement vos véhicules et optimise la gestion des risques.",
+    "MODULE1_ITEM_1": "Détection freinage brusque",
+    "MODULE1_ITEM_2": "Détection risque de collision",
+    "MODULE1_ITEM_3": "Distance de sécurité non respectée",
+    "MODULE1_ITEM_4": "Alertes sortie de voie",
+    "MODULE1_ITEM_5": "Détection infractions routières",
+    "MODULE2_ITEM_1": "Détection fatigue",
+    "MODULE2_ITEM_2": "Détection distraction conducteur",
+    "MODULE2_ITEM_3": "Alertes somnolence",
+    "MODULE2_ITEM_4": "Détection tabagisme",
+    "MODULE2_ITEM_5": "Surveillance comportements à risque",
+    "EXTRA_NIGHT_ITEM_1": "Alertes vocales temps réel aux conducteurs",
+    "EXTRA_NIGHT_ITEM_2": "Notifications cloud pour gestionnaires",
+    "EXTRA_NIGHT_ITEM_3": "Détection automatique d'événements",
+    "EXTRA_NIGHT_ITEM_4": "Extraits vidéo pour incidents critiques",
+    "EXTRA_MOBILE_ITEM_1": "Activation urgence en un clic",
+    "EXTRA_MOBILE_ITEM_2": "Transmission position en temps réel",
+    "EXTRA_MOBILE_ITEM_3": "Enregistrement vidéo instantané",
+    "EXTRA_MOBILE_ITEM_4": "Notification urgence gestionnaire",
+    "CORE_GEO_ITEM_1": "Suivi GPS véhicules",
+    "CORE_GEO_ITEM_2": "Suivi vitesse",
+    "CORE_GEO_ITEM_3": "Analyse consommation carburant",
+    "CORE_GEO_ITEM_4": "Suivi heures de conduite",
+    "CORE_GEO_ITEM_5": "Historique trajets et arrêts",
+    "CORE_GEO_ITEM_6": "Gestion points d'intérêt",
+    "CORE_GEO_ITEM_7": "Intégration données FMS",
+    "CORE_SCORING_ITEM_1": "Score sécurité conducteur",
+    "CORE_SCORING_ITEM_2": "Rapports d'analyse des risques",
+    "CORE_SCORING_ITEM_3": "Classement conducteurs",
+    "CORE_SCORING_ITEM_4": "Insights coaching conducteur",
+    "CORE_CABIN_TITLE": "Caméra surveillance cabine",
+    "CORE_CABIN_TEXT": "Caméra cabine supplémentaire conçue pour la surveillance logistique et la sécurité.",
+    "CORE_CABIN_ITEM_1": "Surveillance zone cargaison",
+    "CORE_CABIN_ITEM_2": "Visibilité cabine conducteur",
+    "CORE_CABIN_ITEM_3": "Enregistrement incidents",
+    "CORE_CABIN_ITEM_4": "Contrôle conformité opérationnelle"
   },
   "RESELLER": {
     "HERO_BADGE": "Ecosystème d'intégration",

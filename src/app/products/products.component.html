@@ -142,77 +142,95 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- ADAS -->
-        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 text-center group hover:bg-white/[0.04] transition-all">
-          <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-          </div>
-          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">
+        <!-- 1. ADAS -->
+        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 flex flex-col group hover:bg-white/[0.04] transition-all">
+          <h3 class="text-lg font-cyber font-bold uppercase mb-3 text-purple-900 dark:text-white">
             {{ 'PRODUCTS.MODULE1_TITLE' | translate }}
           </h3>
-          <p class="text-nav-grey text-xs leading-relaxed">
+          <p class="text-nav-grey text-xs leading-relaxed mb-6 flex-grow">
             {{ 'PRODUCTS.MODULE1_TEXT' | translate }}
           </p>
+          <ul class="space-y-2 mt-auto">
+            <li *ngFor="let i of [1,2,3,4,5]; let idx = index" class="flex items-center gap-2 text-nav-grey text-xs">
+              <i class="fa-solid text-cyber-cyan flex-shrink-0 w-4 text-center" [ngClass]="module1Icons[idx]"></i>
+              <span>{{ 'PRODUCTS.MODULE1_ITEM_' + i | translate }}</span>
+            </li>
+          </ul>
         </div>
-        <!-- DMS -->
-        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 text-center group hover:bg-white/[0.04] transition-all">
-          <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-          </div>
-          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">
+        <!-- 2. DMS -->
+        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 flex flex-col group hover:bg-white/[0.04] transition-all">
+          <h3 class="text-lg font-cyber font-bold uppercase mb-3 text-purple-900 dark:text-white">
             {{ 'PRODUCTS.MODULE2_TITLE' | translate }}
           </h3>
-          <p class="text-nav-grey text-xs leading-relaxed">
+          <p class="text-nav-grey text-xs leading-relaxed mb-6 flex-grow">
             {{ 'PRODUCTS.MODULE2_TEXT' | translate }}
           </p>
+          <ul class="space-y-2 mt-auto">
+            <li *ngFor="let i of [1,2,3,4,5]; let idx = index" class="flex items-center gap-2 text-nav-grey text-xs">
+              <i class="fa-solid text-cyber-cyan flex-shrink-0 w-4 text-center" [ngClass]="module2Icons[idx]"></i>
+              <span>{{ 'PRODUCTS.MODULE2_ITEM_' + i | translate }}</span>
+            </li>
+          </ul>
         </div>
-        <!-- Vision nocturne -->
-        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 text-center group hover:bg-white/[0.04] transition-all">
-          <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
-          </div>
-          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">
-            {{ 'PRODUCTS.EXTRA_NIGHT_TITLE' | translate }}
-          </h3>
-          <p class="text-nav-grey text-xs leading-relaxed">
-            {{ 'PRODUCTS.EXTRA_NIGHT_TEXT' | translate }}
-          </p>
-        </div>
-        <!-- Intégration application mobile -->
-        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 text-center group hover:bg-white/[0.04] transition-all">
-          <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-          </div>
-          <h3 class="text-lg font-cyber font-bold uppercase mb-4">
-            {{ 'PRODUCTS.EXTRA_MOBILE_TITLE' | translate }}
-          </h3>
-          <p class="text-nav-grey text-xs leading-relaxed">
-            {{ 'PRODUCTS.EXTRA_MOBILE_TEXT' | translate }}
-          </p>
-        </div>
-        <!-- Gestion de flotte -->
-        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 text-center group hover:bg-white/[0.04] transition-all">
-          <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          </div>
-          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">
+        <!-- 3. Fleet Management Dashboard -->
+        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 flex flex-col group hover:bg-white/[0.04] transition-all">
+          <h3 class="text-lg font-cyber font-bold uppercase mb-3 text-purple-900 dark:text-white">
             {{ 'PRODUCTS.CORE_GEO_TITLE' | translate }}
           </h3>
-          <p class="text-nav-grey text-xs leading-relaxed">
+          <p class="text-nav-grey text-xs leading-relaxed mb-6 flex-grow">
             {{ 'PRODUCTS.CORE_GEO_TEXT' | translate }}
           </p>
+          <ul class="space-y-2 mt-auto">
+            <li *ngFor="let i of [1,2,3,4,5,6,7]; let idx = index" class="flex items-center gap-2 text-nav-grey text-xs">
+              <i class="fa-solid text-cyber-cyan flex-shrink-0 w-4 text-center" [ngClass]="coreGeoIcons[idx]"></i>
+              <span>{{ 'PRODUCTS.CORE_GEO_ITEM_' + i | translate }}</span>
+            </li>
+          </ul>
         </div>
-        <!-- Scoring qualité de conduite (via IA Events & SOS) -->
-        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 text-center group hover:bg-white/[0.04] transition-all">
-          <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-          </div>
-          <h3 class="text-lg font-cyber font-bold uppercase mb-4 text-purple-900 dark:text-white">
+        <!-- 4. Driving Quality Score -->
+        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 flex flex-col group hover:bg-white/[0.04] transition-all">
+          <h3 class="text-lg font-cyber font-bold uppercase mb-3 text-purple-900 dark:text-white">
             {{ 'PRODUCTS.CORE_SCORING_TITLE' | translate }}
           </h3>
-          <p class="text-nav-grey text-xs leading-relaxed">
+          <p class="text-nav-grey text-xs leading-relaxed mb-6 flex-grow">
             {{ 'PRODUCTS.CORE_SCORING_TEXT' | translate }}
           </p>
+          <ul class="space-y-2 mt-auto">
+            <li *ngFor="let i of [1,2,3,4]; let idx = index" class="flex items-center gap-2 text-nav-grey text-xs">
+              <i class="fa-solid text-cyber-cyan flex-shrink-0 w-4 text-center" [ngClass]="coreScoringIcons[idx]"></i>
+              <span>{{ 'PRODUCTS.CORE_SCORING_ITEM_' + i | translate }}</span>
+            </li>
+          </ul>
+        </div>
+        <!-- 5. SOS Emergency Button -->
+        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 flex flex-col group hover:bg-white/[0.04] transition-all">
+          <h3 class="text-lg font-cyber font-bold uppercase mb-3 text-purple-900 dark:text-white">
+            {{ 'PRODUCTS.EXTRA_MOBILE_TITLE' | translate }}
+          </h3>
+          <p class="text-nav-grey text-xs leading-relaxed mb-6 flex-grow">
+            {{ 'PRODUCTS.EXTRA_MOBILE_TEXT' | translate }}
+          </p>
+          <ul class="space-y-2 mt-auto">
+            <li *ngFor="let i of [1,2,3,4]; let idx = index" class="flex items-center gap-2 text-nav-grey text-xs">
+              <i class="fa-solid text-cyber-cyan flex-shrink-0 w-4 text-center" [ngClass]="extraMobileIcons[idx]"></i>
+              <span>{{ 'PRODUCTS.EXTRA_MOBILE_ITEM_' + i | translate }}</span>
+            </li>
+          </ul>
+        </div>
+        <!-- 6. Cabin Monitoring Camera -->
+        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 flex flex-col group hover:bg-white/[0.04] transition-all">
+          <h3 class="text-lg font-cyber font-bold uppercase mb-3 text-purple-900 dark:text-white">
+            {{ 'PRODUCTS.CORE_CABIN_TITLE' | translate }}
+          </h3>
+          <p class="text-nav-grey text-xs leading-relaxed mb-6 flex-grow">
+            {{ 'PRODUCTS.CORE_CABIN_TEXT' | translate }}
+          </p>
+          <ul class="space-y-2 mt-auto">
+            <li *ngFor="let i of [1,2,3,4]; let idx = index" class="flex items-center gap-2 text-nav-grey text-xs">
+              <i class="fa-solid text-cyber-cyan flex-shrink-0 w-4 text-center" [ngClass]="coreCabinIcons[idx]"></i>
+              <span>{{ 'PRODUCTS.CORE_CABIN_ITEM_' + i | translate }}</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
