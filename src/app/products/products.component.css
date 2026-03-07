@@ -14,10 +14,10 @@
   filter: drop-shadow(0 0 8px #00FFC2);
 }
 
-/* Product Hero Orbit Cards */
+/* Product Hero Orbit Cards – tuned for doubledash (wider dual-unit) image */
 .product-orbit {
   width: 100%;
-  max-width: 520px;
+  max-width: 580px;
   margin-inline: auto;
 }
 
@@ -59,84 +59,222 @@ html.dark .product-orbit-connector,
   max-height: 120px;
 }
 
-/* Approximate radial positions around the camera
-   Use percentages so cards stay wrapped around the dashcam on different screens */
+/* Orbit positions: V shape around the image – wide at top, converging at bottom, with space from center */
+/* Left arm of V – connector on right edge toward image */
 .orbit-1 {
-  top: 10%;
-  left: -5%;
+  top: 0%;
+  left: -32%;
 }
 .orbit-1 .product-orbit-connector {
   top: 50%;
-  right: -40px;
-  width: 40px;
+  right: -42px;
+  width: 42px;
 }
-
-.orbit-2 {
-  top: 10%;
-  right: -25%;
-}
-.orbit-2 .product-orbit-connector {
+.orbit-1 .product-orbit-connector::after {
+  content: "";
+  position: absolute;
+  right: 0;
   top: 50%;
-  left: -40px;
-  width: 40px;
+  width: 8px;
+  height: 8px;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  background: rgba(217,227,63,0.95);
+  z-index: 6;
 }
 
 .orbit-3 {
-  top: 35%;
-  left: -25%; /* shifted further left so LTE Connectivity card fully clears the image */
+  top: 28%;
+  left: -26%;
 }
 .orbit-3 .product-orbit-connector {
   top: 50%;
-  right: -50px;
-  width: 50px;
-}
-
-.orbit-4 {
-  top: 35%;
-  right: -25%;
-}
-.orbit-4 .product-orbit-connector {
-  top: 50%;
-  left: -50px;
-  width: 50px;
-}
-
-.orbit-5 {
-  bottom: 28%;
-  left: -32%;
-}
-.orbit-5 .product-orbit-connector {
-  top: 50%;
-  right: -55px;
-  width: 55px;
-}
-
-.orbit-6 {
-  bottom: 28%;
-  right: -12%;
-}
-.orbit-6 .product-orbit-connector {
-  top: 50%;
-  left: -55px;
-  width: 55px;
-}
-
-.orbit-7 {
-  bottom: 6%;
-  left: -24%;
-}
-.orbit-7 .product-orbit-connector {
-  top: 45%;
   right: -40px;
   width: 40px;
 }
-
-.orbit-8 {
-  bottom: 6%;
-  right: -4%;
+.orbit-3 .product-orbit-connector::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  background: rgba(217,227,63,0.95);
+  z-index: 6;
 }
-.orbit-8 .product-orbit-connector {
-  top: 45%;
+
+.orbit-5 {
+  top: 56%;
+  left: -20%;
+}
+.orbit-5 .product-orbit-connector {
+  top: 50%;
+  right: -38px;
+  width: 38px;
+}
+.orbit-5 .product-orbit-connector::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  background: rgba(217,227,63,0.95);
+  z-index: 6;
+}
+
+.orbit-7 {
+  bottom: 2%;
+  left: -14%;
+}
+/* Tamper-Proof Storage: line from right edge of card (horizontal) then goes up (vertical) */
+.orbit-7 .product-orbit-connector {
+  top: 50%;
+  right: -72px;
+  width: 72px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(148,163,184,0.6), rgba(217,227,63,0.9));
+}
+.orbit-7 .product-orbit-connector::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 36px);
+  width: 8px;
+  height: 8px;
+  transform: translate(50%, 50%);
+  border-radius: 50%;
+  background: rgba(217,227,63,0.95);
+  z-index: 6;
+}
+.orbit-7 .product-orbit-connector::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  left: auto;
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(to top, rgba(217,227,63,0.9), rgba(217,227,63,0.95));
+}
+html.dark .orbit-7 .product-orbit-connector,
+.dark .orbit-7 .product-orbit-connector {
+  background: linear-gradient(to right, rgba(148,163,184,0.25), rgba(217,227,63,0.9));
+}
+html.dark .orbit-7 .product-orbit-connector::after,
+.dark .orbit-7 .product-orbit-connector::after {
+  background: linear-gradient(to top, rgba(217,227,63,0.9), rgba(217,227,63,0.95));
+}
+
+/* Right arm of V – connector on left edge toward image */
+.orbit-2 {
+  top: 0%;
+  right: -32%;
+}
+/* Edge AI Alerts: line starts from left of card (horizontal) then goes down (vertical) */
+.orbit-2 .product-orbit-connector {
+  top: 50%;
+  left: -84px;
+  width: 84px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(148,163,184,0.6), rgba(217,227,63,0.9));
+}
+.orbit-2 .product-orbit-connector::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(100% + 36px);
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(217,227,63,0.95);
+  z-index: 6;
+}
+.orbit-2 .product-orbit-connector::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(to bottom, rgba(217,227,63,0.9), rgba(217,227,63,0.95));
+}
+html.dark .orbit-2 .product-orbit-connector,
+.dark .orbit-2 .product-orbit-connector {
+  background: linear-gradient(to right, rgba(148,163,184,0.25), rgba(217,227,63,0.9));
+}
+html.dark .orbit-2 .product-orbit-connector::after,
+.dark .orbit-2 .product-orbit-connector::after {
+  background: linear-gradient(to bottom, rgba(217,227,63,0.9), rgba(217,227,63,0.95));
+}
+
+.orbit-4 {
+  top: 28%;
+  right: -26%;
+}
+.orbit-4 .product-orbit-connector {
+  top: 50%;
   left: -40px;
   width: 40px;
+}
+.orbit-4 .product-orbit-connector::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(217,227,63,0.95);
+  z-index: 6;
+}
+
+.orbit-6 {
+  top: 56%;
+  right: -20%;
+}
+.orbit-6 .product-orbit-connector {
+  top: 50%;
+  left: -38px;
+  width: 38px;
+}
+.orbit-6 .product-orbit-connector::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(217,227,63,0.95);
+  z-index: 6;
+}
+
+.orbit-8 {
+  bottom: 2%;
+  right: -14%;
+}
+.orbit-8 .product-orbit-connector {
+  top: 50%;
+  left: -36px;
+  width: 36px;
+}
+.orbit-8 .product-orbit-connector::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(217,227,63,0.95);
+  z-index: 6;
 }

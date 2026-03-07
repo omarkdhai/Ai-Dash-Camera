@@ -8,19 +8,19 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         <!-- Title / Badge -->
         <div class="text-center lg:text-left">
-          <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.4em] text-purple-600 dark:text-cyber-cyan mb-10">
+          <div class="badge-header-style inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.4em] text-purple-600 dark:text-cyber-cyan mb-10">
             {{ 'SCHOOL_BUS.HERO_BADGE' | translate }}
           </div>
           
           <h1 class="text-4xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none mb-4 text-purple-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-white dark:to-[#D9E33F]">
             {{ 'NAV.SCHOOL_BUS' | translate }} <br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">{{ 'SCHOOL_BUS.HERO_SUBTITLE' | translate }}</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-purple-600 dark:to-[#8BFF8B]">{{ 'SCHOOL_BUS.HERO_SUBTITLE' | translate }}</span>
           </h1>
         </div>
 
         <!-- School Bus – Info Cards Grid -->
         <div class="mt-6 lg:mt-2 grid grid-cols-1 gap-4">
-          <div class="p-4 lg:ml-0 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3">
+          <div class="p-4 lg:ml-0 rounded-2xl bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/10 shadow-sm inline-block text-left flex items-start space-x-3">
             <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
@@ -32,7 +32,7 @@
               <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'SCHOOL_BUS.CARD_1_DESC' | translate }}</p>
             </div>
           </div>
-          <div class="p-4 lg:ml-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3">
+          <div class="p-4 lg:ml-6 rounded-2xl bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/10 shadow-sm inline-block text-left flex items-start space-x-3">
             <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
@@ -44,7 +44,7 @@
               <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'SCHOOL_BUS.CARD_2_DESC' | translate }}</p>
             </div>
           </div>
-          <div class="p-4 lg:ml-12 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3">
+          <div class="p-4 lg:ml-12 rounded-2xl bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/10 shadow-sm inline-block text-left flex items-start space-x-3">
             <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
@@ -62,7 +62,7 @@
   </header>
 
   <!-- 2. MARKET DEMAND & CHALLENGE -->
-  <section appScrollReveal class="py-32 px-6 lg:px-20">
+  <section appScrollReveal class="scroll-section py-32 px-6 lg:px-20">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="space-y-8">
         <h2 class="text-4xl font-cyber font-bold uppercase tracking-tight text-purple-900 dark:text-white">
@@ -91,14 +91,14 @@
            </div>
         </div>
       </div>
-      <div class="p-1 border border-white/10 rounded-[40px] bg-white/[0.02]">
+      <div class="p-1 border border-slate-300 dark:border-white/10 rounded-[40px] bg-slate-300 dark:bg-white/[0.02] shadow-sm">
          <img src="assets/school-bus1.jpg" class="rounded-3xl border border-white/10 shadow-2xl h-[400px] w-full object-cover order-2 lg:order-1 grayscale hover:grayscale-0 transition duration-700">
       </div>
     </div>
   </section>
 
   <!-- 3. VSS SOLUTION FOR SCHOOL BUS -->
-  <section appScrollReveal class="py-32 px-6 lg:px-20 bg-white/[0.01] border-y border-white/5 relative">
+  <section appScrollReveal class="scroll-section py-32 px-6 lg:px-20 bg-white/[0.01] border-y border-white/5 relative">
     <div class="max-w-7xl mx-auto text-center">
       <h2 class="text-4xl font-cyber font-bold uppercase mb-20 tracking-widest text-purple-900 dark:text-white">
           {{ 'SCHOOL_BUS.ACCENT_SOLUTION' | translate }} <span class="text-cyber-cyan italic">{{ 'SCHOOL_BUS.ACCENT_SUBTITLE' | translate }}</span>
@@ -113,7 +113,7 @@
   </section>
 
   <!-- 4. PROTECTION TARGETS -->
-  <section appScrollReveal class="py-32 px-6 lg:px-20 bg-white/[0.01] border-y border-white/5">
+  <section appScrollReveal class="scroll-section py-32 px-6 lg:px-20 bg-white/[0.01] border-y border-white/5">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
       <div class="text-center group">
         <div class="aspect-video mb-8 rounded-3xl overflow-hidden border border-white/10 grayscale group-hover:grayscale-0 transition-all duration-700">
@@ -149,7 +149,7 @@
   </section>
 
   <!-- 5. ADVANTAGES -->
-  <section appScrollReveal class="py-40 px-6 lg:px-20">
+  <section appScrollReveal class="scroll-section py-40 px-6 lg:px-20">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
       <div class="space-y-16">
         <h2 class="text-4xl font-cyber font-bold uppercase tracking-widest text-purple-900 dark:text-white">

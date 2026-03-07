@@ -6,13 +6,13 @@
     <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyber-cyan/5 blur-[150px] rounded-full"></div>
     
     <div class="max-w-7xl mx-auto relative z-10 text-center">
-      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.4em] text-purple-600 dark:text-cyber-cyan mb-10">
+      <div class="badge-header-style inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.4em] text-purple-600 dark:text-cyber-cyan mb-10">
         AI Powered Solutions
       </div>
       
       <h1 class="text-5xl md:text-7xl font-cyber font-extrabold uppercase tracking-tighter leading-none mb-10 text-purple-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-white dark:to-[#D9E33F]">
         Explore our <br>
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">Solutions</span>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-purple-600 dark:to-[#8BFF8B]">Solutions</span>
       </h1>
       
       <p class="text-nav-grey text-sm md:text-base max-w-4xl mx-auto leading-relaxed font-light font-cyber italic">
@@ -23,7 +23,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
   </header>
 
   <!-- CTA + visual indicators -->
-  <section appScrollReveal class="py-12 px-6">
+  <section appScrollReveal class="scroll-section py-12 px-6">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
       <!-- CTA buttons -->
       <div class="flex flex-col items-center lg:items-start gap-4">
@@ -44,25 +44,25 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
 
       <!-- Indicators tiles -->
       <div class="solution-metrics-grid grid grid-cols-2 gap-4">
-        <div class="solution-metric-tile p-4 rounded-2xl bg-white/80 dark:bg-white/[0.04] border border-slate-200 dark:border-white/10 flex items-center gap-3">
+        <div class="solution-metric-tile p-4 rounded-2xl bg-slate-300 dark:bg-white/[0.04] border border-slate-400 dark:border-white/10 shadow-sm flex items-center gap-3">
           <span class="text-cyber-cyan text-xl">↓</span>
           <span class="text-[11px] font-cyber uppercase tracking-[0.25em] text-purple-900 dark:text-white">
             {{ 'INSURER.METRIC_SINISTRALITE' | translate }}
           </span>
         </div>
-        <div class="solution-metric-tile p-4 rounded-2xl bg-white/80 dark:bg-white/[0.04] border border-slate-200 dark:border-white/10 flex items-center gap-3">
+        <div class="solution-metric-tile p-4 rounded-2xl bg-slate-300 dark:bg-white/[0.04] border border-slate-400 dark:border-white/10 shadow-sm flex items-center gap-3">
           <span class="text-cyber-cyan text-xl">↓</span>
           <span class="text-[11px] font-cyber uppercase tracking-[0.25em] text-purple-900 dark:text-white">
             {{ 'INSURER.METRIC_COUT' | translate }}
           </span>
         </div>
-        <div class="solution-metric-tile p-4 rounded-2xl bg-white/80 dark:bg-white/[0.04] border border-slate-200 dark:border-white/10 flex items-center gap-3">
+        <div class="solution-metric-tile p-4 rounded-2xl bg-slate-300 dark:bg-white/[0.04] border border-slate-400 dark:border-white/10 shadow-sm flex items-center gap-3">
           <span class="text-cyber-cyan text-xl">↑</span>
           <span class="text-[11px] font-cyber uppercase tracking-[0.25em] text-purple-900 dark:text-white">
             {{ 'INSURER.METRIC_DRIVER_SAFETY' | translate }}
           </span>
         </div>
-        <div class="solution-metric-tile p-4 rounded-2xl bg-white/80 dark:bg-white/[0.04] border border-slate-200 dark:border-white/10 flex items-center gap-3">
+        <div class="solution-metric-tile p-4 rounded-2xl bg-slate-300 dark:bg-white/[0.04] border border-slate-400 dark:border-white/10 shadow-sm flex items-center gap-3">
           <span class="text-cyber-cyan text-xl">↑</span>
           <span class="text-[11px] font-cyber uppercase tracking-[0.25em] text-purple-900 dark:text-white">
             {{ 'INSURER.METRIC_MAITRISE' | translate }}
@@ -128,7 +128,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
 
         <p class="text-xs md:text-sm text-nav-grey/80 font-cyber">
           Le risque est géré
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B] italic">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-purple-600 dark:to-[#8BFF8B] italic">
             opérationnellement
           </span>, pas stratégiquement.
         </p>
@@ -176,7 +176,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
   <div class="max-w-7xl mx-auto px-6 space-y-64 mt-20">
 
     <!-- SECTOR 01: LOGISTICS (Text Left, Image Right) -->
-    <section appScrollReveal id="logistics" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section appScrollReveal id="logistics" class="scroll-section grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="space-y-8">
         <div class="text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_01</div>
         <div [routerLink]="['/logistics']" class="group flex items-center justify-between p-6 rounded-2xl cursor-pointer hover:border-cyber-cyan/50 transition-all">
@@ -186,7 +186,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
         <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
           <span class="font-bold">Réduisez vos accidents et vos coûts d'exploitation</span>
         </p>
-        <div class="p-8 bg-white/[0.02] border border-white/10 rounded-[32px] backdrop-blur-md">
+        <div class="p-8 bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/10 rounded-[32px] shadow-sm backdrop-blur-md">
           <h4 class="text-white font-bold text-xs uppercase mb-4 tracking-widest">Enjeux :</h4>
           <ul class="text-nav-grey text-[11px] space-y-3 uppercase tracking-widest leading-relaxed">
              <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyber-cyan rounded-full mr-3 shadow-[0_0_10px_#00FFC2]"></span> Exposition permanente au risque routier</li>
@@ -213,7 +213,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
     </section>
 
     <!-- SECTOR 02: OIL & GAS (Image Left, Text Right) -->
-    <section appScrollReveal id="hazardous" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section appScrollReveal id="hazardous" class="scroll-section grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div class="relative group order-2 lg:order-1 h-[450px]">
             <div class="absolute -inset-4 bg-red-500/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
             <img src="assets/oil-truck.jpg" class="rounded-[40px] border border-white/10 shadow-2xl h-full w-full object-cover grayscale hover:grayscale-0 transition duration-700" alt="Oil & Gas">
@@ -227,7 +227,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
           <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
             <span class="font-bold">La sécurité n’est pas une option, c'est une obligation</span>
           </p>
-          <div class="p-8 bg-white/[0.02] border border-white/10 rounded-[32px] backdrop-blur-md">
+          <div class="p-8 bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/10 rounded-[32px] shadow-sm backdrop-blur-md">
             <h4 class="text-white font-bold text-xs uppercase mb-4 tracking-widest">Enjeux :</h4>
             <ul class="text-nav-grey text-[11px] space-y-3 uppercase tracking-widest leading-relaxed">
               <li class="flex items-center">
@@ -265,7 +265,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
     </section>
 
     <!-- SECTOR 03: TAXI (Text Left, Image Right) -->
-    <section appScrollReveal id="private-hire" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section appScrollReveal id="private-hire" class="scroll-section grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="space-y-8">
         <div class="text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_03</div>
         <div [routerLink]="['/taxi']" class="group flex items-center justify-between p-6 rounded-2xl cursor-pointer hover:border-cyber-cyan/50 transition-all">
@@ -275,7 +275,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
         <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
           <span class="font-bold">Sécurisez vos chauffeurs et protégez votre activité.</span>
         </p>
-        <div class="p-8 bg-white/[0.02] border border-white/10 rounded-[32px] backdrop-blur-md">
+        <div class="p-8 bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/10 rounded-[32px] shadow-sm backdrop-blur-md">
           <h4 class="text-white font-bold text-xs uppercase mb-4 tracking-widest">Enjeux :</h4>
           <ul class="text-nav-grey text-[11px] space-y-3 uppercase tracking-widest leading-relaxed">
             <li class="flex items-center">
@@ -310,7 +310,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
     </section>
 
     <!-- SECTOR 04: SCHOOL BUS (Image Left, Text Right) -->
-    <section appScrollReveal id="specialized" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section appScrollReveal id="specialized" class="scroll-section grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <img src="assets/students.jpg" class="rounded-[40px] border border-white/10 shadow-2xl h-[450px] w-full object-cover order-2 lg:order-1 grayscale hover:grayscale-0 transition duration-700" alt="School Bus">
         <div class="space-y-8 order-1 lg:order-2">
           <div class="text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_04</div>
@@ -321,7 +321,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
           <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
             <span class="font-bold">Protéger les enfants, rassurer les collectivités et parents</span>
           </p>
-          <div class="p-8 bg-white/[0.02] border border-white/10 rounded-[32px] backdrop-blur-md">
+          <div class="p-8 bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/10 rounded-[32px] shadow-sm backdrop-blur-md">
             <h4 class="text-white font-bold text-xs uppercase mb-4 tracking-widest">Enjeux :</h4>
             <ul class="text-nav-grey text-[11px] space-y-3 uppercase tracking-widest leading-relaxed">
               <li class="flex items-center">
@@ -359,7 +359,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
     </section>
 
     <!-- SECTOR 05: PUBLIC BUS (Text Left, Image Right) -->
-    <section appScrollReveal id="public-transport" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section appScrollReveal id="public-transport" class="scroll-section grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="space-y-8">
         <div class="text-cyber-cyan font-cyber font-black tracking-[0.5em] text-[10px]">APPLICATION_05</div>
         <div [routerLink]="['/public-bus']" class="group flex items-center justify-between p-6 rounded-2xl cursor-pointer hover:border-cyber-cyan/50 transition-all">
@@ -369,7 +369,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
         <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
           <span class="font-bold">Sécurisez passagers et conducteurs</span>
         </p>
-        <div class="p-8 bg-white/[0.02] border border-white/10 rounded-[32px] backdrop-blur-md">
+        <div class="p-8 bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/10 rounded-[32px] shadow-sm backdrop-blur-md">
           <h4 class="text-white font-bold text-xs uppercase mb-4 tracking-widest">Enjeux :</h4>
           <ul class="text-nav-grey text-[11px] space-y-3 uppercase tracking-widest leading-relaxed">
             <li class="flex items-center">
@@ -408,7 +408,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
     </section>
 
     <!-- SECTOR 06: RENT CAR (Image Left, Text Right) -->
-    <section appScrollReveal id="rent-car" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section appScrollReveal id="rent-car" class="scroll-section grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div class="relative group order-2 lg:order-1 h-[450px]">
             <img src="assets/rent-car1.jpg" class="rounded-[40px] border border-white/10 shadow-2xl h-full w-full object-cover grayscale hover:grayscale-0 transition duration-700" alt="Rent Car">
         </div>
@@ -421,7 +421,7 @@ Transformer le risque routier en avantage stratégique : une infrastructure AI +
           <p class="text-nav-grey leading-relaxed border-l-2 border-cyber-cyan pl-6 text-sm md:text-base">
             <span class="font-bold">Protégez vos véhicules et réduisez la fraude</span>
           </p>
-          <div class="p-8 bg-white/[0.02] border border-white/10 rounded-[32px] backdrop-blur-md">
+          <div class="p-8 bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/10 rounded-[32px] shadow-sm backdrop-blur-md">
             <h4 class="text-white font-bold text-xs uppercase mb-4 tracking-widest">Enjeux :</h4>
             <ul class="text-nav-grey text-[11px] space-y-3 uppercase tracking-widest leading-relaxed">
               <li class="flex items-center">

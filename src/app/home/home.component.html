@@ -1,7 +1,7 @@
 <div class="bg-slate-50 dark:bg-[#251c2b] text-slate-900 dark:text-white font-base selection:bg-cyber-cyan selection:text-black overflow-hidden transition-colors">
 
   <!-- HERO -->
-  <section appScrollReveal class="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-6">
+  <section appScrollReveal class="scroll-section relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-6">
   <!-- Background Glows -->
   <div class="absolute top-[-20%] left-[-10%] w-[700px] h-[700px] bg-cyber-cyan/10 blur-[180px] rounded-full"></div>
   <div class="absolute bottom-[20%] right-[-10%] w-[500px] h-[500px] bg-purple-500/5 blur-[150px] rounded-full"></div>
@@ -10,7 +10,7 @@
     
     <!-- Left Content -->
     <div class="space-y-8">
-      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.3em] text-purple-600 dark:text-cyber-cyan">
+      <div class="badge-header-style inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.3em] text-purple-600 dark:text-cyber-cyan">
         <span class="relative flex h-2 w-2 mr-2">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyber-cyan opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2 w-2 bg-cyber-cyan"></span>
@@ -21,7 +21,7 @@
       <ng-container *ngFor="let image of carouselImages; let i = index">
         <div *ngIf="i === currentImageIndex" class="space-y-4">
           <h4 class="text-4xl md:text-5xl font-cyber font-extrabold leading-[1.1] tracking-tight text-purple-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-white dark:to-[#D9E33F] slide-text-title">
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-purple-600 dark:to-[#8BFF8B]">
               {{ image.titleKey | translate }}
             </span>
           </h4>
@@ -71,7 +71,7 @@
 </section>
 
     <!-- DASHCAM SECTOR APPLICATIONS -->
-  <section appScrollReveal class="py-32 px-6 lg:px-20 bg-[251c2b] relative overflow-hidden transition-colors">
+  <section appScrollReveal class="scroll-section py-32 px-6 lg:px-20 bg-[251c2b] relative overflow-hidden transition-colors">
     
     <!-- Background Blueprint Glow -->
     <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(0,255,194,0.03)_0%,transparent_50%)] pointer-events-none"></div>
@@ -163,7 +163,7 @@
 </section>
 
   <!-- INNOVATION SECTION -->
-  <section appScrollReveal class="py-40 px-6 lg:px-20 bg-white dark:bg-[#251c2b] relative overflow-hidden transition-colors">
+  <section appScrollReveal class="scroll-section py-40 px-6 lg:px-20 bg-white dark:bg-[#251c2b] relative overflow-hidden transition-colors">
     
     <!-- Subtle Blueprint Grid Overlay -->
     <div class="absolute inset-0 opacity-[0.03] pointer-events-none" 
@@ -181,7 +181,7 @@
           <span class="text-[10px] font-cyber text-purple-600 dark:text-cyber-cyan uppercase tracking-[0.6em] font-bold">{{ 'HOME.FUTURE_PROOF_TECH' | translate }}</span>
         </div>
         <h2 class="text-5xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none text-purple-900 dark:text-white">
-          {{ 'HOME.CORE_INNOVATION_PREFIX' | translate }} <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B] italic">{{ 'HOME.CORE_INNOVATION' | translate }}</span>
+          {{ 'HOME.CORE_INNOVATION_PREFIX' | translate }} <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-purple-600 dark:to-[#8BFF8B] italic">{{ 'HOME.CORE_INNOVATION' | translate }}</span>
         </h2>
       </div>
 
@@ -191,8 +191,8 @@
         <div class="space-y-16">
           
           <!-- Tech Item 1 -->
-          <div class="group relative pl-12 border-l border-slate-200 dark:border-white/10 hover:border-cyber-cyan transition-colors duration-500">
-            <div class="absolute top-0 left-[-5px] w-2 h-2 bg-slate-400 dark:bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
+          <div class="group relative p-6 pl-10 rounded-2xl border border-slate-300 dark:border-white/10 border-l-4 border-l-cyber-cyan/50 dark:border-l-cyber-cyan/50 bg-slate-200/50 dark:bg-white/[0.02] hover:border-cyber-cyan/40 transition-colors duration-500 shadow-sm">
+            <div class="absolute top-6 left-3 w-2 h-2 bg-slate-400 dark:bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
             <span class="text-[9px] font-cyber text-slate-500 dark:text-nav-grey uppercase tracking-widest mb-2 block opacity-50">{{ 'HOME.TECH_STACK_01' | translate }}</span>
             <h4 class="text-xl font-cyber font-bold uppercase text-purple-900 dark:text-white mb-4 group-hover:text-cyber-cyan transition-colors">{{ 'HOME.LOCAL_EDGE_PROCESSING' | translate }}</h4>
             <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed max-w-md font-light">
@@ -201,8 +201,8 @@
           </div>
 
           <!-- Tech Item 2 -->
-          <div class="group relative pl-12 border-l border-slate-200 dark:border-white/10 hover:border-cyber-cyan transition-colors duration-500">
-              <div class="absolute top-0 left-[-5px] w-2 h-2 bg-slate-400 dark:bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
+          <div class="group relative p-6 pl-10 rounded-2xl border border-slate-300 dark:border-white/10 border-l-4 border-l-cyber-cyan/50 dark:border-l-cyber-cyan/50 bg-slate-200/50 dark:bg-white/[0.02] hover:border-cyber-cyan/40 transition-colors duration-500 shadow-sm">
+              <div class="absolute top-6 left-3 w-2 h-2 bg-slate-400 dark:bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
               <span class="text-[9px] font-cyber text-slate-500 dark:text-nav-grey uppercase tracking-widest mb-2 block opacity-50">{{ 'HOME.TECH_STACK_02' | translate }}</span>
               <h4 class="text-xl font-cyber font-bold uppercase text-purple-900 dark:text-white mb-4 group-hover:text-cyber-cyan transition-colors">{{ 'HOME.OTA_EVOLUTION' | translate }}</h4>
               <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed max-w-md font-light">
@@ -211,8 +211,8 @@
           </div>
 
           <!-- Tech Item 3 -->
-          <div class="group relative pl-12 border-l border-slate-200 dark:border-white/10 hover:border-cyber-cyan transition-colors duration-500">
-              <div class="absolute top-0 left-[-5px] w-2 h-2 bg-slate-400 dark:bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
+          <div class="group relative p-6 pl-10 rounded-2xl border border-slate-300 dark:border-white/10 border-l-4 border-l-cyber-cyan/50 dark:border-l-cyber-cyan/50 bg-slate-200/50 dark:bg-white/[0.02] hover:border-cyber-cyan/40 transition-colors duration-500 shadow-sm">
+              <div class="absolute top-6 left-3 w-2 h-2 bg-slate-400 dark:bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
               <span class="text-[9px] font-cyber text-slate-500 dark:text-nav-grey uppercase tracking-widest mb-2 block opacity-50">{{ 'HOME.TECH_STACK_03' | translate }}</span>
               <h4 class="text-xl font-cyber font-bold uppercase text-purple-900 dark:text-white mb-4 group-hover:text-cyber-cyan transition-colors">{{ 'HOME.SENSOR_FUSION' | translate }}</h4>
               <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed max-w-md font-light">
@@ -221,8 +221,8 @@
           </div>
 
           <!-- Tech Item 4 -->
-          <div class="group relative pl-12 border-l border-slate-200 dark:border-white/10 hover:border-cyber-cyan transition-colors duration-500">
-              <div class="absolute top-0 left-[-5px] w-2 h-2 bg-slate-400 dark:bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
+          <div class="group relative p-6 pl-10 rounded-2xl border border-slate-300 dark:border-white/10 border-l-4 border-l-cyber-cyan/50 dark:border-l-cyber-cyan/50 bg-slate-200/50 dark:bg-white/[0.02] hover:border-cyber-cyan/40 transition-colors duration-500 shadow-sm">
+              <div class="absolute top-6 left-3 w-2 h-2 bg-slate-400 dark:bg-white group-hover:bg-cyber-cyan rounded-full transition-colors shadow-[0_0_10px_#00FFC2]"></div>
               <span class="text-[9px] font-cyber text-slate-500 dark:text-nav-grey uppercase tracking-widest mb-2 block opacity-50">{{ 'HOME.TECH_STACK_04' | translate }}</span>
               <h4 class="text-xl font-cyber font-bold uppercase text-purple-900 dark:text-white mb-4 group-hover:text-cyber-cyan transition-colors">{{ 'HOME.COMPLIANCE_TRUST_ACCOUNTABILITY' | translate }}</h4>
               <p class="text-slate-600 dark:text-nav-grey text-sm leading-relaxed max-w-md font-light">
@@ -267,11 +267,11 @@
               </p>
 
               <div class="pt-6 grid grid-cols-2 gap-4">
-                  <div class="p-4 rounded-2xl bg-slate-100 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 text-center transition-colors">
+                  <div class="p-4 rounded-2xl bg-slate-300 dark:bg-white/[0.03] border border-slate-400 dark:border-white/5 text-center transition-colors">
                       <div class="text-lg font-cyber font-bold text-purple-900 dark:text-white tracking-widest">Improving driving quality</div>
                       <div class="text-[8px] text-slate-500 dark:text-nav-grey uppercase">{{ 'HOME.RESOLUTION' | translate }}</div>
                   </div>
-                  <div class="p-4 rounded-2xl bg-slate-100 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 text-center transition-colors">
+                  <div class="p-4 rounded-2xl bg-slate-300 dark:bg-white/[0.03] border border-slate-400 dark:border-white/5 text-center transition-colors">
                       <div class="text-lg font-cyber font-bold text-purple-900 dark:text-white tracking-widest">Safety Scoring + Coaching Insights</div>
                       <div class="text-[8px] text-slate-500 dark:text-nav-grey uppercase">{{ 'HOME.CONNECTIVITY' | translate }}</div>
                   </div>
@@ -285,7 +285,7 @@
   </section>
 
   <!-- ROAD RISK → STRATEGIC ADVANTAGE -->
-  <section appScrollReveal class="py-32 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] border-y border-slate-200 dark:border-white/5 transition-colors">
+  <section appScrollReveal class="scroll-section py-32 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] border-y border-slate-200 dark:border-white/5 transition-colors">
     <div class="max-w-7xl mx-auto space-y-14">
 
       <!-- Title & subtitle -->
@@ -300,25 +300,25 @@
 
       <!-- Visual indicators -->
       <div class="flex flex-wrap justify-center gap-4">
-        <div class="flex items-center space-x-3 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 px-4 py-2 rounded-xl">
+        <div class="flex items-center space-x-3 bg-slate-300 dark:bg-white/[0.03] border border-slate-400 dark:border-white/10 px-4 py-2 rounded-xl">
           <span class="text-cyber-cyan text-lg">↓</span>
           <span class="text-[11px] md:text-[12px] font-cyber uppercase tracking-[0.25em]">
             {{ 'INSURER.METRIC_SINISTRALITE' | translate }}
           </span>
         </div>
-        <div class="flex items-center space-x-3 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 px-4 py-2 rounded-xl">
+        <div class="flex items-center space-x-3 bg-slate-300 dark:bg-white/[0.03] border border-slate-400 dark:border-white/10 px-4 py-2 rounded-xl">
           <span class="text-cyber-cyan text-lg">↓</span>
           <span class="text-[11px] md:text-[12px] font-cyber uppercase tracking-[0.25em]">
             {{ 'INSURER.METRIC_COUT' | translate }}
           </span>
         </div>
-        <div class="flex items-center space-x-3 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 px-4 py-2 rounded-xl">
+        <div class="flex items-center space-x-3 bg-slate-300 dark:bg-white/[0.03] border border-slate-400 dark:border-white/10 px-4 py-2 rounded-xl">
           <span class="text-cyber-cyan text-lg">↑</span>
           <span class="text-[11px] md:text-[12px] font-cyber uppercase tracking-[0.25em]">
             {{ 'INSURER.METRIC_DRIVER_SAFETY' | translate }}
           </span>
         </div>
-        <div class="flex items-center space-x-3 bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 px-4 py-2 rounded-xl">
+        <div class="flex items-center space-x-3 bg-slate-300 dark:bg-white/[0.03] border border-slate-400 dark:border-white/10 px-4 py-2 rounded-xl">
           <span class="text-cyber-cyan text-lg">↑</span>
           <span class="text-[11px] md:text-[12px] font-cyber uppercase tracking-[0.25em]">
             {{ 'INSURER.METRIC_MAITRISE' | translate }}
@@ -329,7 +329,7 @@
       <!-- 3-column governance / compliance / ESG -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <!-- Gouvernance du risque -->
-        <div class="p-8 rounded-[32px] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
+        <div class="p-8 rounded-[32px] bg-slate-300 dark:bg-white/[0.03] border border-slate-400 dark:border-white/10">
           <h3 class="text-sm font-cyber text-cyber-cyan uppercase tracking-[0.3em] mb-4">
             {{ 'INSURER.RISK_GOVERNANCE_TITLE' | translate }}
           </h3>
@@ -341,7 +341,7 @@
         </div>
 
         <!-- Conformité européenne intégrée -->
-        <div class="p-8 rounded-[32px] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
+        <div class="p-8 rounded-[32px] bg-slate-300 dark:bg-white/[0.03] border border-slate-400 dark:border-white/10">
           <h3 class="text-sm font-cyber text-cyber-cyan uppercase tracking-[0.3em] mb-4">
             {{ 'INSURER.EU_COMPLIANCE_TITLE' | translate }}
           </h3>
@@ -353,7 +353,7 @@
         </div>
 
         <!-- Impact ESG -->
-        <div class="p-8 rounded-[32px] bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10">
+        <div class="p-8 rounded-[32px] bg-slate-300 dark:bg-white/[0.03] border border-slate-400 dark:border-white/10">
           <h3 class="text-sm font-cyber text-cyber-cyan uppercase tracking-[0.3em] mb-4">
             {{ 'INSURER.ESG_IMPACT_TITLE' | translate }}
           </h3>
@@ -368,7 +368,7 @@
   </section>
 
   <!-- PERFORMANCE ANALYTICS: SAFETY EVOLUTION -->
-  <section appScrollReveal class="py-40 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] relative overflow-hidden transition-colors">
+  <section appScrollReveal class="scroll-section py-40 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] relative overflow-hidden transition-colors">
     <!-- Subtle Grid Background -->
     <div class="absolute inset-0 opacity-[0.03] pointer-events-none"></div>
 
@@ -424,7 +424,7 @@
 
         <!-- Right side: simplified chart / badges -->
         <div class="lg:col-span-8 relative order-1 lg:order-2">
-          <div class="relative bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 p-8 md:p-12 rounded-[40px] overflow-hidden transition-colors">
+          <div class="relative bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/5 shadow-sm p-8 md:p-12 rounded-[40px] overflow-hidden transition-colors">
             <div class="absolute inset-0 opacity-[0.08] pointer-events-none"
                  style="background-image: radial-gradient(#00FFC2 0.7px, transparent 0.7px); background-size: 26px 26px;"></div>
 
@@ -496,13 +496,13 @@
   </section>
 
   <!-- ACTUARIAL VALUE → OUTCOMES -->
-  <section appScrollReveal class="py-24 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] transition-colors">
+  <section appScrollReveal class="scroll-section py-24 px-6 lg:px-20 bg-slate-50 dark:bg-[#251c2b] transition-colors">
     <div class="max-w-5xl mx-auto space-y-10">
       <h3 class="text-3xl md:text-4xl font-cyber font-extrabold uppercase tracking-tight text-purple-900 dark:text-white text-center">
         {{ 'INSURER.ACTUARIAL_STATEMENT' | translate }}
       </h3>
 
-      <div class="overflow-hidden rounded-3xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/[0.03]">
+      <div class="overflow-hidden rounded-3xl border border-slate-400 dark:border-white/10 bg-slate-300 shadow-sm dark:bg-white/[0.03]">
         <div class="grid grid-cols-2 text-xs md:text-sm font-cyber uppercase tracking-[0.25em] text-purple-900 dark:text-white bg-slate-100 dark:bg-white/[0.04]">
           <div class="px-6 py-4 border-r border-slate-200 dark:border-white/10">
             {{ 'INSURER.ACTUARIAL_LABEL' | translate }}
@@ -542,7 +542,7 @@
   </section>
 
   <!-- CONTACT FORM -->
-  <section appScrollReveal class="py-32 px-6 relative bg-slate-50 dark:bg-[#251c2b] transition-colors">
+  <section appScrollReveal class="scroll-section py-32 px-6 relative bg-slate-50 dark:bg-[#251c2b] transition-colors">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] bg-cyber-cyan/5 blur-[150px] pointer-events-none"></div>
     
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 relative z-10">
@@ -594,7 +594,7 @@
         </div>
       </div>
 
-      <div class="bg-white dark:bg-white/[0.03] backdrop-blur-xl border border-slate-200 dark:border-white/10 p-10 rounded-3xl shadow-lg dark:shadow-none transition-colors">
+      <div class="bg-slate-300 dark:bg-white/[0.03] backdrop-blur-xl border border-slate-400 shadow-sm dark:border-white/10 p-10 rounded-3xl shadow-lg dark:shadow-none transition-colors">
         <form class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <input type="text" [placeholder]="'HOME.FULL_NAME' | translate" class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-4 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-cyber-cyan focus:outline-none transition-all">

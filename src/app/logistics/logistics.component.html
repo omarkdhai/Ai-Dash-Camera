@@ -7,19 +7,19 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         <!-- Title / Badge -->
         <div class="text-center lg:text-left">
-          <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.4em] text-purple-600 dark:text-cyber-cyan mb-10">
+          <div class="badge-header-style inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-slate-300 dark:border-white/10 bg-slate-200/50 dark:bg-white/5 text-[10px] font-cyber uppercase tracking-[0.4em] text-purple-600 dark:text-cyber-cyan mb-10">
             {{ 'LOGISTICS.HERO_BADGE' | translate }}
           </div>
           
           <h1 class="text-4xl md:text-5xl font-cyber font-extrabold uppercase tracking-tighter leading-none mb-4 text-purple-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-white dark:to-[#D9E33F]">
             {{ 'LOGISTICS.HERO_TITLE' | translate }} <br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-[#8BFF8B]">{{ 'LOGISTICS.HERO_SUBTITLE' | translate }}</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan to-purple-600 dark:to-[#8BFF8B]">{{ 'LOGISTICS.HERO_SUBTITLE' | translate }}</span>
           </h1>
         </div>
 
         <!-- Logistics – Info Cards Grid (Right) -->
         <div class="mt-6 lg:mt-2 grid grid-cols-1 gap-4">
-          <div class="solution-hero-card p-4 lg:ml-0 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3">
+          <div class="solution-hero-card p-4 lg:ml-0 rounded-2xl bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/10 shadow-sm inline-block text-left flex items-start space-x-3">
             <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
@@ -31,7 +31,7 @@
               <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'LOGISTICS.CARD_1_DESC' | translate }}</p>
             </div>
           </div>
-          <div class="solution-hero-card p-4 lg:ml-6 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3">
+          <div class="solution-hero-card p-4 lg:ml-6 rounded-2xl bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/10 shadow-sm inline-block text-left flex items-start space-x-3">
             <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
@@ -43,7 +43,7 @@
               <p class="text-[11px] text-nav-grey leading-relaxed">{{ 'LOGISTICS.CARD_2_DESC' | translate }}</p>
             </div>
           </div>
-          <div class="solution-hero-card p-4 lg:ml-12 rounded-2xl bg-slate-100 dark:bg-white/[0.02] border border-white/10 inline-block text-left flex items-start space-x-3">
+          <div class="solution-hero-card p-4 lg:ml-12 rounded-2xl bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/10 shadow-sm inline-block text-left flex items-start space-x-3">
             <div class="w-10 h-10 rounded-xl bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
@@ -61,7 +61,7 @@
   </header>
 
   <!-- 2. MARKET DEMAND & CHALLENGES -->
-  <section appScrollReveal class="py-32 px-6 lg:px-20 relative">
+  <section appScrollReveal class="scroll-section py-32 px-6 lg:px-20 relative">
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
         <div>
@@ -108,7 +108,7 @@
   </section>
 
   <!-- 3. VISUAL OVERVIEW -->
-  <section appScrollReveal class="py-32 bg-white/[0.01] border-y border-white/5">
+  <section appScrollReveal class="scroll-section py-32 bg-white/[0.01] border-y border-white/5">
     <div class="max-w-7xl mx-auto px-6 text-center">
       <h2 class="text-4xl font-cyber font-bold uppercase mb-20 tracking-widest text-purple-900 dark:text-white">
         {{ 'LOGISTICS.ACCENT_SOLUTION' | translate }} <span class="text-cyber-cyan italic">{{ 'LOGISTICS.ACCENT_SUBTITLE' | translate }}</span>
@@ -126,9 +126,9 @@
   </section>
 
   <!-- 4. STRATEGIC PILLARS -->
-  <section appScrollReveal class="py-32 px-6">
+  <section appScrollReveal class="scroll-section py-32 px-6">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-      <div class="p-10 rounded-[40px] bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/40 transition-all group">
+      <div class="p-10 rounded-[40px] bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/5 shadow-sm hover:border-cyber-cyan/40 transition-all group">
         <div class="w-14 h-14 bg-cyber-cyan/10 rounded-2xl flex items-center justify-center text-cyber-cyan mb-8">
            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1m-6 0a1 1 0 001-1m-6 0a1 1 0 011-1h2a1 1 0 011 1m-1 0h3m-3 0h-3"/></svg>
         </div>
@@ -141,7 +141,7 @@
         </ul>
       </div>
 
-      <div class="p-10 rounded-[40px] bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/40 transition-all group">
+      <div class="p-10 rounded-[40px] bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/5 shadow-sm hover:border-cyber-cyan/40 transition-all group">
         <div class="w-14 h-14 bg-cyber-cyan/10 rounded-2xl flex items-center justify-center text-cyber-cyan mb-8">
            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
         </div>
@@ -154,7 +154,7 @@
         </ul>
       </div>
 
-      <div class="p-10 rounded-[40px] bg-white/[0.02] border border-white/5 hover:border-cyber-cyan/40 transition-all group">
+      <div class="p-10 rounded-[40px] bg-slate-300 dark:bg-white/[0.02] border border-slate-400 dark:border-white/5 shadow-sm hover:border-cyber-cyan/40 transition-all group">
         <div class="w-14 h-14 bg-cyber-cyan/10 rounded-2xl flex items-center justify-center text-cyber-cyan mb-8">
            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
         </div>
@@ -170,7 +170,7 @@
   </section>
 
   <!-- 5. TECHNICAL ADVANTAGES -->
-  <section class="py-32 px-6 lg:px-20 space-y-64">
+  <section class="scroll-section py-32 px-6 lg:px-20 space-y-64">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-32">
         <h2 class="text-4xl font-cyber font-bold uppercase mb-20 tracking-widest text-purple-900 dark:text-white">
@@ -221,7 +221,7 @@
   </section>
 
   <!-- 6. FINAL BENEFITS LIST -->
-  <section appScrollReveal class="py-32 px-6 lg:px-20 bg-white/[0.01]">
+  <section appScrollReveal class="scroll-section py-32 px-6 lg:px-20 bg-white/[0.01]">
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20">
       <div class="lg:w-1/2 space-y-12">
         <h2 class="text-4xl font-cyber font-bold uppercase tracking-widest text-purple-900 dark:text-white">{{ 'LOGISTICS.BENEFITS_TITLE' | translate }}</h2>

@@ -52,8 +52,13 @@ export class HomeComponent implements OnInit, OnDestroy {
         window.scrollTo(0, 0);
       }
     });
-
     this.startCarousel();
+  }
+
+  ngOnDestroy() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
   }
 
   private startCarousel() {
@@ -76,9 +81,4 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.currentImageIndex = (this.currentImageIndex + 1) % this.carouselImages.length;
   }
 
-  ngOnDestroy() {
-    if (this.intervalId) {
-      clearInterval(this.intervalId);
-    }
-  }
 }
